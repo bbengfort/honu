@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/bbengfort/honu"
 	"github.com/urfave/cli"
@@ -14,7 +15,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "honu"
 	app.Version = "0.1"
-	app.Usage = "throughput testing for a simple gRPC service"
+	app.Usage = "throughput testing for a volatile, in-memory key/value store"
 
 	// Define commands available to the application
 	app.Commands = []cli.Command{
@@ -96,7 +97,7 @@ func main() {
 				cli.StringFlag{
 					Name:  "w, results",
 					Usage: "path on disk to write results to",
-					Value: "results.csv",
+					Value: "",
 				},
 			},
 		},
@@ -161,5 +162,14 @@ func put(c *cli.Context) error {
 
 // Run the throughput experiment
 func run(c *cli.Context) error {
+	duration, err := time.ParseDuration(c.String("duration"))
+	if err != nil {
+		return cli.NewExitError(err.Error(), 1)
+	}
+
+	if err := client.Run(c.String("key"), duration, c.String("results")); err != nil {
+		return cli.NewExitError(err.Error(), 1)
+	}
+
 	return nil
 }
