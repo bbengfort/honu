@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package rpc;
+
+// GetRequest is sent from a client to the server to read a value for a key
+message GetRequest {
+    string key = 1; // the name of the key to get
+}
+
+// GetReply is a response from the server to the client with the value
+message GetReply {
+    bool success = 1;   // if the get operation was successful
+    uint64 version = 2; // the current version of the value
+    string key = 3;     // the key of the request for debugging
+    bytes value = 4;    // the current value for the given key
+    string error = 5;   // the error that occurred if not success
+}
+
+
+// PutRequest is sent from a client to the server to put a value for a key
+message PutRequest {
+    string key = 1;  // the key of the object to put
+    bytes value = 2; // the value of the object to put
+}
+
+// PutReply is a response from the leader to the client
+message PutReply {
+    bool success = 1;   // if the put operation was successful
+    string key = 2;     // the key of the request for debugging
+    uint64 version = 3; // the created version of the key/value
+    string error = 4;   // the error that occurred if not success
+}
+
+// The Storage service defines the client-server communications for getting
+// and putting a value to a single server without replication.
+service Storage {
+    rpc GetValue(GetRequest) returns (GetReply) {};
+    rpc PutValue(PutRequest) returns (PutReply) {};
+}
