@@ -35,6 +35,7 @@ You can create a .env file in the local directory that you're running honu from 
 HONU_SERVER_ADDR=192.168.35.1:3264
 HONU_LOCAL_KEY=foo
 HONU_RUN_DURATION=30s
+HONU_RUN_DISABLED=false
 ```
 
 Hopefully this will help run experiments without typing in tons of arguments at the command line.

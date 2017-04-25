@@ -110,6 +110,11 @@ func main() {
 					Usage: "path on disk to write results to",
 					Value: "",
 				},
+				cli.BoolFlag{
+					Name:   "X, disabled",
+					Usage:  "exit without running throughput",
+					EnvVar: "HONU_RUN_DISABLED",
+				},
 			},
 		},
 	}
@@ -173,6 +178,11 @@ func put(c *cli.Context) error {
 
 // Run the throughput experiment
 func run(c *cli.Context) error {
+	if c.Bool("disabled") {
+		fmt.Println("this client is disabled, exiting")
+		return nil
+	}
+
 	duration, err := time.ParseDuration(c.String("duration"))
 	if err != nil {
 		return cli.NewExitError(err.Error(), 1)
