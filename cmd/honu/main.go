@@ -6,10 +6,14 @@ import (
 	"time"
 
 	"github.com/bbengfort/honu"
+	"github.com/joho/godotenv"
 	"github.com/urfave/cli"
 )
 
 func main() {
+
+	// Load the .env file if it exists
+	godotenv.Load()
 
 	// Instantiate the command line application
 	app := cli.NewApp()
@@ -26,9 +30,10 @@ func main() {
 			Category: "server",
 			Flags: []cli.Flag{
 				cli.StringFlag{
-					Name:  "a, addr",
-					Usage: "ip address to serve on",
-					Value: ":3264",
+					Name:   "a, addr",
+					Usage:  "ip address to serve on",
+					Value:  ":3264",
+					EnvVar: "HONU_SERVER_ADDR",
 				},
 			},
 		},
@@ -40,13 +45,15 @@ func main() {
 			Before:   initClient,
 			Flags: []cli.Flag{
 				cli.StringFlag{
-					Name:  "a, addr",
-					Usage: "ip address of the remote server",
-					Value: "localhost:3264",
+					Name:   "a, addr",
+					Usage:  "ip address of the remote server",
+					Value:  "localhost:3264",
+					EnvVar: "HONU_SERVER_ADDR",
 				},
 				cli.StringFlag{
-					Name:  "k, key",
-					Usage: "name or key to get the value for",
+					Name:   "k, key",
+					Usage:  "name or key to get the value for",
+					EnvVar: "HONU_LOCAL_KEY",
 				},
 			},
 		},
@@ -58,13 +65,15 @@ func main() {
 			Before:   initClient,
 			Flags: []cli.Flag{
 				cli.StringFlag{
-					Name:  "a, addr",
-					Usage: "ip address of the remote server",
-					Value: "localhost:3264",
+					Name:   "a, addr",
+					Usage:  "ip address of the remote server",
+					Value:  "localhost:3264",
+					EnvVar: "HONU_SERVER_ADDR",
 				},
 				cli.StringFlag{
-					Name:  "k, key",
-					Usage: "name or key to get the value for",
+					Name:   "k, key",
+					Usage:  "name or key to get the value for",
+					EnvVar: "HONU_LOCAL_KEY",
 				},
 				cli.StringFlag{
 					Name:  "v, value",
@@ -80,19 +89,21 @@ func main() {
 			Before:   initClient,
 			Flags: []cli.Flag{
 				cli.StringFlag{
-					Name:  "a, addr",
-					Usage: "ip address of the remote server",
-					Value: "localhost:3264",
+					Name:   "a, addr",
+					Usage:  "ip address of the remote server",
+					Value:  "localhost:3264",
+					EnvVar: "HONU_SERVER_ADDR",
 				},
 				cli.StringFlag{
-					Name:  "k, key",
-					Usage: "name or key to create a workload on",
-					Value: "",
+					Name:   "k, key",
+					Usage:  "name or key to create a workload on",
+					EnvVar: "HONU_LOCAL_KEY",
 				},
 				cli.StringFlag{
-					Name:  "d, duration",
-					Usage: "parsable duration to run for",
-					Value: "10s",
+					Name:   "d, duration",
+					Usage:  "parsable duration to run for",
+					Value:  "10s",
+					EnvVar: "HONU_RUN_DURATION",
 				},
 				cli.StringFlag{
 					Name:  "w, results",
