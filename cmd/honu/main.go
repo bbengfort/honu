@@ -32,7 +32,7 @@ func main() {
 				cli.StringFlag{
 					Name:   "a, addr",
 					Usage:  "ip address to serve on",
-					Value:  ":3264",
+					Value:  honu.DefaultAddr,
 					EnvVar: "HONU_SERVER_ADDR",
 				},
 				cli.BoolFlag{
@@ -52,7 +52,7 @@ func main() {
 				cli.StringFlag{
 					Name:   "a, addr",
 					Usage:  "ip address of the remote server",
-					Value:  "localhost:3264",
+					Value:  "localhost" + honu.DefaultAddr,
 					EnvVar: "HONU_SERVER_ADDR",
 				},
 				cli.StringFlag{
@@ -72,7 +72,7 @@ func main() {
 				cli.StringFlag{
 					Name:   "a, addr",
 					Usage:  "ip address of the remote server",
-					Value:  "localhost:3264",
+					Value:  "localhost" + honu.DefaultAddr,
 					EnvVar: "HONU_SERVER_ADDR",
 				},
 				cli.StringFlag{
@@ -96,7 +96,7 @@ func main() {
 				cli.StringFlag{
 					Name:   "a, addr",
 					Usage:  "ip address of the remote server",
-					Value:  "localhost:3264",
+					Value:  "localhost" + honu.DefaultAddr,
 					EnvVar: "HONU_SERVER_ADDR",
 				},
 				cli.StringFlag{
