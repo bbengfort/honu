@@ -31,7 +31,7 @@ func init() {
 // OS Signal Handlers
 //===========================================================================
 
-func signalHandler() {
+func signalHandler(shutdown func() error) {
 	// Make signal channel and register notifiers for Interupt and Terminate
 	sigchan := make(chan os.Signal, 1)
 	signal.Notify(sigchan, os.Interrupt)
@@ -45,5 +45,11 @@ func signalHandler() {
 
 	// Shutdown now that we've received the signal
 	debug("shutting down the honu server or client")
-	info("honu is shutdown")
+	if err := shutdown(); err != nil {
+		warn("could not gracefully shutdown: %s", err)
+		os.Exit(1)
+	}
+
+	// Declare graceful shutdown.
+	info("honu has gracefully shutdown")
 }

@@ -35,6 +35,11 @@ func main() {
 					Value:  ":3264",
 					EnvVar: "HONU_SERVER_ADDR",
 				},
+				cli.BoolFlag{
+					Name:   "r, relax",
+					Usage:  "relax to sequential consistency",
+					EnvVar: "HONU_SEQUENTIAL_CONSISTENCY",
+				},
 			},
 		},
 		{
@@ -129,7 +134,7 @@ func main() {
 
 // Run the storage server
 func serve(c *cli.Context) error {
-	server := honu.NewServer()
+	server := honu.NewServer(c.Bool("relax"))
 
 	if err := server.Run(c.String("addr")); err != nil {
 		return cli.NewExitError(err.Error(), 1)

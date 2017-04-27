@@ -79,6 +79,12 @@ func (c *Client) Run(key string, duration time.Duration, outpath string) error {
 		return err
 	}
 
+	// Initialize the signal handler for graceful shutdown
+	go signalHandler(func() error {
+		results <- nil // close the results file
+		return nil
+	})
+
 	// Send the first write
 	go c.write(done, echan, results)
 
@@ -88,7 +94,8 @@ func (c *Client) Run(key string, duration time.Duration, outpath string) error {
 		case <-timer.C:
 			results <- nil // close the results file
 			throughput := float64(c.messages) / c.latency.Seconds()
-			msg := fmt.Sprintf("%d messages sent in %s (%0.4f msg/sec)", c.messages, c.latency, throughput)
+			latency := float64(c.latency.Nanoseconds()) / float64(c.messages)
+			msg := fmt.Sprintf("%d messages sent in %s (%0.4f msg/sec, %0.4f ns/msg)", c.messages, c.latency, throughput, latency)
 			fmt.Println(msg)
 			return nil
 		case err := <-echan:
