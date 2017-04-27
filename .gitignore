@@ -25,3 +25,4 @@ _testmain.go
 
 .env
 fixtures/*.csv
+fixtures/*.dat
