@@ -1,0 +1,1823 @@
+1 local 0 remote clients
+[honu] 22:30:27.213672 connected to storage server at nevis.cs.umd.edu:3264
+30201 messages sent in 29.567304358s (1021.4323 msg/sec, 979017.3954 ns/msg)
+[honu] 22:31:01.620774 connected to storage server at nevis.cs.umd.edu:3264
+30222 messages sent in 29.573448387s (1021.9302 msg/sec, 978540.4138 ns/msg)
+[honu] 22:31:35.642846 connected to storage server at nevis.cs.umd.edu:3264
+30142 messages sent in 29.569384648s (1019.3651 msg/sec, 981002.7420 ns/msg)
+[honu] 22:32:11.127096 connected to storage server at nevis.cs.umd.edu:3264
+30106 messages sent in 29.568832077s (1018.1667 msg/sec, 982157.4463 ns/msg)
+[honu] 22:32:56.418363 connected to storage server at nevis.cs.umd.edu:3264
+30168 messages sent in 29.571718136s (1020.1639 msg/sec, 980234.6240 ns/msg)
+1 local 1 remote clients
+[honu] 22:38:01.942047 connected to storage server at nevis.cs.umd.edu:3264
+33668 messages sent in 29.585464156s (1137.9913 msg/sec, 878741.3614 ns/msg)
+[honu] 22:38:36.487665 connected to storage server at nevis.cs.umd.edu:3264
+33814 messages sent in 29.568819154s (1143.5695 msg/sec, 874454.9345 ns/msg)
+[honu] 22:39:11.508815 connected to storage server at nevis.cs.umd.edu:3264
+33693 messages sent in 29.575681919s (1139.2130 msg/sec, 877799.0063 ns/msg)
+[honu] 22:39:46.564989 connected to storage server at nevis.cs.umd.edu:3264
+33839 messages sent in 29.574190671s (1144.2071 msg/sec, 873967.6312 ns/msg)
+[honu] 22:40:26.752497 connected to storage server at nevis.cs.umd.edu:3264
+33673 messages sent in 29.58242625s (1138.2772 msg/sec, 878520.6620 ns/msg)
+2 local 1 remote clients
+[honu] 08:04:22.694153 connected to storage server at nevis.cs.umd.edu:3264
+32472 messages sent in 29.534115756s (1099.4743 msg/sec, 909525.6146 ns/msg)
+[honu] 08:04:22.694442 connected to storage server at nevis.cs.umd.edu:3264
+32449 messages sent in 29.532963305s (1098.7384 msg/sec, 910134.7747 ns/msg)
+[honu] 08:05:00.526336 connected to storage server at nevis.cs.umd.edu:3264
+32480 messages sent in 29.529306289s (1099.9242 msg/sec, 909153.5188 ns/msg)
+[honu] 08:05:00.526323 connected to storage server at nevis.cs.umd.edu:3264
+32499 messages sent in 29.53257479s (1100.4459 msg/sec, 908722.5696 ns/msg)
+[honu] 08:05:34.912056 connected to storage server at nevis.cs.umd.edu:3264
+32558 messages sent in 29.531084672s (1102.4993 msg/sec, 907030.0593 ns/msg)
+[honu] 08:05:34.912076 connected to storage server at nevis.cs.umd.edu:3264
+32559 messages sent in 29.532255154s (1102.4895 msg/sec, 907038.1509 ns/msg)
+[honu] 08:06:09.454702 connected to storage server at nevis.cs.umd.edu:3264
+32341 messages sent in 29.53638736s (1094.9545 msg/sec, 913279.9654 ns/msg)
+[honu] 08:06:09.454724 connected to storage server at nevis.cs.umd.edu:3264
+32362 messages sent in 29.535404182s (1095.7020 msg/sec, 912656.9490 ns/msg)
+[honu] 08:06:42.786903 connected to storage server at nevis.cs.umd.edu:3264
+32201 messages sent in 29.539794031s (1090.0888 msg/sec, 917356.4185 ns/msg)
+[honu] 08:06:42.787165 connected to storage server at nevis.cs.umd.edu:3264
+32207 messages sent in 29.539961291s (1090.2858 msg/sec, 917190.7129 ns/msg)
+1 local 2 remote clients
+[honu] 08:11:31.756033 connected to storage server at nevis.cs.umd.edu:3264
+34516 messages sent in 29.570786358s (1167.2331 msg/sec, 856726.9196 ns/msg)
+[honu] 08:12:08.620950 connected to storage server at nevis.cs.umd.edu:3264
+34806 messages sent in 29.569065925s (1177.1085 msg/sec, 849539.3301 ns/msg)
+[honu] 08:13:08.917606 connected to storage server at nevis.cs.umd.edu:3264
+34728 messages sent in 29.566174594s (1174.5855 msg/sec, 851364.1613 ns/msg)
+[honu] 08:14:04.472574 connected to storage server at nevis.cs.umd.edu:3264
+34706 messages sent in 29.560938919s (1174.0493 msg/sec, 851752.9799 ns/msg)
+[honu] 08:14:41.221004 connected to storage server at nevis.cs.umd.edu:3264
+35045 messages sent in 29.560671745s (1185.5279 msg/sec, 843506.1134 ns/msg)
+2 local 2 remote clients
+[honu] 08:17:10.234215 connected to storage server at nevis.cs.umd.edu:3264
+33417 messages sent in 29.520623518s (1131.9883 msg/sec, 883401.3681 ns/msg)
+[honu] 08:17:10.234132 connected to storage server at nevis.cs.umd.edu:3264
+33421 messages sent in 29.522624321s (1132.0471 msg/sec, 883355.5047 ns/msg)
+[honu] 08:17:59.597620 connected to storage server at nevis.cs.umd.edu:3264
+33032 messages sent in 29.526583581s (1118.7207 msg/sec, 893878.1661 ns/msg)
+[honu] 08:17:59.598250 connected to storage server at nevis.cs.umd.edu:3264
+33037 messages sent in 29.524980544s (1118.9508 msg/sec, 893694.3592 ns/msg)
+[honu] 08:18:35.442708 connected to storage server at nevis.cs.umd.edu:3264
+33321 messages sent in 29.522914746s (1128.6487 msg/sec, 886015.2680 ns/msg)
+[honu] 08:18:35.442704 connected to storage server at nevis.cs.umd.edu:3264
+33329 messages sent in 29.520658154s (1129.0060 msg/sec, 885734.8902 ns/msg)
+[honu] 08:19:14.255633 connected to storage server at nevis.cs.umd.edu:3264
+33435 messages sent in 29.51607826s (1132.7724 msg/sec, 882789.8388 ns/msg)
+[honu] 08:19:14.255269 connected to storage server at nevis.cs.umd.edu:3264
+33439 messages sent in 29.520394416s (1132.7423 msg/sec, 882813.3143 ns/msg)
+[honu] 08:19:49.591307 connected to storage server at nevis.cs.umd.edu:3264
+33331 messages sent in 29.524432586s (1128.9294 msg/sec, 885794.9832 ns/msg)
+[honu] 08:19:49.591340 connected to storage server at nevis.cs.umd.edu:3264
+33311 messages sent in 29.523691176s (1128.2803 msg/sec, 886304.5593 ns/msg)
+3 local 2 remote clients
+[honu] 08:22:27.585928 connected to storage server at nevis.cs.umd.edu:3264
+33623 messages sent in 29.510045025s (1139.3747 msg/sec, 877674.3606 ns/msg)
+[honu] 08:22:27.586036 connected to storage server at nevis.cs.umd.edu:3264
+33641 messages sent in 29.513535463s (1139.8499 msg/sec, 877308.5064 ns/msg)
+[honu] 08:22:27.585912 connected to storage server at nevis.cs.umd.edu:3264
+33624 messages sent in 29.511282592s (1139.3608 msg/sec, 877685.0640 ns/msg)
+[honu] 08:23:07.956434 connected to storage server at nevis.cs.umd.edu:3264
+33607 messages sent in 29.505888494s (1138.9930 msg/sec, 877968.5332 ns/msg)
+[honu] 08:23:07.956751 connected to storage server at nevis.cs.umd.edu:3264
+33604 messages sent in 29.507872632s (1138.8147 msg/sec, 878105.9586 ns/msg)
+[honu] 08:23:07.956567 connected to storage server at nevis.cs.umd.edu:3264
+33624 messages sent in 29.506430509s (1139.5482 msg/sec, 877540.7598 ns/msg)
+[honu] 08:25:17.931687 connected to storage server at nevis.cs.umd.edu:3264
+33465 messages sent in 29.514292694s (1133.8574 msg/sec, 881945.0977 ns/msg)
+[honu] 08:25:17.931711 connected to storage server at nevis.cs.umd.edu:3264
+33467 messages sent in 29.512493103s (1133.9943 msg/sec, 881838.6202 ns/msg)
+[honu] 08:25:17.931627 connected to storage server at nevis.cs.umd.edu:3264
+33462 messages sent in 29.515652357s (1133.7036 msg/sec, 882064.8006 ns/msg)
+[honu] 08:26:00.019820 connected to storage server at nevis.cs.umd.edu:3264
+33493 messages sent in 29.511139348s (1134.9274 msg/sec, 881113.6461 ns/msg)
+[honu] 08:26:00.021044 connected to storage server at nevis.cs.umd.edu:3264
+33502 messages sent in 29.515111044s (1135.0796 msg/sec, 880995.4941 ns/msg)
+[honu] 08:26:00.021067 connected to storage server at nevis.cs.umd.edu:3264
+33495 messages sent in 29.5162813s (1134.7974 msg/sec, 881214.5484 ns/msg)
+[honu] 08:26:38.153139 connected to storage server at nevis.cs.umd.edu:3264
+33581 messages sent in 29.50979118s (1137.9613 msg/sec, 878764.5151 ns/msg)
+[honu] 08:26:38.153145 connected to storage server at nevis.cs.umd.edu:3264
+33582 messages sent in 29.510754191s (1137.9580 msg/sec, 878767.0237 ns/msg)
+[honu] 08:26:38.153145 connected to storage server at nevis.cs.umd.edu:3264
+33577 messages sent in 29.510796757s (1137.7870 msg/sec, 878899.1499 ns/msg)
+2 local 3 remote clients
+[honu] 08:29:03.130121 connected to storage server at nevis.cs.umd.edu:3264
+33955 messages sent in 29.510503732s (1150.6073 msg/sec, 869106.2798 ns/msg)
+[honu] 08:29:03.130018 connected to storage server at nevis.cs.umd.edu:3264
+33973 messages sent in 29.509280278s (1151.2649 msg/sec, 868609.7865 ns/msg)
+[honu] 08:29:37.535509 connected to storage server at nevis.cs.umd.edu:3264
+34033 messages sent in 29.505435866s (1153.4485 msg/sec, 866965.4707 ns/msg)
+[honu] 08:29:37.535472 connected to storage server at nevis.cs.umd.edu:3264
+34057 messages sent in 29.509313746s (1154.1102 msg/sec, 866468.3838 ns/msg)
+[honu] 08:30:15.974413 connected to storage server at nevis.cs.umd.edu:3264
+34014 messages sent in 29.512561741s (1152.5262 msg/sec, 867659.2503 ns/msg)
+[honu] 08:30:15.974360 connected to storage server at nevis.cs.umd.edu:3264
+34020 messages sent in 29.50854589s (1152.8864 msg/sec, 867388.1802 ns/msg)
+[honu] 08:31:05.273937 connected to storage server at nevis.cs.umd.edu:3264
+34327 messages sent in 29.505083025s (1163.4267 msg/sec, 859529.9043 ns/msg)
+[honu] 08:31:05.275081 connected to storage server at nevis.cs.umd.edu:3264
+34347 messages sent in 29.505995403s (1164.0685 msg/sec, 859055.9700 ns/msg)
+[honu] 08:31:42.939709 connected to storage server at nevis.cs.umd.edu:3264
+33763 messages sent in 29.51413217s (1143.9605 msg/sec, 874156.0931 ns/msg)
+[honu] 08:31:42.939748 connected to storage server at nevis.cs.umd.edu:3264
+33749 messages sent in 29.516767451s (1143.3840 msg/sec, 874596.8014 ns/msg)
+3 local 3 remote clients
+[honu] 08:33:07.983611 connected to storage server at nevis.cs.umd.edu:3264
+33779 messages sent in 29.506807826s (1144.7867 msg/sec, 873525.2028 ns/msg)
+[honu] 08:33:07.980652 connected to storage server at nevis.cs.umd.edu:3264
+33767 messages sent in 29.508756412s (1144.3044 msg/sec, 873893.3400 ns/msg)
+[honu] 08:33:07.984638 connected to storage server at nevis.cs.umd.edu:3264
+33773 messages sent in 29.508677508s (1144.5108 msg/sec, 873735.7507 ns/msg)
+[honu] 08:34:04.907213 connected to storage server at nevis.cs.umd.edu:3264
+33917 messages sent in 29.505787738s (1149.5033 msg/sec, 869940.9658 ns/msg)
+[honu] 08:34:04.907476 connected to storage server at nevis.cs.umd.edu:3264
+33889 messages sent in 29.505094127s (1148.5813 msg/sec, 870639.2672 ns/msg)
+[honu] 08:34:04.907154 connected to storage server at nevis.cs.umd.edu:3264
+33906 messages sent in 29.50213997s (1149.2726 msg/sec, 870115.6129 ns/msg)
+[honu] 08:34:59.717243 connected to storage server at nevis.cs.umd.edu:3264
+33964 messages sent in 29.505130664s (1151.1218 msg/sec, 868717.7795 ns/msg)
+[honu] 08:34:59.716906 connected to storage server at nevis.cs.umd.edu:3264
+33953 messages sent in 29.505545219s (1150.7328 msg/sec, 869011.4340 ns/msg)
+[honu] 08:34:59.717268 connected to storage server at nevis.cs.umd.edu:3264
+33951 messages sent in 29.504028994s (1150.7242 msg/sec, 869017.9669 ns/msg)
+[honu] 08:35:47.022185 connected to storage server at nevis.cs.umd.edu:3264
+33974 messages sent in 29.505708354s (1151.4382 msg/sec, 868479.0827 ns/msg)
+[honu] 08:35:47.021495 connected to storage server at nevis.cs.umd.edu:3264
+33969 messages sent in 29.505546014s (1151.2751 msg/sec, 868602.1377 ns/msg)
+[honu] 08:35:47.022408 connected to storage server at nevis.cs.umd.edu:3264
+33960 messages sent in 29.504221664s (1151.0217 msg/sec, 868793.3352 ns/msg)
+[honu] 08:36:27.722668 connected to storage server at nevis.cs.umd.edu:3264
+33933 messages sent in 29.505403502s (1150.0605 msg/sec, 869519.4502 ns/msg)
+[honu] 08:36:27.722481 connected to storage server at nevis.cs.umd.edu:3264
+33939 messages sent in 29.504826767s (1150.2864 msg/sec, 869348.7365 ns/msg)
+[honu] 08:36:27.722368 connected to storage server at nevis.cs.umd.edu:3264
+33938 messages sent in 29.504126344s (1150.2798 msg/sec, 869353.7139 ns/msg)
+4 local 4 remote clients
+[honu] 08:39:43.316601 connected to storage server at nevis.cs.umd.edu:3264
+34810 messages sent in 29.47276258s (1181.0905 msg/sec, 846675.1675 ns/msg)
+[honu] 08:39:43.317490 connected to storage server at nevis.cs.umd.edu:3264
+34819 messages sent in 29.468997672s (1181.5468 msg/sec, 846348.1913 ns/msg)
+[honu] 08:39:43.316560 connected to storage server at nevis.cs.umd.edu:3264
+34798 messages sent in 29.475956089s (1180.5554 msg/sec, 847058.9140 ns/msg)
+[honu] 08:39:43.316877 connected to storage server at nevis.cs.umd.edu:3264
+34824 messages sent in 29.474613198s (1181.4913 msg/sec, 846387.9278 ns/msg)
+[honu] 08:40:18.710797 connected to storage server at nevis.cs.umd.edu:3264
+34815 messages sent in 29.471958385s (1181.2924 msg/sec, 846530.4721 ns/msg)
+[honu] 08:40:18.709946 connected to storage server at nevis.cs.umd.edu:3264
+34805 messages sent in 29.469716458s (1181.0429 msg/sec, 846709.2791 ns/msg)
+[honu] 08:40:18.711326 connected to storage server at nevis.cs.umd.edu:3264
+34778 messages sent in 29.473005611s (1179.9950 msg/sec, 847461.1999 ns/msg)
+[honu] 08:40:18.709887 connected to storage server at nevis.cs.umd.edu:3264
+34788 messages sent in 29.470234485s (1180.4453 msg/sec, 847137.9351 ns/msg)
+[honu] 08:40:54.123904 connected to storage server at nevis.cs.umd.edu:3264
+34864 messages sent in 29.473649816s (1182.8871 msg/sec, 845389.2214 ns/msg)
+[honu] 08:40:54.126604 connected to storage server at nevis.cs.umd.edu:3264
+34858 messages sent in 29.470134308s (1182.8246 msg/sec, 845433.8834 ns/msg)
+[honu] 08:40:54.122524 connected to storage server at nevis.cs.umd.edu:3264
+34891 messages sent in 29.47181455s (1183.8769 msg/sec, 844682.4267 ns/msg)
+[honu] 08:40:54.123938 connected to storage server at nevis.cs.umd.edu:3264
+34888 messages sent in 29.46873853s (1183.8987 msg/sec, 844666.8921 ns/msg)
+[honu] 08:41:43.989837 connected to storage server at nevis.cs.umd.edu:3264
+34865 messages sent in 29.469845174s (1183.0737 msg/sec, 845255.8490 ns/msg)
+[honu] 08:41:43.988877 connected to storage server at nevis.cs.umd.edu:3264
+34855 messages sent in 29.469217285s (1182.7596 msg/sec, 845480.3410 ns/msg)
+[honu] 08:41:43.992758 connected to storage server at nevis.cs.umd.edu:3264
+34831 messages sent in 29.464321731s (1182.1416 msg/sec, 845922.3603 ns/msg)
+[honu] 08:41:43.993463 connected to storage server at nevis.cs.umd.edu:3264
+34834 messages sent in 29.466253692s (1182.1659 msg/sec, 845904.9691 ns/msg)
+[honu] 08:42:18.982531 connected to storage server at nevis.cs.umd.edu:3264
+34798 messages sent in 29.470242301s (1180.7843 msg/sec, 846894.7152 ns/msg)
+[honu] 08:42:18.982813 connected to storage server at nevis.cs.umd.edu:3264
+34808 messages sent in 29.474864291s (1180.9384 msg/sec, 846784.1959 ns/msg)
+[honu] 08:42:18.982872 connected to storage server at nevis.cs.umd.edu:3264
+34778 messages sent in 29.4700987s (1180.1114 msg/sec, 847377.6152 ns/msg)
+[honu] 08:42:18.983444 connected to storage server at nevis.cs.umd.edu:3264
+34805 messages sent in 29.476087147s (1180.7877 msg/sec, 846892.3185 ns/msg)
+5 local 5 remote clients
+[honu] 08:43:31.491529 connected to storage server at nevis.cs.umd.edu:3264
+33458 messages sent in 29.496486352s (1134.3046 msg/sec, 881597.4162 ns/msg)
+[honu] 08:43:31.491514 connected to storage server at nevis.cs.umd.edu:3264
+33483 messages sent in 29.50109535s (1134.9748 msg/sec, 881076.8256 ns/msg)
+[honu] 08:43:31.491933 connected to storage server at nevis.cs.umd.edu:3264
+33450 messages sent in 29.498740496s (1133.9467 msg/sec, 881875.6501 ns/msg)
+[honu] 08:43:31.491831 connected to storage server at nevis.cs.umd.edu:3264
+33455 messages sent in 29.49646192s (1134.2038 msg/sec, 881675.7411 ns/msg)
+[honu] 08:43:31.492662 connected to storage server at nevis.cs.umd.edu:3264
+33494 messages sent in 29.4995453s (1135.4073 msg/sec, 880741.1865 ns/msg)
+[honu] 08:44:05.638262 connected to storage server at nevis.cs.umd.edu:3264
+33461 messages sent in 29.497033359s (1134.3853 msg/sec, 881534.7228 ns/msg)
+[honu] 08:44:05.637442 connected to storage server at nevis.cs.umd.edu:3264
+33419 messages sent in 29.496379587s (1132.9865 msg/sec, 882623.0464 ns/msg)
+[honu] 08:44:05.637723 connected to storage server at nevis.cs.umd.edu:3264
+33433 messages sent in 29.499884421s (1133.3265 msg/sec, 882358.2814 ns/msg)
+[honu] 08:44:05.637422 connected to storage server at nevis.cs.umd.edu:3264
+33461 messages sent in 29.496808829s (1134.3939 msg/sec, 881528.0126 ns/msg)
+[honu] 08:44:05.638248 connected to storage server at nevis.cs.umd.edu:3264
+33447 messages sent in 29.496805807s (1133.9194 msg/sec, 881896.9058 ns/msg)
+[honu] 08:44:44.093196 connected to storage server at nevis.cs.umd.edu:3264
+33553 messages sent in 29.497745395s (1137.4768 msg/sec, 879138.8369 ns/msg)
+[honu] 08:44:44.092553 connected to storage server at nevis.cs.umd.edu:3264
+33514 messages sent in 29.497652871s (1136.1582 msg/sec, 880159.1237 ns/msg)
+[honu] 08:44:44.090054 connected to storage server at nevis.cs.umd.edu:3264
+33508 messages sent in 29.499282971s (1135.8920 msg/sec, 880365.3746 ns/msg)
+[honu] 08:44:44.092265 connected to storage server at nevis.cs.umd.edu:3264
+33510 messages sent in 29.497178503s (1136.0409 msg/sec, 880250.0299 ns/msg)
+[honu] 08:44:44.094278 connected to storage server at nevis.cs.umd.edu:3264
+33480 messages sent in 29.498989814s (1134.9541 msg/sec, 881092.8857 ns/msg)
+[honu] 08:45:21.786441 connected to storage server at nevis.cs.umd.edu:3264
+33437 messages sent in 29.492189446s (1133.7578 msg/sec, 882022.5931 ns/msg)
+[honu] 08:45:21.787523 connected to storage server at nevis.cs.umd.edu:3264
+33510 messages sent in 29.496468508s (1136.0682 msg/sec, 880228.8424 ns/msg)
+[honu] 08:45:21.786402 connected to storage server at nevis.cs.umd.edu:3264
+33489 messages sent in 29.493752202s (1135.4608 msg/sec, 880699.6985 ns/msg)
+[honu] 08:45:21.788920 connected to storage server at nevis.cs.umd.edu:3264
+33504 messages sent in 29.496988282s (1135.8448 msg/sec, 880401.9903 ns/msg)
+[honu] 08:45:21.787509 connected to storage server at nevis.cs.umd.edu:3264
+33467 messages sent in 29.496088815s (1134.6250 msg/sec, 881348.4571 ns/msg)
+[honu] 08:45:57.652429 connected to storage server at nevis.cs.umd.edu:3264
+33431 messages sent in 29.496474497s (1133.3897 msg/sec, 882309.0693 ns/msg)
+[honu] 08:45:57.652942 connected to storage server at nevis.cs.umd.edu:3264
+33448 messages sent in 29.499487509s (1133.8502 msg/sec, 881950.7148 ns/msg)
+[honu] 08:45:57.652495 connected to storage server at nevis.cs.umd.edu:3264
+33458 messages sent in 29.500950197s (1134.1330 msg/sec, 881730.8326 ns/msg)
+[honu] 08:45:57.652444 connected to storage server at nevis.cs.umd.edu:3264
+33481 messages sent in 29.498893131s (1134.9917 msg/sec, 881063.6818 ns/msg)
+[honu] 08:45:57.649741 connected to storage server at nevis.cs.umd.edu:3264
+33453 messages sent in 29.497372541s (1134.1010 msg/sec, 881755.6734 ns/msg)
+6 local 6 remote clients
+[honu] 08:47:37.672283 connected to storage server at nevis.cs.umd.edu:3264
+32669 messages sent in 29.508491001s (1107.1051 msg/sec, 903256.6348 ns/msg)
+[honu] 08:47:37.674364 connected to storage server at nevis.cs.umd.edu:3264
+32649 messages sent in 29.506622174s (1106.4974 msg/sec, 903752.7083 ns/msg)
+[honu] 08:47:37.673816 connected to storage server at nevis.cs.umd.edu:3264
+32660 messages sent in 29.5080784s (1106.8155 msg/sec, 903492.9088 ns/msg)
+[honu] 08:47:37.676802 connected to storage server at nevis.cs.umd.edu:3264
+32683 messages sent in 29.50176081s (1107.8322 msg/sec, 902663.7949 ns/msg)
+[honu] 08:47:37.673288 connected to storage server at nevis.cs.umd.edu:3264
+32653 messages sent in 29.510831117s (1106.4751 msg/sec, 903770.8975 ns/msg)
+[honu] 08:47:37.675391 connected to storage server at nevis.cs.umd.edu:3264
+32680 messages sent in 29.503239779s (1107.6750 msg/sec, 902791.9149 ns/msg)
+[honu] 08:48:19.503149 connected to storage server at nevis.cs.umd.edu:3264
+32740 messages sent in 29.50456233s (1109.6589 msg/sec, 901177.8354 ns/msg)
+[honu] 08:48:19.499169 connected to storage server at nevis.cs.umd.edu:3264
+32732 messages sent in 29.498690261s (1109.6086 msg/sec, 901218.6931 ns/msg)
+[honu] 08:48:19.505810 connected to storage server at nevis.cs.umd.edu:3264
+32752 messages sent in 29.497625075s (1110.3267 msg/sec, 900635.8413 ns/msg)
+[honu] 08:48:19.500673 connected to storage server at nevis.cs.umd.edu:3264
+32765 messages sent in 29.503522381s (1110.5454 msg/sec, 900458.4887 ns/msg)
+[honu] 08:48:19.504646 connected to storage server at nevis.cs.umd.edu:3264
+32761 messages sent in 29.503796727s (1110.3995 msg/sec, 900576.8056 ns/msg)
+[honu] 08:48:19.504647 connected to storage server at nevis.cs.umd.edu:3264
+32773 messages sent in 29.501723366s (1110.8843 msg/sec, 900183.7905 ns/msg)
+[honu] 08:48:54.930050 connected to storage server at nevis.cs.umd.edu:3264
+32659 messages sent in 29.496181513s (1107.2281 msg/sec, 903156.2973 ns/msg)
+[honu] 08:48:54.931997 connected to storage server at nevis.cs.umd.edu:3264
+32725 messages sent in 29.499551553s (1109.3389 msg/sec, 901437.7862 ns/msg)
+[honu] 08:48:54.930621 connected to storage server at nevis.cs.umd.edu:3264
+32708 messages sent in 29.500719878s (1108.7187 msg/sec, 901942.0288 ns/msg)
+[honu] 08:48:54.929483 connected to storage server at nevis.cs.umd.edu:3264
+32711 messages sent in 29.49885738s (1108.8904 msg/sec, 901802.3717 ns/msg)
+[honu] 08:48:54.930626 connected to storage server at nevis.cs.umd.edu:3264
+32706 messages sent in 29.500236921s (1108.6691 msg/sec, 901982.4167 ns/msg)
+[honu] 08:48:54.931680 connected to storage server at nevis.cs.umd.edu:3264
+32696 messages sent in 29.502468594s (1108.2462 msg/sec, 902326.5413 ns/msg)
+[honu] 08:49:31.649333 connected to storage server at nevis.cs.umd.edu:3264
+32675 messages sent in 29.5056317s (1107.4157 msg/sec, 903003.2655 ns/msg)
+[honu] 08:49:31.649239 connected to storage server at nevis.cs.umd.edu:3264
+32692 messages sent in 29.505889876s (1107.9822 msg/sec, 902541.5966 ns/msg)
+[honu] 08:49:31.653068 connected to storage server at nevis.cs.umd.edu:3264
+32727 messages sent in 29.505605348s (1109.1791 msg/sec, 901567.6765 ns/msg)
+[honu] 08:49:31.648977 connected to storage server at nevis.cs.umd.edu:3264
+32688 messages sent in 29.507918638s (1107.7704 msg/sec, 902714.1042 ns/msg)
+[honu] 08:49:31.651188 connected to storage server at nevis.cs.umd.edu:3264
+32657 messages sent in 29.50596979s (1106.7930 msg/sec, 903511.3388 ns/msg)
+[honu] 08:49:31.651993 connected to storage server at nevis.cs.umd.edu:3264
+32649 messages sent in 29.509667712s (1106.3832 msg/sec, 903845.9895 ns/msg)
+[honu] 08:50:06.564304 connected to storage server at nevis.cs.umd.edu:3264
+32691 messages sent in 29.504091095s (1108.0158 msg/sec, 902514.1811 ns/msg)
+[honu] 08:50:06.564344 connected to storage server at nevis.cs.umd.edu:3264
+32640 messages sent in 29.508856035s (1106.1086 msg/sec, 904070.3442 ns/msg)
+[honu] 08:50:06.568006 connected to storage server at nevis.cs.umd.edu:3264
+32648 messages sent in 29.504313345s (1106.5501 msg/sec, 903709.6712 ns/msg)
+[honu] 08:50:06.564345 connected to storage server at nevis.cs.umd.edu:3264
+32672 messages sent in 29.507299625s (1107.2514 msg/sec, 903137.2314 ns/msg)
+[honu] 08:50:06.565683 connected to storage server at nevis.cs.umd.edu:3264
+32686 messages sent in 29.505501452s (1107.7934 msg/sec, 902695.3880 ns/msg)
+[honu] 08:50:06.567060 connected to storage server at nevis.cs.umd.edu:3264
+32676 messages sent in 29.507751819s (1107.3700 msg/sec, 903040.5135 ns/msg)
+7 local 7 remote clients
+[honu] 08:51:26.109949 connected to storage server at nevis.cs.umd.edu:3264
+32041 messages sent in 29.516230197s (1085.5384 msg/sec, 921201.9037 ns/msg)
+[honu] 08:51:26.104570 connected to storage server at nevis.cs.umd.edu:3264
+31998 messages sent in 29.517444596s (1084.0369 msg/sec, 922477.7985 ns/msg)
+[honu] 08:51:26.102003 connected to storage server at nevis.cs.umd.edu:3264
+32009 messages sent in 29.521880482s (1084.2466 msg/sec, 922299.3684 ns/msg)
+[honu] 08:51:26.102495 connected to storage server at nevis.cs.umd.edu:3264
+31968 messages sent in 29.517805938s (1083.0073 msg/sec, 923354.7904 ns/msg)
+[honu] 08:51:26.112411 connected to storage server at nevis.cs.umd.edu:3264
+31997 messages sent in 29.519038909s (1083.9445 msg/sec, 922556.4556 ns/msg)
+[honu] 08:51:26.110008 connected to storage server at nevis.cs.umd.edu:3264
+32059 messages sent in 29.518575749s (1086.0619 msg/sec, 920757.8449 ns/msg)
+[honu] 08:51:26.103394 connected to storage server at nevis.cs.umd.edu:3264
+31978 messages sent in 29.517404429s (1083.3608 msg/sec, 923053.4877 ns/msg)
+[honu] 08:52:01.217887 connected to storage server at nevis.cs.umd.edu:3264
+32056 messages sent in 29.520978495s (1085.8719 msg/sec, 920918.9698 ns/msg)
+[honu] 08:52:01.217990 connected to storage server at nevis.cs.umd.edu:3264
+32061 messages sent in 29.519461412s (1086.0971 msg/sec, 920728.0313 ns/msg)
+[honu] 08:52:01.217854 connected to storage server at nevis.cs.umd.edu:3264
+32040 messages sent in 29.51760691s (1085.4538 msg/sec, 921273.6239 ns/msg)
+[honu] 08:52:01.220070 connected to storage server at nevis.cs.umd.edu:3264
+32070 messages sent in 29.51868415s (1086.4305 msg/sec, 920445.4054 ns/msg)
+[honu] 08:52:01.218970 connected to storage server at nevis.cs.umd.edu:3264
+32061 messages sent in 29.519306997s (1086.1027 msg/sec, 920723.2150 ns/msg)
+[honu] 08:52:01.220911 connected to storage server at nevis.cs.umd.edu:3264
+32038 messages sent in 29.523090132s (1085.1845 msg/sec, 921502.2827 ns/msg)
+[honu] 08:52:01.217860 connected to storage server at nevis.cs.umd.edu:3264
+32017 messages sent in 29.518609507s (1084.6378 msg/sec, 921966.7523 ns/msg)
+[honu] 08:53:03.303886 connected to storage server at nevis.cs.umd.edu:3264
+31970 messages sent in 29.519418317s (1083.0159 msg/sec, 923347.4607 ns/msg)
+[honu] 08:53:03.301326 connected to storage server at nevis.cs.umd.edu:3264
+32018 messages sent in 29.513480457s (1084.8602 msg/sec, 921777.7643 ns/msg)
+[honu] 08:53:03.306219 connected to storage server at nevis.cs.umd.edu:3264
+31969 messages sent in 29.516711554s (1083.0814 msg/sec, 923291.6749 ns/msg)
+[honu] 08:53:03.307732 connected to storage server at nevis.cs.umd.edu:3264
+32027 messages sent in 29.517440287s (1085.0196 msg/sec, 921642.3732 ns/msg)
+[honu] 08:53:03.308184 connected to storage server at nevis.cs.umd.edu:3264
+32038 messages sent in 29.516303198s (1085.4340 msg/sec, 921290.4425 ns/msg)
+[honu] 08:53:03.306242 connected to storage server at nevis.cs.umd.edu:3264
+31987 messages sent in 29.516461807s (1083.7004 msg/sec, 922764.3045 ns/msg)
+[honu] 08:53:03.308965 connected to storage server at nevis.cs.umd.edu:3264
+31964 messages sent in 29.517826223s (1082.8711 msg/sec, 923470.9743 ns/msg)
+[honu] 08:54:25.939641 connected to storage server at nevis.cs.umd.edu:3264
+32034 messages sent in 29.519272054s (1085.1894 msg/sec, 921498.1599 ns/msg)
+[honu] 08:54:25.940671 connected to storage server at nevis.cs.umd.edu:3264
+32088 messages sent in 29.519069177s (1087.0261 msg/sec, 919941.0738 ns/msg)
+[honu] 08:54:25.939667 connected to storage server at nevis.cs.umd.edu:3264
+32068 messages sent in 29.516793206s (1086.4324 msg/sec, 920443.8445 ns/msg)
+[honu] 08:54:25.939667 connected to storage server at nevis.cs.umd.edu:3264
+32060 messages sent in 29.517757309s (1086.1259 msg/sec, 920703.5967 ns/msg)
+[honu] 08:54:25.938533 connected to storage server at nevis.cs.umd.edu:3264
+32071 messages sent in 29.51869491s (1086.4640 msg/sec, 920417.0406 ns/msg)
+[honu] 08:54:25.942349 connected to storage server at nevis.cs.umd.edu:3264
+32103 messages sent in 29.521613854s (1087.4405 msg/sec, 919590.5010 ns/msg)
+[honu] 08:54:25.939664 connected to storage server at nevis.cs.umd.edu:3264
+32069 messages sent in 29.518236236s (1086.4131 msg/sec, 920460.1402 ns/msg)
+[honu] 08:54:59.887253 connected to storage server at nevis.cs.umd.edu:3264
+32082 messages sent in 29.516109838s (1086.9319 msg/sec, 920020.8789 ns/msg)
+[honu] 08:54:59.887306 connected to storage server at nevis.cs.umd.edu:3264
+32098 messages sent in 29.518283908s (1087.3938 msg/sec, 919630.0052 ns/msg)
+[honu] 08:54:59.887425 connected to storage server at nevis.cs.umd.edu:3264
+32083 messages sent in 29.516839484s (1086.9389 msg/sec, 920014.9451 ns/msg)
+[honu] 08:54:59.889249 connected to storage server at nevis.cs.umd.edu:3264
+32050 messages sent in 29.516161564s (1085.8458 msg/sec, 920941.0784 ns/msg)
+[honu] 08:54:59.888238 connected to storage server at nevis.cs.umd.edu:3264
+32087 messages sent in 29.521523329s (1086.9019 msg/sec, 920046.2283 ns/msg)
+[honu] 08:54:59.888528 connected to storage server at nevis.cs.umd.edu:3264
+31982 messages sent in 29.518807061s (1083.4449 msg/sec, 922981.8980 ns/msg)
+[honu] 08:54:59.887212 connected to storage server at nevis.cs.umd.edu:3264
+32082 messages sent in 29.519264111s (1086.8157 msg/sec, 920119.1980 ns/msg)
+8 local 8 remote clients
+[honu] 08:56:30.203492 connected to storage server at nevis.cs.umd.edu:3264
+31512 messages sent in 29.532737127s (1067.0193 msg/sec, 937190.1855 ns/msg)
+[honu] 08:56:30.203518 connected to storage server at nevis.cs.umd.edu:3264
+31503 messages sent in 29.532672071s (1066.7169 msg/sec, 937455.8636 ns/msg)
+[honu] 08:56:30.203497 connected to storage server at nevis.cs.umd.edu:3264
+31515 messages sent in 29.531259729s (1067.1743 msg/sec, 937054.0926 ns/msg)
+[honu] 08:56:30.201754 connected to storage server at nevis.cs.umd.edu:3264
+31518 messages sent in 29.529748559s (1067.3305 msg/sec, 936916.9541 ns/msg)
+[honu] 08:56:30.198974 connected to storage server at nevis.cs.umd.edu:3264
+31578 messages sent in 29.532134226s (1069.2759 msg/sec, 935212.3069 ns/msg)
+[honu] 08:56:30.204357 connected to storage server at nevis.cs.umd.edu:3264
+31480 messages sent in 29.533925286s (1065.8929 msg/sec, 938180.5999 ns/msg)
+[honu] 08:56:30.198680 connected to storage server at nevis.cs.umd.edu:3264
+31522 messages sent in 29.534020611s (1067.3115 msg/sec, 936933.5896 ns/msg)
+[honu] 08:56:30.202245 connected to storage server at nevis.cs.umd.edu:3264
+31491 messages sent in 29.527718201s (1066.4895 msg/sec, 937655.7810 ns/msg)
+[honu] 08:57:04.607892 connected to storage server at nevis.cs.umd.edu:3264
+31473 messages sent in 29.528589834s (1065.8484 msg/sec, 938219.7386 ns/msg)
+[honu] 08:57:04.604153 connected to storage server at nevis.cs.umd.edu:3264
+31489 messages sent in 29.531877072s (1066.2715 msg/sec, 937847.4093 ns/msg)
+[honu] 08:57:04.614535 connected to storage server at nevis.cs.umd.edu:3264
+31490 messages sent in 29.531481746s (1066.3197 msg/sec, 937805.0729 ns/msg)
+[honu] 08:57:04.616664 connected to storage server at nevis.cs.umd.edu:3264
+31498 messages sent in 29.529768071s (1066.6525 msg/sec, 937512.4792 ns/msg)
+[honu] 08:57:04.614786 connected to storage server at nevis.cs.umd.edu:3264
+31449 messages sent in 29.534639253s (1064.8175 msg/sec, 939128.0884 ns/msg)
+[honu] 08:57:04.614794 connected to storage server at nevis.cs.umd.edu:3264
+31514 messages sent in 29.531555397s (1067.1297 msg/sec, 937093.2093 ns/msg)
+[honu] 08:57:04.612289 connected to storage server at nevis.cs.umd.edu:3264
+31502 messages sent in 29.522263151s (1067.0591 msg/sec, 937155.2013 ns/msg)
+[honu] 08:57:04.608698 connected to storage server at nevis.cs.umd.edu:3264
+31535 messages sent in 29.53106108s (1067.8587 msg/sec, 936453.4987 ns/msg)
+[honu] 08:59:42.309734 connected to storage server at nevis.cs.umd.edu:3264
+31550 messages sent in 29.532026128s (1068.3317 msg/sec, 936038.8630 ns/msg)
+[honu] 08:59:42.309566 connected to storage server at nevis.cs.umd.edu:3264
+31434 messages sent in 29.527694967s (1064.5599 msg/sec, 939355.3149 ns/msg)
+[honu] 08:59:42.306183 connected to storage server at nevis.cs.umd.edu:3264
+31465 messages sent in 29.532707684s (1065.4289 msg/sec, 938589.1525 ns/msg)
+[honu] 08:59:42.307031 connected to storage server at nevis.cs.umd.edu:3264
+31422 messages sent in 29.529679911s (1064.0820 msg/sec, 939777.2233 ns/msg)
+[honu] 08:59:42.308573 connected to storage server at nevis.cs.umd.edu:3264
+31502 messages sent in 29.533377077s (1066.6576 msg/sec, 937508.0019 ns/msg)
+[honu] 08:59:42.309827 connected to storage server at nevis.cs.umd.edu:3264
+31486 messages sent in 29.530038417s (1066.2363 msg/sec, 937878.3719 ns/msg)
+[honu] 08:59:42.308341 connected to storage server at nevis.cs.umd.edu:3264
+31467 messages sent in 29.532557317s (1065.5020 msg/sec, 938524.7185 ns/msg)
+[honu] 08:59:42.306563 connected to storage server at nevis.cs.umd.edu:3264
+31468 messages sent in 29.532023952s (1065.5551 msg/sec, 938477.9443 ns/msg)
+[honu] 09:00:37.412664 connected to storage server at nevis.cs.umd.edu:3264
+31503 messages sent in 29.533654897s (1066.6814 msg/sec, 937487.0615 ns/msg)
+[honu] 09:00:37.410088 connected to storage server at nevis.cs.umd.edu:3264
+31487 messages sent in 29.533364696s (1066.1501 msg/sec, 937954.2254 ns/msg)
+[honu] 09:00:37.412277 connected to storage server at nevis.cs.umd.edu:3264
+31527 messages sent in 29.531003894s (1067.5898 msg/sec, 936689.3106 ns/msg)
+[honu] 09:00:37.410056 connected to storage server at nevis.cs.umd.edu:3264
+31497 messages sent in 29.533919824s (1066.4687 msg/sec, 937674.0586 ns/msg)
+[honu] 09:00:37.408610 connected to storage server at nevis.cs.umd.edu:3264
+31510 messages sent in 29.534143912s (1066.9007 msg/sec, 937294.3165 ns/msg)
+[honu] 09:00:37.414358 connected to storage server at nevis.cs.umd.edu:3264
+31487 messages sent in 29.534176073s (1066.1208 msg/sec, 937979.9941 ns/msg)
+[honu] 09:00:37.408020 connected to storage server at nevis.cs.umd.edu:3264
+31581 messages sent in 29.533091793s (1069.3428 msg/sec, 935153.7884 ns/msg)
+[honu] 09:00:37.412493 connected to storage server at nevis.cs.umd.edu:3264
+31495 messages sent in 29.533044621s (1066.4325 msg/sec, 937705.8143 ns/msg)
+[honu] 09:01:28.901837 connected to storage server at nevis.cs.umd.edu:3264
+31439 messages sent in 29.53163432s (1064.5872 msg/sec, 939331.2230 ns/msg)
+[honu] 09:01:28.898494 connected to storage server at nevis.cs.umd.edu:3264
+31412 messages sent in 29.534292051s (1063.5772 msg/sec, 940223.2284 ns/msg)
+[honu] 09:01:28.898194 connected to storage server at nevis.cs.umd.edu:3264
+31431 messages sent in 29.531109291s (1064.3352 msg/sec, 939553.6028 ns/msg)
+[honu] 09:01:28.901864 connected to storage server at nevis.cs.umd.edu:3264
+31473 messages sent in 29.529039645s (1065.8322 msg/sec, 938234.0306 ns/msg)
+[honu] 09:01:28.903481 connected to storage server at nevis.cs.umd.edu:3264
+31374 messages sent in 29.529351384s (1062.4683 msg/sec, 941204.5447 ns/msg)
+[honu] 09:01:28.901866 connected to storage server at nevis.cs.umd.edu:3264
+31484 messages sent in 29.530264818s (1066.1604 msg/sec, 937945.1410 ns/msg)
+[honu] 09:01:28.903513 connected to storage server at nevis.cs.umd.edu:3264
+31432 messages sent in 29.531252087s (1064.3639 msg/sec, 939528.2542 ns/msg)
+[honu] 09:01:28.901866 connected to storage server at nevis.cs.umd.edu:3264
+31427 messages sent in 29.529170462s (1064.2697 msg/sec, 939611.4953 ns/msg)
+9 local 9 remote clients
+[honu] 09:02:54.127165 connected to storage server at nevis.cs.umd.edu:3264
+31001 messages sent in 29.540852676s (1049.4281 msg/sec, 952899.9928 ns/msg)
+[honu] 09:02:54.130321 connected to storage server at nevis.cs.umd.edu:3264
+30969 messages sent in 29.547120976s (1048.1224 msg/sec, 954087.0217 ns/msg)
+[honu] 09:02:54.130066 connected to storage server at nevis.cs.umd.edu:3264
+30980 messages sent in 29.542236641s (1048.6681 msg/sec, 953590.5953 ns/msg)
+[honu] 09:02:54.127123 connected to storage server at nevis.cs.umd.edu:3264
+30965 messages sent in 29.543268667s (1048.1237 msg/sec, 954085.8604 ns/msg)
+[honu] 09:02:54.127445 connected to storage server at nevis.cs.umd.edu:3264
+30977 messages sent in 29.540078704s (1048.6431 msg/sec, 953613.2842 ns/msg)
+[honu] 09:02:54.126932 connected to storage server at nevis.cs.umd.edu:3264
+30941 messages sent in 29.541055089s (1047.3898 msg/sec, 954754.3741 ns/msg)
+[honu] 09:02:54.127676 connected to storage server at nevis.cs.umd.edu:3264
+30921 messages sent in 29.539781886s (1046.7579 msg/sec, 955330.7424 ns/msg)
+[honu] 09:02:54.130848 connected to storage server at nevis.cs.umd.edu:3264
+30926 messages sent in 29.531979119s (1047.2038 msg/sec, 954923.9837 ns/msg)
+[honu] 09:02:54.129033 connected to storage server at nevis.cs.umd.edu:3264
+30995 messages sent in 29.543126784s (1049.1442 msg/sec, 953157.8249 ns/msg)
+[honu] 09:03:30.127231 connected to storage server at nevis.cs.umd.edu:3264
+31050 messages sent in 29.538105988s (1051.1845 msg/sec, 951307.7613 ns/msg)
+[honu] 09:03:30.124149 connected to storage server at nevis.cs.umd.edu:3264
+31055 messages sent in 29.540229762s (1051.2782 msg/sec, 951222.9838 ns/msg)
+[honu] 09:03:30.126737 connected to storage server at nevis.cs.umd.edu:3264
+30993 messages sent in 29.534846496s (1049.3706 msg/sec, 952952.1665 ns/msg)
+[honu] 09:03:30.128839 connected to storage server at nevis.cs.umd.edu:3264
+30969 messages sent in 29.534819592s (1048.5590 msg/sec, 953689.8057 ns/msg)
+[honu] 09:03:30.125932 connected to storage server at nevis.cs.umd.edu:3264
+31055 messages sent in 29.538609863s (1051.3359 msg/sec, 951170.8215 ns/msg)
+[honu] 09:03:30.124687 connected to storage server at nevis.cs.umd.edu:3264
+31138 messages sent in 29.536923605s (1054.2059 msg/sec, 948581.2706 ns/msg)
+[honu] 09:03:30.129259 connected to storage server at nevis.cs.umd.edu:3264
+31034 messages sent in 29.538455576s (1050.6304 msg/sec, 951809.4856 ns/msg)
+[honu] 09:03:30.129402 connected to storage server at nevis.cs.umd.edu:3264
+31056 messages sent in 29.536148291s (1051.4573 msg/sec, 951060.9316 ns/msg)
+[honu] 09:03:30.130758 connected to storage server at nevis.cs.umd.edu:3264
+31011 messages sent in 29.5306396s (1050.1296 msg/sec, 952263.3775 ns/msg)
+[honu] 09:04:04.533983 connected to storage server at nevis.cs.umd.edu:3264
+30926 messages sent in 29.537519525s (1047.0073 msg/sec, 955103.1341 ns/msg)
+[honu] 09:04:04.532678 connected to storage server at nevis.cs.umd.edu:3264
+31014 messages sent in 29.539490676s (1049.9165 msg/sec, 952456.6543 ns/msg)
+[honu] 09:04:04.545087 connected to storage server at nevis.cs.umd.edu:3264
+30926 messages sent in 29.541119559s (1046.8798 msg/sec, 955219.5421 ns/msg)
+[honu] 09:04:04.537117 connected to storage server at nevis.cs.umd.edu:3264
+30938 messages sent in 29.534947209s (1047.5048 msg/sec, 954649.5316 ns/msg)
+[honu] 09:04:04.542677 connected to storage server at nevis.cs.umd.edu:3264
+30913 messages sent in 29.53949161s (1046.4974 msg/sec, 955568.5831 ns/msg)
+[honu] 09:04:04.543765 connected to storage server at nevis.cs.umd.edu:3264
+30911 messages sent in 29.539039326s (1046.4457 msg/sec, 955615.7784 ns/msg)
+[honu] 09:04:04.541323 connected to storage server at nevis.cs.umd.edu:3264
+31014 messages sent in 29.53933305s (1049.9221 msg/sec, 952451.5719 ns/msg)
+[honu] 09:04:04.544349 connected to storage server at nevis.cs.umd.edu:3264
+30982 messages sent in 29.537622971s (1048.8996 msg/sec, 953380.1230 ns/msg)
+[honu] 09:04:04.541841 connected to storage server at nevis.cs.umd.edu:3264
+30964 messages sent in 29.539098829s (1048.2378 msg/sec, 953982.0058 ns/msg)
+[honu] 09:04:40.655434 connected to storage server at nevis.cs.umd.edu:3264
+31010 messages sent in 29.543219903s (1049.6486 msg/sec, 952699.7711 ns/msg)
+[honu] 09:04:40.659680 connected to storage server at nevis.cs.umd.edu:3264
+30950 messages sent in 29.537889324s (1047.8068 msg/sec, 954374.4531 ns/msg)
+[honu] 09:04:40.662759 connected to storage server at nevis.cs.umd.edu:3264
+31008 messages sent in 29.542478137s (1049.6073 msg/sec, 952737.2980 ns/msg)
+[honu] 09:04:40.660603 connected to storage server at nevis.cs.umd.edu:3264
+30956 messages sent in 29.541112824s (1047.8955 msg/sec, 954293.6046 ns/msg)
+[honu] 09:04:40.663327 connected to storage server at nevis.cs.umd.edu:3264
+30959 messages sent in 29.544597666s (1047.8735 msg/sec, 954313.6944 ns/msg)
+[honu] 09:04:40.664191 connected to storage server at nevis.cs.umd.edu:3264
+31017 messages sent in 29.535194396s (1050.1708 msg/sec, 952226.0179 ns/msg)
+[honu] 09:04:40.659407 connected to storage server at nevis.cs.umd.edu:3264
+30933 messages sent in 29.54299985s (1047.0501 msg/sec, 955064.1661 ns/msg)
+[honu] 09:04:40.661506 connected to storage server at nevis.cs.umd.edu:3264
+31003 messages sent in 29.538698566s (1049.5723 msg/sec, 952769.0406 ns/msg)
+[honu] 09:04:40.661450 connected to storage server at nevis.cs.umd.edu:3264
+31039 messages sent in 29.535722684s (1050.8969 msg/sec, 951568.1138 ns/msg)
+[honu] 09:05:15.710532 connected to storage server at nevis.cs.umd.edu:3264
+30948 messages sent in 29.543487422s (1047.5405 msg/sec, 954617.0164 ns/msg)
+[honu] 09:05:15.714157 connected to storage server at nevis.cs.umd.edu:3264
+30940 messages sent in 29.540980851s (1047.3586 msg/sec, 954782.8329 ns/msg)
+[honu] 09:05:15.714736 connected to storage server at nevis.cs.umd.edu:3264
+30978 messages sent in 29.538782716s (1048.7230 msg/sec, 953540.6649 ns/msg)
+[honu] 09:05:15.714794 connected to storage server at nevis.cs.umd.edu:3264
+30996 messages sent in 29.541700757s (1049.2287 msg/sec, 953081.0671 ns/msg)
+[honu] 09:05:15.716824 connected to storage server at nevis.cs.umd.edu:3264
+31012 messages sent in 29.542147951s (1049.7544 msg/sec, 952603.7647 ns/msg)
+[honu] 09:05:15.716869 connected to storage server at nevis.cs.umd.edu:3264
+30990 messages sent in 29.533612384s (1049.3129 msg/sec, 953004.5945 ns/msg)
+[honu] 09:05:15.714425 connected to storage server at nevis.cs.umd.edu:3264
+31016 messages sent in 29.543440768s (1049.8439 msg/sec, 952522.5938 ns/msg)
+[honu] 09:05:15.714481 connected to storage server at nevis.cs.umd.edu:3264
+31002 messages sent in 29.540290815s (1049.4819 msg/sec, 952851.1327 ns/msg)
+[honu] 09:05:15.714451 connected to storage server at nevis.cs.umd.edu:3264
+30986 messages sent in 29.540771699s (1048.9232 msg/sec, 953358.6684 ns/msg)
+10 local 10 remote clients
+[honu] 09:07:03.191089 connected to storage server at nevis.cs.umd.edu:3264
+30496 messages sent in 29.545733352s (1032.1626 msg/sec, 968839.6299 ns/msg)
+[honu] 09:07:03.180602 connected to storage server at nevis.cs.umd.edu:3264
+30487 messages sent in 29.54916542s (1031.7381 msg/sec, 969238.2137 ns/msg)
+[honu] 09:07:03.187903 connected to storage server at nevis.cs.umd.edu:3264
+30483 messages sent in 29.54957702s (1031.5884 msg/sec, 969378.9004 ns/msg)
+[honu] 09:07:03.187914 connected to storage server at nevis.cs.umd.edu:3264
+30455 messages sent in 29.550730433s (1030.6006 msg/sec, 970308.0096 ns/msg)
+[honu] 09:07:03.185990 connected to storage server at nevis.cs.umd.edu:3264
+30554 messages sent in 29.54955524s (1033.9919 msg/sec, 967125.5888 ns/msg)
+[honu] 09:07:03.189698 connected to storage server at nevis.cs.umd.edu:3264
+30477 messages sent in 29.55048664s (1031.3536 msg/sec, 969599.5879 ns/msg)
+[honu] 09:07:03.188426 connected to storage server at nevis.cs.umd.edu:3264
+30484 messages sent in 29.546190273s (1031.7405 msg/sec, 969236.0016 ns/msg)
+[honu] 09:07:03.188738 connected to storage server at nevis.cs.umd.edu:3264
+30556 messages sent in 29.546393885s (1034.1702 msg/sec, 966958.8259 ns/msg)
+[honu] 09:07:03.188424 connected to storage server at nevis.cs.umd.edu:3264
+30472 messages sent in 29.547424137s (1031.2913 msg/sec, 969658.1825 ns/msg)
+[honu] 09:07:03.185995 connected to storage server at nevis.cs.umd.edu:3264
+30392 messages sent in 29.545606928s (1028.6470 msg/sec, 972150.7939 ns/msg)
+[honu] 09:07:53.685308 connected to storage server at nevis.cs.umd.edu:3264
+30613 messages sent in 29.552813254s (1035.8743 msg/sec, 965368.0872 ns/msg)
+[honu] 09:07:53.684701 connected to storage server at nevis.cs.umd.edu:3264
+30620 messages sent in 29.552294973s (1036.1293 msg/sec, 965130.4694 ns/msg)
+[honu] 09:07:53.685358 connected to storage server at nevis.cs.umd.edu:3264
+30592 messages sent in 29.552670113s (1035.1687 msg/sec, 966026.0889 ns/msg)
+[honu] 09:07:53.687871 connected to storage server at nevis.cs.umd.edu:3264
+30583 messages sent in 29.548236501s (1035.0195 msg/sec, 966165.4024 ns/msg)
+[honu] 09:07:53.683796 connected to storage server at nevis.cs.umd.edu:3264
+30591 messages sent in 29.551239282s (1035.1850 msg/sec, 966010.8948 ns/msg)
+[honu] 09:07:53.684916 connected to storage server at nevis.cs.umd.edu:3264
+30557 messages sent in 29.551524859s (1034.0245 msg/sec, 967095.0963 ns/msg)
+[honu] 09:07:53.689360 connected to storage server at nevis.cs.umd.edu:3264
+30584 messages sent in 29.555724264s (1034.7911 msg/sec, 966378.6380 ns/msg)
+[honu] 09:07:53.687025 connected to storage server at nevis.cs.umd.edu:3264
+30446 messages sent in 29.552741067s (1030.2259 msg/sec, 970660.8772 ns/msg)
+[honu] 09:07:53.689018 connected to storage server at nevis.cs.umd.edu:3264
+30591 messages sent in 29.553860832s (1035.0932 msg/sec, 966096.5915 ns/msg)
+[honu] 09:07:53.689021 connected to storage server at nevis.cs.umd.edu:3264
+30550 messages sent in 29.554652017s (1033.6782 msg/sec, 967419.0513 ns/msg)
+[honu] 09:08:29.343417 connected to storage server at nevis.cs.umd.edu:3264
+30481 messages sent in 29.552540578s (1031.4172 msg/sec, 969539.7322 ns/msg)
+[honu] 09:08:29.349196 connected to storage server at nevis.cs.umd.edu:3264
+30461 messages sent in 29.556423374s (1030.6051 msg/sec, 970303.7777 ns/msg)
+[honu] 09:08:29.349660 connected to storage server at nevis.cs.umd.edu:3264
+30523 messages sent in 29.551824255s (1032.8635 msg/sec, 968182.1661 ns/msg)
+[honu] 09:08:29.343192 connected to storage server at nevis.cs.umd.edu:3264
+30517 messages sent in 29.552406072s (1032.6401 msg/sec, 968391.5874 ns/msg)
+[honu] 09:08:29.349605 connected to storage server at nevis.cs.umd.edu:3264
+30503 messages sent in 29.550131754s (1032.2458 msg/sec, 968761.4908 ns/msg)
+[honu] 09:08:29.349133 connected to storage server at nevis.cs.umd.edu:3264
+30576 messages sent in 29.548441964s (1034.7754 msg/sec, 966393.3138 ns/msg)
+[honu] 09:08:29.347526 connected to storage server at nevis.cs.umd.edu:3264
+30545 messages sent in 29.5517389s (1033.6109 msg/sec, 967482.0396 ns/msg)
+[honu] 09:08:29.347020 connected to storage server at nevis.cs.umd.edu:3264
+30483 messages sent in 29.552744691s (1031.4778 msg/sec, 969482.8164 ns/msg)
+[honu] 09:08:29.349150 connected to storage server at nevis.cs.umd.edu:3264
+30505 messages sent in 29.55149877s (1032.2657 msg/sec, 968742.7887 ns/msg)
+[honu] 09:08:29.347120 connected to storage server at nevis.cs.umd.edu:3264
+30507 messages sent in 29.550167963s (1032.3799 msg/sec, 968635.6562 ns/msg)
+[honu] 09:09:03.782443 connected to storage server at nevis.cs.umd.edu:3264
+30529 messages sent in 29.552644722s (1033.0378 msg/sec, 968018.7599 ns/msg)
+[honu] 09:09:03.787775 connected to storage server at nevis.cs.umd.edu:3264
+30587 messages sent in 29.555030087s (1034.9169 msg/sec, 966261.1595 ns/msg)
+[honu] 09:09:03.790632 connected to storage server at nevis.cs.umd.edu:3264
+30539 messages sent in 29.555660222s (1033.2708 msg/sec, 967800.5246 ns/msg)
+[honu] 09:09:03.788310 connected to storage server at nevis.cs.umd.edu:3264
+30631 messages sent in 29.547949378s (1036.6540 msg/sec, 964642.0090 ns/msg)
+[honu] 09:09:03.787304 connected to storage server at nevis.cs.umd.edu:3264
+30611 messages sent in 29.553068872s (1035.7977 msg/sec, 965439.5110 ns/msg)
+[honu] 09:09:03.793965 connected to storage server at nevis.cs.umd.edu:3264
+30528 messages sent in 29.54159936s (1033.3902 msg/sec, 967688.6583 ns/msg)
+[honu] 09:09:03.787734 connected to storage server at nevis.cs.umd.edu:3264
+30581 messages sent in 29.552481948s (1034.8031 msg/sec, 966367.4160 ns/msg)
+[honu] 09:09:03.793995 connected to storage server at nevis.cs.umd.edu:3264
+30582 messages sent in 29.55860512s (1034.6226 msg/sec, 966536.0382 ns/msg)
+[honu] 09:09:03.787605 connected to storage server at nevis.cs.umd.edu:3264
+30598 messages sent in 29.557037364s (1035.2188 msg/sec, 965979.3896 ns/msg)
+[honu] 09:09:03.787311 connected to storage server at nevis.cs.umd.edu:3264
+30505 messages sent in 29.559515087s (1031.9858 msg/sec, 969005.5757 ns/msg)
+[honu] 09:09:37.701891 connected to storage server at nevis.cs.umd.edu:3264
+30478 messages sent in 29.546614087s (1031.5226 msg/sec, 969440.7142 ns/msg)
+[honu] 09:09:37.700925 connected to storage server at nevis.cs.umd.edu:3264
+30500 messages sent in 29.548966097s (1032.1850 msg/sec, 968818.5606 ns/msg)
+[honu] 09:09:37.701383 connected to storage server at nevis.cs.umd.edu:3264
+30484 messages sent in 29.550140554s (1031.6025 msg/sec, 969365.5870 ns/msg)
+[honu] 09:09:37.701811 connected to storage server at nevis.cs.umd.edu:3264
+30568 messages sent in 29.548086802s (1034.5171 msg/sec, 966634.6114 ns/msg)
+[honu] 09:09:37.700217 connected to storage server at nevis.cs.umd.edu:3264
+30479 messages sent in 29.552158392s (1031.3629 msg/sec, 969590.8131 ns/msg)
+[honu] 09:09:37.700238 connected to storage server at nevis.cs.umd.edu:3264
+30526 messages sent in 29.549319409s (1033.0526 msg/sec, 968004.9600 ns/msg)
+[honu] 09:09:37.704505 connected to storage server at nevis.cs.umd.edu:3264
+30454 messages sent in 29.550232225s (1030.5841 msg/sec, 970323.5117 ns/msg)
+[honu] 09:09:37.704784 connected to storage server at nevis.cs.umd.edu:3264
+30513 messages sent in 29.551985546s (1032.5195 msg/sec, 968504.7536 ns/msg)
+[honu] 09:09:37.702574 connected to storage server at nevis.cs.umd.edu:3264
+30543 messages sent in 29.549485326s (1033.6221 msg/sec, 967471.6081 ns/msg)
+[honu] 09:09:37.704721 connected to storage server at nevis.cs.umd.edu:3264
+30497 messages sent in 29.550225115s (1032.0395 msg/sec, 968955.1469 ns/msg)
+11 local 11 remote clients
+[honu] 09:11:14.849627 connected to storage server at nevis.cs.umd.edu:3264
+30127 messages sent in 29.557420757s (1019.2703 msg/sec, 981094.0604 ns/msg)
+[honu] 09:11:14.852243 connected to storage server at nevis.cs.umd.edu:3264
+30096 messages sent in 29.551230006s (1018.4348 msg/sec, 981898.9236 ns/msg)
+[honu] 09:11:14.851924 connected to storage server at nevis.cs.umd.edu:3264
+30049 messages sent in 29.559855184s (1016.5476 msg/sec, 983721.7606 ns/msg)
+[honu] 09:11:14.850384 connected to storage server at nevis.cs.umd.edu:3264
+30076 messages sent in 29.56097201s (1017.4226 msg/sec, 982875.7817 ns/msg)
+[honu] 09:11:14.851968 connected to storage server at nevis.cs.umd.edu:3264
+30112 messages sent in 29.554421548s (1018.8662 msg/sec, 981483.1811 ns/msg)
+[honu] 09:11:14.851945 connected to storage server at nevis.cs.umd.edu:3264
+30093 messages sent in 29.561135737s (1017.9920 msg/sec, 982325.9807 ns/msg)
+[honu] 09:11:14.852965 connected to storage server at nevis.cs.umd.edu:3264
+30117 messages sent in 29.55550561s (1018.9980 msg/sec, 981356.2310 ns/msg)
+[honu] 09:11:14.850991 connected to storage server at nevis.cs.umd.edu:3264
+30194 messages sent in 29.553274873s (1021.6803 msg/sec, 978779.7202 ns/msg)
+[honu] 09:11:14.851191 connected to storage server at nevis.cs.umd.edu:3264
+30120 messages sent in 29.554044696s (1019.1498 msg/sec, 981209.9833 ns/msg)
+[honu] 09:11:14.852213 connected to storage server at nevis.cs.umd.edu:3264
+30035 messages sent in 29.559171193s (1016.0975 msg/sec, 984157.5227 ns/msg)
+[honu] 09:11:14.850399 connected to storage server at nevis.cs.umd.edu:3264
+30116 messages sent in 29.560063334s (1018.8070 msg/sec, 981540.1559 ns/msg)
+[honu] 09:11:55.951830 connected to storage server at nevis.cs.umd.edu:3264
+30104 messages sent in 29.556839276s (1018.5122 msg/sec, 981824.3182 ns/msg)
+[honu] 09:11:55.944965 connected to storage server at nevis.cs.umd.edu:3264
+30107 messages sent in 29.554680835s (1018.6880 msg/sec, 981654.7924 ns/msg)
+[honu] 09:11:55.950039 connected to storage server at nevis.cs.umd.edu:3264
+30069 messages sent in 29.555255548s (1017.3825 msg/sec, 982914.4816 ns/msg)
+[honu] 09:11:55.950327 connected to storage server at nevis.cs.umd.edu:3264
+30083 messages sent in 29.55713366s (1017.7915 msg/sec, 982519.4848 ns/msg)
+[honu] 09:11:55.945831 connected to storage server at nevis.cs.umd.edu:3264
+30146 messages sent in 29.560127235s (1019.8197 msg/sec, 980565.4891 ns/msg)
+[honu] 09:11:55.951809 connected to storage server at nevis.cs.umd.edu:3264
+30090 messages sent in 29.556844123s (1018.0383 msg/sec, 982281.2936 ns/msg)
+[honu] 09:11:55.953115 connected to storage server at nevis.cs.umd.edu:3264
+30136 messages sent in 29.554673189s (1019.6695 msg/sec, 980709.8881 ns/msg)
+[honu] 09:11:55.952354 connected to storage server at nevis.cs.umd.edu:3264
+30046 messages sent in 29.553526455s (1016.6638 msg/sec, 983609.3475 ns/msg)
+[honu] 09:11:55.953093 connected to storage server at nevis.cs.umd.edu:3264
+30131 messages sent in 29.558627097s (1019.3640 msg/sec, 981003.8531 ns/msg)
+[honu] 09:11:55.951798 connected to storage server at nevis.cs.umd.edu:3264
+30052 messages sent in 29.558980505s (1016.6792 msg/sec, 983594.4531 ns/msg)
+[honu] 09:11:55.953115 connected to storage server at nevis.cs.umd.edu:3264
+30000 messages sent in 29.556273187s (1015.0129 msg/sec, 985209.1062 ns/msg)
+[honu] 09:12:34.440803 connected to storage server at nevis.cs.umd.edu:3264
+30171 messages sent in 29.551019568s (1020.9800 msg/sec, 979451.1142 ns/msg)
+[honu] 09:12:34.445470 connected to storage server at nevis.cs.umd.edu:3264
+30036 messages sent in 29.554038241s (1016.3078 msg/sec, 983953.8634 ns/msg)
+[honu] 09:12:34.448891 connected to storage server at nevis.cs.umd.edu:3264
+30064 messages sent in 29.560268359s (1017.0408 msg/sec, 983244.6900 ns/msg)
+[honu] 09:12:34.449931 connected to storage server at nevis.cs.umd.edu:3264
+30040 messages sent in 29.550317403s (1016.5711 msg/sec, 983698.9815 ns/msg)
+[honu] 09:12:34.448137 connected to storage server at nevis.cs.umd.edu:3264
+30075 messages sent in 29.554770029s (1017.6022 msg/sec, 982702.2454 ns/msg)
+[honu] 09:12:34.446794 connected to storage server at nevis.cs.umd.edu:3264
+30103 messages sent in 29.546312986s (1018.8412 msg/sec, 981507.2579 ns/msg)
+[honu] 09:12:34.448120 connected to storage server at nevis.cs.umd.edu:3264
+30071 messages sent in 29.556043296s (1017.4231 msg/sec, 982875.3050 ns/msg)
+[honu] 09:12:34.448164 connected to storage server at nevis.cs.umd.edu:3264
+29998 messages sent in 29.553116501s (1015.0537 msg/sec, 985169.5613 ns/msg)
+[honu] 09:12:34.449659 connected to storage server at nevis.cs.umd.edu:3264
+30062 messages sent in 29.554976193s (1017.1553 msg/sec, 983134.0627 ns/msg)
+[honu] 09:12:34.447049 connected to storage server at nevis.cs.umd.edu:3264
+29998 messages sent in 29.556275172s (1014.9452 msg/sec, 985274.8574 ns/msg)
+[honu] 09:12:34.448103 connected to storage server at nevis.cs.umd.edu:3264
+29993 messages sent in 29.552144577s (1014.9179 msg/sec, 985301.3896 ns/msg)
+[honu] 09:13:09.487265 connected to storage server at nevis.cs.umd.edu:3264
+30043 messages sent in 29.557218969s (1016.4353 msg/sec, 983830.4753 ns/msg)
+[honu] 09:13:09.494626 connected to storage server at nevis.cs.umd.edu:3264
+30074 messages sent in 29.558809737s (1017.4293 msg/sec, 982869.2471 ns/msg)
+[honu] 09:13:09.493800 connected to storage server at nevis.cs.umd.edu:3264
+30084 messages sent in 29.557205892s (1017.8229 msg/sec, 982489.2266 ns/msg)
+[honu] 09:13:09.493633 connected to storage server at nevis.cs.umd.edu:3264
+30062 messages sent in 29.559765404s (1016.9905 msg/sec, 983293.3738 ns/msg)
+[honu] 09:13:09.493710 connected to storage server at nevis.cs.umd.edu:3264
+30008 messages sent in 29.561799273s (1015.0938 msg/sec, 985130.6076 ns/msg)
+[honu] 09:13:09.494093 connected to storage server at nevis.cs.umd.edu:3264
+30060 messages sent in 29.564012696s (1016.7767 msg/sec, 983500.0897 ns/msg)
+[honu] 09:13:09.495353 connected to storage server at nevis.cs.umd.edu:3264
+30153 messages sent in 29.557416535s (1020.1501 msg/sec, 980247.9533 ns/msg)
+[honu] 09:13:09.491640 connected to storage server at nevis.cs.umd.edu:3264
+29993 messages sent in 29.561317594s (1014.6029 msg/sec, 985607.2282 ns/msg)
+[honu] 09:13:09.490588 connected to storage server at nevis.cs.umd.edu:3264
+30100 messages sent in 29.562855997s (1018.1696 msg/sec, 982154.6843 ns/msg)
+[honu] 09:13:09.490863 connected to storage server at nevis.cs.umd.edu:3264
+30101 messages sent in 29.56237995s (1018.2198 msg/sec, 982106.2407 ns/msg)
+[honu] 09:13:09.493738 connected to storage server at nevis.cs.umd.edu:3264
+30023 messages sent in 29.560644963s (1015.6409 msg/sec, 984599.9721 ns/msg)
+[honu] 09:13:46.281003 connected to storage server at nevis.cs.umd.edu:3264
+30137 messages sent in 29.556243454s (1019.6492 msg/sec, 980729.4506 ns/msg)
+[honu] 09:13:46.279936 connected to storage server at nevis.cs.umd.edu:3264
+30116 messages sent in 29.555250642s (1018.9729 msg/sec, 981380.3507 ns/msg)
+[honu] 09:13:46.279980 connected to storage server at nevis.cs.umd.edu:3264
+30137 messages sent in 29.55699241s (1019.6234 msg/sec, 980754.3024 ns/msg)
+[honu] 09:13:46.281496 connected to storage server at nevis.cs.umd.edu:3264
+30121 messages sent in 29.55964823s (1018.9905 msg/sec, 981363.4418 ns/msg)
+[honu] 09:13:46.280486 connected to storage server at nevis.cs.umd.edu:3264
+30123 messages sent in 29.55270406s (1019.2976 msg/sec, 981067.7575 ns/msg)
+[honu] 09:13:46.279928 connected to storage server at nevis.cs.umd.edu:3264
+30131 messages sent in 29.555207953s (1019.4819 msg/sec, 980890.3771 ns/msg)
+[honu] 09:13:46.283271 connected to storage server at nevis.cs.umd.edu:3264
+30035 messages sent in 29.551547251s (1016.3596 msg/sec, 983903.6874 ns/msg)
+[honu] 09:13:46.279935 connected to storage server at nevis.cs.umd.edu:3264
+30146 messages sent in 29.553366886s (1020.0530 msg/sec, 980341.2355 ns/msg)
+[honu] 09:13:46.286182 connected to storage server at nevis.cs.umd.edu:3264
+30153 messages sent in 29.546933773s (1020.5120 msg/sec, 979900.3009 ns/msg)
+[honu] 09:13:46.279981 connected to storage server at nevis.cs.umd.edu:3264
+30105 messages sent in 29.554212955s (1018.6365 msg/sec, 981704.4662 ns/msg)
+[honu] 09:13:46.285600 connected to storage server at nevis.cs.umd.edu:3264
+30045 messages sent in 29.551159649s (1016.7114 msg/sec, 983563.3100 ns/msg)
+12 local 12 remote clients
+[honu] 09:15:02.790274 connected to storage server at nevis.cs.umd.edu:3264
+29757 messages sent in 29.56636757s (1006.4476 msg/sec, 993593.6946 ns/msg)
+[honu] 09:15:02.793519 connected to storage server at nevis.cs.umd.edu:3264
+29702 messages sent in 29.56676632s (1004.5738 msg/sec, 995446.9840 ns/msg)
+[honu] 09:15:02.786565 connected to storage server at nevis.cs.umd.edu:3264
+29786 messages sent in 29.562988987s (1007.5436 msg/sec, 992512.8915 ns/msg)
+[honu] 09:15:02.790856 connected to storage server at nevis.cs.umd.edu:3264
+29776 messages sent in 29.56286601s (1007.2095 msg/sec, 992842.0879 ns/msg)
+[honu] 09:15:02.791991 connected to storage server at nevis.cs.umd.edu:3264
+29624 messages sent in 29.562465613s (1002.0815 msg/sec, 997922.8198 ns/msg)
+[honu] 09:15:02.794213 connected to storage server at nevis.cs.umd.edu:3264
+29697 messages sent in 29.560030663s (1004.6336 msg/sec, 995387.7719 ns/msg)
+[honu] 09:15:02.792953 connected to storage server at nevis.cs.umd.edu:3264
+29781 messages sent in 29.565150888s (1007.3008 msg/sec, 992752.1201 ns/msg)
+[honu] 09:15:02.793760 connected to storage server at nevis.cs.umd.edu:3264
+29739 messages sent in 29.564884657s (1005.8893 msg/sec, 994145.2186 ns/msg)
+[honu] 09:15:02.789342 connected to storage server at nevis.cs.umd.edu:3264
+29719 messages sent in 29.554790523s (1005.5561 msg/sec, 994474.5962 ns/msg)
+[honu] 09:15:02.795532 connected to storage server at nevis.cs.umd.edu:3264
+29723 messages sent in 29.560033433s (1005.5131 msg/sec, 994517.1562 ns/msg)
+[honu] 09:15:02.795529 connected to storage server at nevis.cs.umd.edu:3264
+29668 messages sent in 29.565405128s (1003.4701 msg/sec, 996541.9013 ns/msg)
+[honu] 09:15:02.792581 connected to storage server at nevis.cs.umd.edu:3264
+29688 messages sent in 29.560267725s (1004.3211 msg/sec, 995697.5116 ns/msg)
+[honu] 09:15:40.015471 connected to storage server at nevis.cs.umd.edu:3264
+29745 messages sent in 29.56596161s (1006.0556 msg/sec, 993980.8912 ns/msg)
+[honu] 09:15:40.008396 connected to storage server at nevis.cs.umd.edu:3264
+29686 messages sent in 29.558508265s (1004.3132 msg/sec, 995705.3246 ns/msg)
+[honu] 09:15:40.016516 connected to storage server at nevis.cs.umd.edu:3264
+29807 messages sent in 29.563156477s (1008.2482 msg/sec, 991819.2531 ns/msg)
+[honu] 09:15:40.016285 connected to storage server at nevis.cs.umd.edu:3264
+29818 messages sent in 29.56274684s (1008.6343 msg/sec, 991439.6284 ns/msg)
+[honu] 09:15:40.013300 connected to storage server at nevis.cs.umd.edu:3264
+29697 messages sent in 29.558395369s (1004.6892 msg/sec, 995332.7060 ns/msg)
+[honu] 09:15:40.014392 connected to storage server at nevis.cs.umd.edu:3264
+29791 messages sent in 29.561951618s (1007.7481 msg/sec, 992311.4907 ns/msg)
+[honu] 09:15:40.015987 connected to storage server at nevis.cs.umd.edu:3264
+29749 messages sent in 29.561271335s (1006.3505 msg/sec, 993689.5807 ns/msg)
+[honu] 09:15:40.017691 connected to storage server at nevis.cs.umd.edu:3264
+29684 messages sent in 29.561602728s (1004.1404 msg/sec, 995876.6584 ns/msg)
+[honu] 09:15:40.018687 connected to storage server at nevis.cs.umd.edu:3264
+29842 messages sent in 29.557292972s (1009.6324 msg/sec, 990459.5192 ns/msg)
+[honu] 09:15:40.015978 connected to storage server at nevis.cs.umd.edu:3264
+29771 messages sent in 29.565028625s (1006.9667 msg/sec, 993081.4761 ns/msg)
+[honu] 09:15:40.019149 connected to storage server at nevis.cs.umd.edu:3264
+29649 messages sent in 29.566155629s (1002.8020 msg/sec, 997205.8292 ns/msg)
+[honu] 09:15:40.018751 connected to storage server at nevis.cs.umd.edu:3264
+29714 messages sent in 29.563064392s (1005.1055 msg/sec, 994920.3874 ns/msg)
+[honu] 09:16:15.644618 connected to storage server at nevis.cs.umd.edu:3264
+29673 messages sent in 29.563508085s (1003.7036 msg/sec, 996310.0490 ns/msg)
+[honu] 09:16:15.646148 connected to storage server at nevis.cs.umd.edu:3264
+29772 messages sent in 29.565905272s (1006.9707 msg/sec, 993077.5652 ns/msg)
+[honu] 09:16:15.645767 connected to storage server at nevis.cs.umd.edu:3264
+29732 messages sent in 29.569364329s (1005.5001 msg/sec, 994529.9451 ns/msg)
+[honu] 09:16:15.644765 connected to storage server at nevis.cs.umd.edu:3264
+29797 messages sent in 29.566960011s (1007.7803 msg/sec, 992279.7601 ns/msg)
+[honu] 09:16:15.646888 connected to storage server at nevis.cs.umd.edu:3264
+29724 messages sent in 29.565437765s (1005.3631 msg/sec, 994665.5149 ns/msg)
+[honu] 09:16:15.646100 connected to storage server at nevis.cs.umd.edu:3264
+29736 messages sent in 29.564139702s (1005.8131 msg/sec, 994220.4635 ns/msg)
+[honu] 09:16:15.644875 connected to storage server at nevis.cs.umd.edu:3264
+29744 messages sent in 29.569596665s (1005.8981 msg/sec, 994136.5205 ns/msg)
+[honu] 09:16:15.643164 connected to storage server at nevis.cs.umd.edu:3264
+29793 messages sent in 29.563199009s (1007.7732 msg/sec, 992286.7455 ns/msg)
+[honu] 09:16:15.645298 connected to storage server at nevis.cs.umd.edu:3264
+29729 messages sent in 29.562942508s (1005.6171 msg/sec, 994414.2927 ns/msg)
+[honu] 09:16:15.642605 connected to storage server at nevis.cs.umd.edu:3264
+29767 messages sent in 29.564342031s (1006.8548 msg/sec, 993191.8578 ns/msg)
+[honu] 09:16:15.644217 connected to storage server at nevis.cs.umd.edu:3264
+29794 messages sent in 29.566091821s (1007.7084 msg/sec, 992350.5344 ns/msg)
+[honu] 09:16:15.645592 connected to storage server at nevis.cs.umd.edu:3264
+29750 messages sent in 29.564582756s (1006.2716 msg/sec, 993767.4876 ns/msg)
+[honu] 09:16:57.608055 connected to storage server at nevis.cs.umd.edu:3264
+29653 messages sent in 29.561917123s (1003.0811 msg/sec, 996928.3756 ns/msg)
+[honu] 09:16:57.608784 connected to storage server at nevis.cs.umd.edu:3264
+29631 messages sent in 29.564199481s (1002.2595 msg/sec, 997745.5868 ns/msg)
+[honu] 09:16:57.613402 connected to storage server at nevis.cs.umd.edu:3264
+29627 messages sent in 29.56468623s (1002.1077 msg/sec, 997896.7236 ns/msg)
+[honu] 09:16:57.610267 connected to storage server at nevis.cs.umd.edu:3264
+29676 messages sent in 29.56294794s (1003.8241 msg/sec, 996190.4549 ns/msg)
+[honu] 09:16:57.607016 connected to storage server at nevis.cs.umd.edu:3264
+29645 messages sent in 29.559236711s (1002.9014 msg/sec, 997106.9897 ns/msg)
+[honu] 09:16:57.612515 connected to storage server at nevis.cs.umd.edu:3264
+29736 messages sent in 29.559022968s (1005.9872 msg/sec, 994048.3914 ns/msg)
+[honu] 09:16:57.612507 connected to storage server at nevis.cs.umd.edu:3264
+29689 messages sent in 29.56345544s (1004.2466 msg/sec, 995771.3443 ns/msg)
+[honu] 09:16:57.609915 connected to storage server at nevis.cs.umd.edu:3264
+29778 messages sent in 29.561557704s (1007.3217 msg/sec, 992731.4697 ns/msg)
+[honu] 09:16:57.612295 connected to storage server at nevis.cs.umd.edu:3264
+29604 messages sent in 29.567691155s (1001.2280 msg/sec, 998773.5156 ns/msg)
+[honu] 09:16:57.610389 connected to storage server at nevis.cs.umd.edu:3264
+29687 messages sent in 29.564477397s (1004.1443 msg/sec, 995872.8533 ns/msg)
+[honu] 09:16:57.607273 connected to storage server at nevis.cs.umd.edu:3264
+29702 messages sent in 29.559339169s (1004.8263 msg/sec, 995196.9285 ns/msg)
+[honu] 09:16:57.607244 connected to storage server at nevis.cs.umd.edu:3264
+29630 messages sent in 29.562685465s (1002.2770 msg/sec, 997728.1628 ns/msg)
+[honu] 09:17:37.411814 connected to storage server at nevis.cs.umd.edu:3264
+29856 messages sent in 29.563085274s (1009.9081 msg/sec, 990189.0834 ns/msg)
+[honu] 09:17:37.406764 connected to storage server at nevis.cs.umd.edu:3264
+29756 messages sent in 29.565086232s (1006.4574 msg/sec, 993584.0245 ns/msg)
+[honu] 09:17:37.406744 connected to storage server at nevis.cs.umd.edu:3264
+29814 messages sent in 29.564343899s (1008.4445 msg/sec, 991626.2125 ns/msg)
+[honu] 09:17:37.411840 connected to storage server at nevis.cs.umd.edu:3264
+29721 messages sent in 29.564294828s (1005.3005 msg/sec, 994727.4596 ns/msg)
+[honu] 09:17:37.416996 connected to storage server at nevis.cs.umd.edu:3264
+29654 messages sent in 29.563461261s (1003.0625 msg/sec, 996946.8288 ns/msg)
+[honu] 09:17:37.414235 connected to storage server at nevis.cs.umd.edu:3264
+29790 messages sent in 29.565422436s (1007.5960 msg/sec, 992461.3104 ns/msg)
+[honu] 09:17:37.412112 connected to storage server at nevis.cs.umd.edu:3264
+29801 messages sent in 29.560656908s (1008.1305 msg/sec, 991935.0662 ns/msg)
+[honu] 09:17:37.411225 connected to storage server at nevis.cs.umd.edu:3264
+29758 messages sent in 29.562274821s (1006.6208 msg/sec, 993422.7711 ns/msg)
+[honu] 09:17:37.413757 connected to storage server at nevis.cs.umd.edu:3264
+29705 messages sent in 29.561144422s (1004.8664 msg/sec, 995157.1931 ns/msg)
+[honu] 09:17:37.413261 connected to storage server at nevis.cs.umd.edu:3264
+29706 messages sent in 29.552567541s (1005.1918 msg/sec, 994834.9674 ns/msg)
+[honu] 09:17:37.410478 connected to storage server at nevis.cs.umd.edu:3264
+29713 messages sent in 29.56517337s (1005.0000 msg/sec, 995024.8501 ns/msg)
+[honu] 09:17:37.412644 connected to storage server at nevis.cs.umd.edu:3264
+29717 messages sent in 29.562973506s (1005.2101 msg/sec, 994816.8895 ns/msg)
+13 local 13 remote clients
+[honu] 09:18:56.055542 connected to storage server at nevis.cs.umd.edu:3264
+29427 messages sent in 29.566743558s (995.2736 msg/sec, 1004748.8211 ns/msg)
+[honu] 09:18:56.059177 connected to storage server at nevis.cs.umd.edu:3264
+29424 messages sent in 29.571123711s (995.0248 msg/sec, 1005000.1261 ns/msg)
+[honu] 09:18:56.059363 connected to storage server at nevis.cs.umd.edu:3264
+29371 messages sent in 29.570316575s (993.2596 msg/sec, 1006786.1692 ns/msg)
+[honu] 09:18:56.047604 connected to storage server at nevis.cs.umd.edu:3264
+29395 messages sent in 29.568634326s (994.1278 msg/sec, 1005906.9340 ns/msg)
+[honu] 09:18:56.051196 connected to storage server at nevis.cs.umd.edu:3264
+29455 messages sent in 29.570736888s (996.0861 msg/sec, 1003929.2782 ns/msg)
+[honu] 09:18:56.052914 connected to storage server at nevis.cs.umd.edu:3264
+29481 messages sent in 29.572447662s (996.9077 msg/sec, 1003101.9186 ns/msg)
+[honu] 09:18:56.056428 connected to storage server at nevis.cs.umd.edu:3264
+29435 messages sent in 29.573622755s (995.3126 msg/sec, 1004709.4532 ns/msg)
+[honu] 09:18:56.059677 connected to storage server at nevis.cs.umd.edu:3264
+29396 messages sent in 29.564477437s (994.3014 msg/sec, 1005731.3048 ns/msg)
+[honu] 09:18:56.057201 connected to storage server at nevis.cs.umd.edu:3264
+29405 messages sent in 29.56915865s (994.4483 msg/sec, 1005582.6781 ns/msg)
+[honu] 09:18:56.059695 connected to storage server at nevis.cs.umd.edu:3264
+29437 messages sent in 29.571640511s (995.4470 msg/sec, 1004573.8530 ns/msg)
+[honu] 09:18:56.056406 connected to storage server at nevis.cs.umd.edu:3264
+29388 messages sent in 29.572182657s (993.7718 msg/sec, 1006267.2743 ns/msg)
+[honu] 09:18:56.061304 connected to storage server at nevis.cs.umd.edu:3264
+29345 messages sent in 29.568534782s (992.4401 msg/sec, 1007617.4743 ns/msg)
+[honu] 09:18:56.052877 connected to storage server at nevis.cs.umd.edu:3264
+29412 messages sent in 29.571034114s (994.6220 msg/sec, 1005407.1166 ns/msg)
+[honu] 09:19:41.715089 connected to storage server at nevis.cs.umd.edu:3264
+29438 messages sent in 29.567140444s (995.6323 msg/sec, 1004386.8620 ns/msg)
+[honu] 09:19:41.719926 connected to storage server at nevis.cs.umd.edu:3264
+29381 messages sent in 29.566249251s (993.7344 msg/sec, 1006305.0696 ns/msg)
+[honu] 09:19:41.718936 connected to storage server at nevis.cs.umd.edu:3264
+29327 messages sent in 29.571565785s (991.7297 msg/sec, 1008339.2705 ns/msg)
+[honu] 09:19:41.718934 connected to storage server at nevis.cs.umd.edu:3264
+29402 messages sent in 29.57373286s (994.1931 msg/sec, 1005840.8564 ns/msg)
+[honu] 09:19:41.721007 connected to storage server at nevis.cs.umd.edu:3264
+29467 messages sent in 29.573508791s (996.3985 msg/sec, 1003614.5108 ns/msg)
+[honu] 09:19:41.720368 connected to storage server at nevis.cs.umd.edu:3264
+29331 messages sent in 29.57171785s (991.8599 msg/sec, 1008206.9432 ns/msg)
+[honu] 09:19:41.720908 connected to storage server at nevis.cs.umd.edu:3264
+29395 messages sent in 29.570329126s (994.0708 msg/sec, 1005964.5901 ns/msg)
+[honu] 09:19:41.723633 connected to storage server at nevis.cs.umd.edu:3264
+29382 messages sent in 29.568959743s (993.6772 msg/sec, 1006363.0707 ns/msg)
+[honu] 09:19:41.718642 connected to storage server at nevis.cs.umd.edu:3264
+29449 messages sent in 29.562588731s (996.1577 msg/sec, 1003857.1337 ns/msg)
+[honu] 09:19:41.720993 connected to storage server at nevis.cs.umd.edu:3264
+29468 messages sent in 29.568638589s (996.5964 msg/sec, 1003415.1822 ns/msg)
+[honu] 09:19:41.720194 connected to storage server at nevis.cs.umd.edu:3264
+29405 messages sent in 29.570129469s (994.4157 msg/sec, 1005615.6936 ns/msg)
+[honu] 09:19:41.720949 connected to storage server at nevis.cs.umd.edu:3264
+29385 messages sent in 29.569212564s (993.7701 msg/sec, 1006268.9319 ns/msg)
+[honu] 09:19:41.718020 connected to storage server at nevis.cs.umd.edu:3264
+29401 messages sent in 29.571024057s (994.2503 msg/sec, 1005782.9345 ns/msg)
+[honu] 09:20:16.852664 connected to storage server at nevis.cs.umd.edu:3264
+29491 messages sent in 29.573698748s (997.2036 msg/sec, 1002804.2029 ns/msg)
+[honu] 09:20:16.855484 connected to storage server at nevis.cs.umd.edu:3264
+29409 messages sent in 29.573008896s (994.4541 msg/sec, 1005576.8267 ns/msg)
+[honu] 09:20:16.855806 connected to storage server at nevis.cs.umd.edu:3264
+29492 messages sent in 29.570447182s (997.3471 msg/sec, 1002659.9479 ns/msg)
+[honu] 09:20:16.855282 connected to storage server at nevis.cs.umd.edu:3264
+29518 messages sent in 29.567765415s (998.3169 msg/sec, 1001685.9345 ns/msg)
+[honu] 09:20:16.857833 connected to storage server at nevis.cs.umd.edu:3264
+29516 messages sent in 29.570895848s (998.1436 msg/sec, 1001859.8675 ns/msg)
+[honu] 09:20:16.857557 connected to storage server at nevis.cs.umd.edu:3264
+29501 messages sent in 29.577275277s (997.4212 msg/sec, 1002585.5150 ns/msg)
+[honu] 09:20:16.856772 connected to storage server at nevis.cs.umd.edu:3264
+29527 messages sent in 29.574275763s (998.4015 msg/sec, 1001601.1028 ns/msg)
+[honu] 09:20:16.858889 connected to storage server at nevis.cs.umd.edu:3264
+29510 messages sent in 29.573221065s (997.8622 msg/sec, 1002142.3607 ns/msg)
+[honu] 09:20:16.855506 connected to storage server at nevis.cs.umd.edu:3264
+29587 messages sent in 29.571481813s (1000.5248 msg/sec, 999475.5066 ns/msg)
+[honu] 09:20:16.853608 connected to storage server at nevis.cs.umd.edu:3264
+29540 messages sent in 29.57411694s (998.8464 msg/sec, 1001154.9404 ns/msg)
+[honu] 09:20:16.859939 connected to storage server at nevis.cs.umd.edu:3264
+29484 messages sent in 29.570783298s (997.0652 msg/sec, 1002943.4031 ns/msg)
+[honu] 09:20:16.860172 connected to storage server at nevis.cs.umd.edu:3264
+29487 messages sent in 29.570849853s (997.1644 msg/sec, 1002843.6210 ns/msg)
+[honu] 09:20:16.855692 connected to storage server at nevis.cs.umd.edu:3264
+29533 messages sent in 29.57675477s (998.5206 msg/sec, 1001481.5552 ns/msg)
+[honu] 09:20:52.879659 connected to storage server at nevis.cs.umd.edu:3264
+29470 messages sent in 29.569076418s (996.6493 msg/sec, 1003361.9416 ns/msg)
+[honu] 09:20:52.876572 connected to storage server at nevis.cs.umd.edu:3264
+29576 messages sent in 29.567168363s (1000.2987 msg/sec, 999701.3918 ns/msg)
+[honu] 09:20:52.886021 connected to storage server at nevis.cs.umd.edu:3264
+29466 messages sent in 29.572997533s (996.3819 msg/sec, 1003631.2202 ns/msg)
+[honu] 09:20:52.879907 connected to storage server at nevis.cs.umd.edu:3264
+29556 messages sent in 29.566800979s (999.6347 msg/sec, 1000365.4412 ns/msg)
+[honu] 09:20:52.883824 connected to storage server at nevis.cs.umd.edu:3264
+29520 messages sent in 29.566565926s (998.4250 msg/sec, 1001577.4365 ns/msg)
+[honu] 09:20:52.885197 connected to storage server at nevis.cs.umd.edu:3264
+29511 messages sent in 29.574157556s (997.8644 msg/sec, 1002140.1361 ns/msg)
+[honu] 09:20:52.878629 connected to storage server at nevis.cs.umd.edu:3264
+29577 messages sent in 29.567227127s (1000.3305 msg/sec, 999669.5786 ns/msg)
+[honu] 09:20:52.882871 connected to storage server at nevis.cs.umd.edu:3264
+29455 messages sent in 29.565168804s (996.2737 msg/sec, 1003740.2412 ns/msg)
+[honu] 09:20:52.883257 connected to storage server at nevis.cs.umd.edu:3264
+29522 messages sent in 29.569024588s (998.4097 msg/sec, 1001592.8659 ns/msg)
+[honu] 09:20:52.879915 connected to storage server at nevis.cs.umd.edu:3264
+29503 messages sent in 29.573358552s (997.6209 msg/sec, 1002384.7931 ns/msg)
+[honu] 09:20:52.887942 connected to storage server at nevis.cs.umd.edu:3264
+29453 messages sent in 29.568327049s (996.0996 msg/sec, 1003915.6300 ns/msg)
+[honu] 09:20:52.881949 connected to storage server at nevis.cs.umd.edu:3264
+29460 messages sent in 29.568205543s (996.3405 msg/sec, 1003672.9648 ns/msg)
+[honu] 09:20:52.878347 connected to storage server at nevis.cs.umd.edu:3264
+29545 messages sent in 29.567420231s (999.2417 msg/sec, 1000758.8503 ns/msg)
+[honu] 09:21:29.558279 connected to storage server at nevis.cs.umd.edu:3264
+29360 messages sent in 29.575634676s (992.7090 msg/sec, 1007344.5053 ns/msg)
+[honu] 09:21:29.565842 connected to storage server at nevis.cs.umd.edu:3264
+29395 messages sent in 29.568845567s (994.1207 msg/sec, 1005914.1203 ns/msg)
+[honu] 09:21:29.569810 connected to storage server at nevis.cs.umd.edu:3264
+29528 messages sent in 29.569066753s (998.6112 msg/sec, 1001390.7733 ns/msg)
+[honu] 09:21:29.570002 connected to storage server at nevis.cs.umd.edu:3264
+29469 messages sent in 29.574925668s (996.4184 msg/sec, 1003594.4779 ns/msg)
+[honu] 09:21:29.565552 connected to storage server at nevis.cs.umd.edu:3264
+29274 messages sent in 29.572643591s (989.9014 msg/sec, 1010201.6667 ns/msg)
+[honu] 09:21:29.557333 connected to storage server at nevis.cs.umd.edu:3264
+29443 messages sent in 29.576874158s (995.4737 msg/sec, 1004546.8926 ns/msg)
+[honu] 09:21:29.560793 connected to storage server at nevis.cs.umd.edu:3264
+29455 messages sent in 29.570668579s (996.0884 msg/sec, 1003926.9591 ns/msg)
+[honu] 09:21:29.565800 connected to storage server at nevis.cs.umd.edu:3264
+29504 messages sent in 29.568566584s (997.8164 msg/sec, 1002188.4010 ns/msg)
+[honu] 09:21:29.566355 connected to storage server at nevis.cs.umd.edu:3264
+29391 messages sent in 29.557345661s (994.3721 msg/sec, 1005659.7483 ns/msg)
+[honu] 09:21:29.564725 connected to storage server at nevis.cs.umd.edu:3264
+29336 messages sent in 29.570905136s (992.0562 msg/sec, 1008007.4017 ns/msg)
+[honu] 09:21:29.567697 connected to storage server at nevis.cs.umd.edu:3264
+29351 messages sent in 29.571830946s (992.5324 msg/sec, 1007523.7963 ns/msg)
+[honu] 09:21:29.562858 connected to storage server at nevis.cs.umd.edu:3264
+29425 messages sent in 29.569700547s (995.1065 msg/sec, 1004917.6057 ns/msg)
+[honu] 09:21:29.564180 connected to storage server at nevis.cs.umd.edu:3264
+29364 messages sent in 29.573198214s (992.9261 msg/sec, 1007124.3092 ns/msg)
+14 local 14 remote clients
+[honu] 09:22:51.109432 connected to storage server at nevis.cs.umd.edu:3264
+28956 messages sent in 29.587729702s (978.6489 msg/sec, 1021816.8843 ns/msg)
+[honu] 09:22:51.118501 connected to storage server at nevis.cs.umd.edu:3264
+28838 messages sent in 29.585112753s (974.7470 msg/sec, 1025907.2319 ns/msg)
+[honu] 09:22:51.121540 connected to storage server at nevis.cs.umd.edu:3264
+28836 messages sent in 29.578527543s (974.8964 msg/sec, 1025750.0188 ns/msg)
+[honu] 09:22:51.120414 connected to storage server at nevis.cs.umd.edu:3264
+28828 messages sent in 29.588139348s (974.3093 msg/sec, 1026368.0917 ns/msg)
+[honu] 09:22:51.112143 connected to storage server at nevis.cs.umd.edu:3264
+28850 messages sent in 29.585625591s (975.1357 msg/sec, 1025498.2874 ns/msg)
+[honu] 09:22:51.120766 connected to storage server at nevis.cs.umd.edu:3264
+28907 messages sent in 29.584149504s (977.1111 msg/sec, 1023425.1048 ns/msg)
+[honu] 09:22:51.118257 connected to storage server at nevis.cs.umd.edu:3264
+28777 messages sent in 29.583132973s (972.7503 msg/sec, 1028013.0998 ns/msg)
+[honu] 09:22:51.120914 connected to storage server at nevis.cs.umd.edu:3264
+28810 messages sent in 29.590794717s (973.6136 msg/sec, 1027101.5174 ns/msg)
+[honu] 09:22:51.115633 connected to storage server at nevis.cs.umd.edu:3264
+28891 messages sent in 29.590131598s (976.3728 msg/sec, 1024198.9408 ns/msg)
+[honu] 09:22:51.113980 connected to storage server at nevis.cs.umd.edu:3264
+28881 messages sent in 29.586222896s (976.1638 msg/sec, 1024418.2298 ns/msg)
+[honu] 09:22:51.120412 connected to storage server at nevis.cs.umd.edu:3264
+28858 messages sent in 29.578832837s (975.6301 msg/sec, 1024978.6138 ns/msg)
+[honu] 09:22:51.118272 connected to storage server at nevis.cs.umd.edu:3264
+28769 messages sent in 29.586544962s (972.3677 msg/sec, 1028417.5662 ns/msg)
+[honu] 09:22:51.114831 connected to storage server at nevis.cs.umd.edu:3264
+28845 messages sent in 29.583994636s (975.0205 msg/sec, 1025619.5055 ns/msg)
+[honu] 09:22:51.115958 connected to storage server at nevis.cs.umd.edu:3264
+28862 messages sent in 29.588075565s (975.4605 msg/sec, 1025156.8001 ns/msg)
+[honu] 09:23:39.719836 connected to storage server at nevis.cs.umd.edu:3264
+28789 messages sent in 29.579559075s (973.2735 msg/sec, 1027460.4563 ns/msg)
+[honu] 09:23:39.715115 connected to storage server at nevis.cs.umd.edu:3264
+28839 messages sent in 29.586510575s (974.7348 msg/sec, 1025920.1281 ns/msg)
+[honu] 09:23:39.715107 connected to storage server at nevis.cs.umd.edu:3264
+28807 messages sent in 29.582902833s (973.7719 msg/sec, 1026934.5240 ns/msg)
+[honu] 09:23:39.713794 connected to storage server at nevis.cs.umd.edu:3264
+28829 messages sent in 29.585035374s (974.4453 msg/sec, 1026224.8213 ns/msg)
+[honu] 09:23:39.716956 connected to storage server at nevis.cs.umd.edu:3264
+28908 messages sent in 29.579289717s (977.3054 msg/sec, 1023221.5898 ns/msg)
+[honu] 09:23:39.719861 connected to storage server at nevis.cs.umd.edu:3264
+28781 messages sent in 29.591130258s (972.6225 msg/sec, 1028148.0928 ns/msg)
+[honu] 09:23:39.716165 connected to storage server at nevis.cs.umd.edu:3264
+28897 messages sent in 29.588350256s (976.6344 msg/sec, 1023924.6377 ns/msg)
+[honu] 09:23:39.719336 connected to storage server at nevis.cs.umd.edu:3264
+28831 messages sent in 29.583039723s (974.5787 msg/sec, 1026084.4134 ns/msg)
+[honu] 09:23:39.719371 connected to storage server at nevis.cs.umd.edu:3264
+28863 messages sent in 29.585692971s (975.5729 msg/sec, 1025038.7337 ns/msg)
+[honu] 09:23:39.717199 connected to storage server at nevis.cs.umd.edu:3264
+28812 messages sent in 29.584765054s (973.8796 msg/sec, 1026820.9445 ns/msg)
+[honu] 09:23:39.714304 connected to storage server at nevis.cs.umd.edu:3264
+28837 messages sent in 29.589658122s (974.5635 msg/sec, 1026100.4308 ns/msg)
+[honu] 09:23:39.720883 connected to storage server at nevis.cs.umd.edu:3264
+28829 messages sent in 29.583496819s (974.4960 msg/sec, 1026171.4530 ns/msg)
+[honu] 09:23:39.711730 connected to storage server at nevis.cs.umd.edu:3264
+28781 messages sent in 29.583857398s (972.8616 msg/sec, 1027895.3962 ns/msg)
+[honu] 09:23:39.713010 connected to storage server at nevis.cs.umd.edu:3264
+28887 messages sent in 29.590535401s (976.2243 msg/sec, 1024354.7409 ns/msg)
+[honu] 09:24:18.243741 connected to storage server at nevis.cs.umd.edu:3264
+28778 messages sent in 29.587123876s (972.6528 msg/sec, 1028116.0566 ns/msg)
+[honu] 09:24:18.241861 connected to storage server at nevis.cs.umd.edu:3264
+28757 messages sent in 29.58382241s (972.0515 msg/sec, 1028752.0399 ns/msg)
+[honu] 09:24:18.246427 connected to storage server at nevis.cs.umd.edu:3264
+28863 messages sent in 29.5867098s (975.5394 msg/sec, 1025073.9632 ns/msg)
+[honu] 09:24:18.240170 connected to storage server at nevis.cs.umd.edu:3264
+28742 messages sent in 29.577606047s (971.7487 msg/sec, 1029072.6479 ns/msg)
+[honu] 09:24:18.241403 connected to storage server at nevis.cs.umd.edu:3264
+28765 messages sent in 29.583981312s (972.3167 msg/sec, 1028471.4518 ns/msg)
+[honu] 09:24:18.243966 connected to storage server at nevis.cs.umd.edu:3264
+28762 messages sent in 29.58574287s (972.1574 msg/sec, 1028639.9718 ns/msg)
+[honu] 09:24:18.242467 connected to storage server at nevis.cs.umd.edu:3264
+28761 messages sent in 29.581319218s (972.2690 msg/sec, 1028521.9296 ns/msg)
+[honu] 09:24:18.244288 connected to storage server at nevis.cs.umd.edu:3264
+28735 messages sent in 29.58024362s (971.4254 msg/sec, 1029415.1251 ns/msg)
+[honu] 09:24:18.246452 connected to storage server at nevis.cs.umd.edu:3264
+28822 messages sent in 29.587076647s (974.1415 msg/sec, 1026544.8840 ns/msg)
+[honu] 09:24:18.245174 connected to storage server at nevis.cs.umd.edu:3264
+28771 messages sent in 29.58511257s (972.4824 msg/sec, 1028296.2904 ns/msg)
+[honu] 09:24:18.246246 connected to storage server at nevis.cs.umd.edu:3264
+28792 messages sent in 29.586202964s (973.1563 msg/sec, 1027584.1541 ns/msg)
+[honu] 09:24:18.245634 connected to storage server at nevis.cs.umd.edu:3264
+28789 messages sent in 29.581032319s (973.2250 msg/sec, 1027511.6301 ns/msg)
+[honu] 09:24:18.246195 connected to storage server at nevis.cs.umd.edu:3264
+28814 messages sent in 29.590056634s (973.7731 msg/sec, 1026933.3183 ns/msg)
+[honu] 09:24:18.243422 connected to storage server at nevis.cs.umd.edu:3264
+28742 messages sent in 29.580085132s (971.6673 msg/sec, 1029158.9010 ns/msg)
+[honu] 09:24:53.081363 connected to storage server at nevis.cs.umd.edu:3264
+28882 messages sent in 29.588746408s (976.1144 msg/sec, 1024470.1339 ns/msg)
+[honu] 09:24:53.070838 connected to storage server at nevis.cs.umd.edu:3264
+28851 messages sent in 29.588150464s (975.0863 msg/sec, 1025550.2570 ns/msg)
+[honu] 09:24:53.079781 connected to storage server at nevis.cs.umd.edu:3264
+28871 messages sent in 29.585252757s (975.8578 msg/sec, 1024739.4533 ns/msg)
+[honu] 09:24:53.078939 connected to storage server at nevis.cs.umd.edu:3264
+28881 messages sent in 29.581345426s (976.3248 msg/sec, 1024249.3482 ns/msg)
+[honu] 09:24:53.075403 connected to storage server at nevis.cs.umd.edu:3264
+28959 messages sent in 29.588371769s (978.7291 msg/sec, 1021733.2010 ns/msg)
+[honu] 09:24:53.079802 connected to storage server at nevis.cs.umd.edu:3264
+28875 messages sent in 29.587822835s (975.9082 msg/sec, 1024686.5051 ns/msg)
+[honu] 09:24:53.082545 connected to storage server at nevis.cs.umd.edu:3264
+28825 messages sent in 29.588857339s (974.1843 msg/sec, 1026499.8210 ns/msg)
+[honu] 09:24:53.082846 connected to storage server at nevis.cs.umd.edu:3264
+28953 messages sent in 29.589404903s (978.4921 msg/sec, 1021980.6204 ns/msg)
+[honu] 09:24:53.079790 connected to storage server at nevis.cs.umd.edu:3264
+28824 messages sent in 29.586457815s (974.2295 msg/sec, 1026452.1862 ns/msg)
+[honu] 09:24:53.075030 connected to storage server at nevis.cs.umd.edu:3264
+28901 messages sent in 29.586808856s (976.8205 msg/sec, 1023729.5891 ns/msg)
+[honu] 09:24:53.076121 connected to storage server at nevis.cs.umd.edu:3264
+28844 messages sent in 29.585933706s (974.9228 msg/sec, 1025722.2891 ns/msg)
+[honu] 09:24:53.077975 connected to storage server at nevis.cs.umd.edu:3264
+28837 messages sent in 29.588442085s (974.6035 msg/sec, 1026058.2614 ns/msg)
+[honu] 09:24:53.078087 connected to storage server at nevis.cs.umd.edu:3264
+28905 messages sent in 29.585586458s (976.9960 msg/sec, 1023545.6308 ns/msg)
+[honu] 09:24:53.076773 connected to storage server at nevis.cs.umd.edu:3264
+28806 messages sent in 29.589281345s (973.5282 msg/sec, 1027191.6040 ns/msg)
+[honu] 09:25:29.218715 connected to storage server at nevis.cs.umd.edu:3264
+28967 messages sent in 29.575188678s (979.4358 msg/sec, 1020995.9153 ns/msg)
+[honu] 09:25:29.220788 connected to storage server at nevis.cs.umd.edu:3264
+28837 messages sent in 29.581865847s (974.8202 msg/sec, 1025830.2128 ns/msg)
+[honu] 09:25:29.221280 connected to storage server at nevis.cs.umd.edu:3264
+28865 messages sent in 29.581265947s (975.7865 msg/sec, 1024814.3408 ns/msg)
+[honu] 09:25:29.222699 connected to storage server at nevis.cs.umd.edu:3264
+28881 messages sent in 29.582861314s (976.2747 msg/sec, 1024301.8356 ns/msg)
+[honu] 09:25:29.223119 connected to storage server at nevis.cs.umd.edu:3264
+28879 messages sent in 29.578464697s (976.3522 msg/sec, 1024220.5304 ns/msg)
+[honu] 09:25:29.223498 connected to storage server at nevis.cs.umd.edu:3264
+28852 messages sent in 29.582851694s (975.2948 msg/sec, 1025331.0583 ns/msg)
+[honu] 09:25:29.220521 connected to storage server at nevis.cs.umd.edu:3264
+28864 messages sent in 29.581208247s (975.7546 msg/sec, 1024847.8467 ns/msg)
+[honu] 09:25:29.223463 connected to storage server at nevis.cs.umd.edu:3264
+28881 messages sent in 29.584708363s (976.2138 msg/sec, 1024365.7894 ns/msg)
+[honu] 09:25:29.223382 connected to storage server at nevis.cs.umd.edu:3264
+28815 messages sent in 29.584687922s (973.9836 msg/sec, 1026711.3629 ns/msg)
+[honu] 09:25:29.223936 connected to storage server at nevis.cs.umd.edu:3264
+28874 messages sent in 29.579841688s (976.1377 msg/sec, 1024445.5804 ns/msg)
+[honu] 09:25:29.222423 connected to storage server at nevis.cs.umd.edu:3264
+28819 messages sent in 29.58383629s (974.1468 msg/sec, 1026539.3071 ns/msg)
+[honu] 09:25:29.224331 connected to storage server at nevis.cs.umd.edu:3264
+28879 messages sent in 29.582211153s (976.2286 msg/sec, 1024350.2598 ns/msg)
+[honu] 09:25:29.223339 connected to storage server at nevis.cs.umd.edu:3264
+28854 messages sent in 29.584230781s (975.3169 msg/sec, 1025307.7834 ns/msg)
+[honu] 09:25:29.221570 connected to storage server at nevis.cs.umd.edu:3264
+28932 messages sent in 29.579989214s (978.0937 msg/sec, 1022396.9727 ns/msg)
+15 local 15 remote clients
+[honu] 09:26:46.766048 connected to storage server at nevis.cs.umd.edu:3264
+28149 messages sent in 29.599975442s (950.9805 msg/sec, 1051546.2518 ns/msg)
+[honu] 09:26:46.757309 connected to storage server at nevis.cs.umd.edu:3264
+28112 messages sent in 29.598127122s (949.7898 msg/sec, 1052864.5106 ns/msg)
+[honu] 09:26:46.764495 connected to storage server at nevis.cs.umd.edu:3264
+28105 messages sent in 29.602011681s (949.4287 msg/sec, 1053264.9593 ns/msg)
+[honu] 09:26:46.759843 connected to storage server at nevis.cs.umd.edu:3264
+27994 messages sent in 29.600553644s (945.7256 msg/sec, 1057389.2135 ns/msg)
+[honu] 09:26:46.757579 connected to storage server at nevis.cs.umd.edu:3264
+27965 messages sent in 29.598079089s (944.8248 msg/sec, 1058397.2497 ns/msg)
+[honu] 09:26:46.764585 connected to storage server at nevis.cs.umd.edu:3264
+28020 messages sent in 29.601416264s (946.5763 msg/sec, 1056438.8388 ns/msg)
+[honu] 09:26:46.762575 connected to storage server at nevis.cs.umd.edu:3264
+28070 messages sent in 29.600771233s (948.2861 msg/sec, 1054534.0660 ns/msg)
+[honu] 09:26:46.764039 connected to storage server at nevis.cs.umd.edu:3264
+28033 messages sent in 29.597741733s (947.1331 msg/sec, 1055817.8480 ns/msg)
+[honu] 09:26:46.762267 connected to storage server at nevis.cs.umd.edu:3264
+27991 messages sent in 29.597611523s (945.7182 msg/sec, 1057397.4321 ns/msg)
+[honu] 09:26:46.764508 connected to storage server at nevis.cs.umd.edu:3264
+28029 messages sent in 29.596436587s (947.0397 msg/sec, 1055921.9589 ns/msg)
+[honu] 09:26:46.761984 connected to storage server at nevis.cs.umd.edu:3264
+27950 messages sent in 29.60424899s (944.1212 msg/sec, 1059186.0104 ns/msg)
+[honu] 09:26:46.768873 connected to storage server at nevis.cs.umd.edu:3264
+28085 messages sent in 29.601789365s (948.7602 msg/sec, 1054007.0986 ns/msg)
+[honu] 09:26:46.768794 connected to storage server at nevis.cs.umd.edu:3264
+28067 messages sent in 29.59723716s (948.2980 msg/sec, 1054520.8665 ns/msg)
+[honu] 09:26:46.769894 connected to storage server at nevis.cs.umd.edu:3264
+28024 messages sent in 29.601642484s (946.7042 msg/sec, 1056296.1206 ns/msg)
+[honu] 09:26:46.769982 connected to storage server at nevis.cs.umd.edu:3264
+27968 messages sent in 29.601331522s (944.8224 msg/sec, 1058400.0115 ns/msg)
+[honu] 09:27:25.727534 connected to storage server at nevis.cs.umd.edu:3264
+28133 messages sent in 29.591428234s (950.7145 msg/sec, 1051840.4804 ns/msg)
+[honu] 09:27:25.728418 connected to storage server at nevis.cs.umd.edu:3264
+28149 messages sent in 29.595653644s (951.1194 msg/sec, 1051392.7189 ns/msg)
+[honu] 09:27:25.724112 connected to storage server at nevis.cs.umd.edu:3264
+28168 messages sent in 29.597771354s (951.6933 msg/sec, 1050758.7104 ns/msg)
+[honu] 09:27:25.724385 connected to storage server at nevis.cs.umd.edu:3264
+28073 messages sent in 29.589556743s (948.7469 msg/sec, 1054021.8980 ns/msg)
+[honu] 09:27:25.726484 connected to storage server at nevis.cs.umd.edu:3264
+28127 messages sent in 29.591853615s (950.4981 msg/sec, 1052079.9806 ns/msg)
+[honu] 09:27:25.718753 connected to storage server at nevis.cs.umd.edu:3264
+28184 messages sent in 29.596200392s (952.2844 msg/sec, 1050106.4573 ns/msg)
+[honu] 09:27:25.723597 connected to storage server at nevis.cs.umd.edu:3264
+28168 messages sent in 29.594406056s (951.8015 msg/sec, 1050639.2380 ns/msg)
+[honu] 09:27:25.730226 connected to storage server at nevis.cs.umd.edu:3264
+28165 messages sent in 29.596907531s (951.6197 msg/sec, 1050839.9620 ns/msg)
+[honu] 09:27:25.730496 connected to storage server at nevis.cs.umd.edu:3264
+28166 messages sent in 29.605106169s (951.3899 msg/sec, 1051093.7360 ns/msg)
+[honu] 09:27:25.721640 connected to storage server at nevis.cs.umd.edu:3264
+28132 messages sent in 29.597329761s (950.4911 msg/sec, 1052087.6497 ns/msg)
+[honu] 09:27:25.725625 connected to storage server at nevis.cs.umd.edu:3264
+28015 messages sent in 29.596058102s (946.5788 msg/sec, 1056436.1271 ns/msg)
+[honu] 09:27:25.726884 connected to storage server at nevis.cs.umd.edu:3264
+28139 messages sent in 29.602079149s (950.5751 msg/sec, 1051994.7102 ns/msg)
+[honu] 09:27:25.724394 connected to storage server at nevis.cs.umd.edu:3264
+27987 messages sent in 29.593592416s (945.7115 msg/sec, 1057404.9529 ns/msg)
+[honu] 09:27:25.728019 connected to storage server at nevis.cs.umd.edu:3264
+28086 messages sent in 29.591945898s (949.1096 msg/sec, 1053619.0949 ns/msg)
+[honu] 09:27:25.722810 connected to storage server at nevis.cs.umd.edu:3264
+28015 messages sent in 29.598469645s (946.5016 msg/sec, 1056522.2076 ns/msg)
+[honu] 09:28:07.061316 connected to storage server at nevis.cs.umd.edu:3264
+28215 messages sent in 29.595623733s (953.3504 msg/sec, 1048932.2606 ns/msg)
+[honu] 09:28:07.067171 connected to storage server at nevis.cs.umd.edu:3264
+28217 messages sent in 29.596169097s (953.4004 msg/sec, 1048877.2406 ns/msg)
+[honu] 09:28:07.065068 connected to storage server at nevis.cs.umd.edu:3264
+28109 messages sent in 29.596916301s (949.7273 msg/sec, 1052933.8042 ns/msg)
+[honu] 09:28:07.064815 connected to storage server at nevis.cs.umd.edu:3264
+28079 messages sent in 29.596252962s (948.7350 msg/sec, 1054035.1495 ns/msg)
+[honu] 09:28:07.061777 connected to storage server at nevis.cs.umd.edu:3264
+28148 messages sent in 29.595231291s (951.0992 msg/sec, 1051415.0665 ns/msg)
+[honu] 09:28:07.065888 connected to storage server at nevis.cs.umd.edu:3264
+28189 messages sent in 29.595277096s (952.4831 msg/sec, 1049887.4418 ns/msg)
+[honu] 09:28:07.066392 connected to storage server at nevis.cs.umd.edu:3264
+28182 messages sent in 29.597182297s (952.1852 msg/sec, 1050215.8220 ns/msg)
+[honu] 09:28:07.064863 connected to storage server at nevis.cs.umd.edu:3264
+28190 messages sent in 29.600227386s (952.3575 msg/sec, 1050025.8030 ns/msg)
+[honu] 09:28:07.066620 connected to storage server at nevis.cs.umd.edu:3264
+28159 messages sent in 29.597702862s (951.3914 msg/sec, 1051092.1148 ns/msg)
+[honu] 09:28:07.065276 connected to storage server at nevis.cs.umd.edu:3264
+28113 messages sent in 29.593101035s (949.9849 msg/sec, 1052648.2778 ns/msg)
+[honu] 09:28:07.064592 connected to storage server at nevis.cs.umd.edu:3264
+28193 messages sent in 29.596253472s (952.5868 msg/sec, 1049773.1164 ns/msg)
+[honu] 09:28:07.066704 connected to storage server at nevis.cs.umd.edu:3264
+28164 messages sent in 29.596450531s (951.6006 msg/sec, 1050861.0471 ns/msg)
+[honu] 09:28:07.064765 connected to storage server at nevis.cs.umd.edu:3264
+28106 messages sent in 29.598737848s (949.5675 msg/sec, 1053111.0029 ns/msg)
+[honu] 09:28:07.068257 connected to storage server at nevis.cs.umd.edu:3264
+28183 messages sent in 29.604797253s (951.9741 msg/sec, 1050448.7547 ns/msg)
+[honu] 09:28:07.067149 connected to storage server at nevis.cs.umd.edu:3264
+28152 messages sent in 29.597622551s (951.1575 msg/sec, 1051350.6163 ns/msg)
+[honu] 09:28:42.955776 connected to storage server at nevis.cs.umd.edu:3264
+28209 messages sent in 29.59882896s (953.0445 msg/sec, 1049268.9907 ns/msg)
+[honu] 09:28:42.960103 connected to storage server at nevis.cs.umd.edu:3264
+28257 messages sent in 29.595569959s (954.7713 msg/sec, 1047371.2694 ns/msg)
+[honu] 09:28:42.952627 connected to storage server at nevis.cs.umd.edu:3264
+28253 messages sent in 29.599908376s (954.4962 msg/sec, 1047673.1100 ns/msg)
+[honu] 09:28:42.961032 connected to storage server at nevis.cs.umd.edu:3264
+28270 messages sent in 29.601222897s (955.0281 msg/sec, 1047089.5966 ns/msg)
+[honu] 09:28:42.955377 connected to storage server at nevis.cs.umd.edu:3264
+28195 messages sent in 29.598660671s (952.5769 msg/sec, 1049784.0281 ns/msg)
+[honu] 09:28:42.958974 connected to storage server at nevis.cs.umd.edu:3264
+28297 messages sent in 29.598945709s (956.0138 msg/sec, 1046010.0261 ns/msg)
+[honu] 09:28:42.959360 connected to storage server at nevis.cs.umd.edu:3264
+28256 messages sent in 29.603087328s (954.4950 msg/sec, 1047674.3817 ns/msg)
+[honu] 09:28:42.956725 connected to storage server at nevis.cs.umd.edu:3264
+28250 messages sent in 29.596221194s (954.5137 msg/sec, 1047653.8476 ns/msg)
+[honu] 09:28:42.959476 connected to storage server at nevis.cs.umd.edu:3264
+28178 messages sent in 29.595413455s (952.1070 msg/sec, 1050302.1313 ns/msg)
+[honu] 09:28:42.959536 connected to storage server at nevis.cs.umd.edu:3264
+28239 messages sent in 29.599088002s (954.0497 msg/sec, 1048163.4619 ns/msg)
+[honu] 09:28:42.962181 connected to storage server at nevis.cs.umd.edu:3264
+28289 messages sent in 29.596157052s (955.8336 msg/sec, 1046207.2555 ns/msg)
+[honu] 09:28:42.962219 connected to storage server at nevis.cs.umd.edu:3264
+28219 messages sent in 29.600022238s (953.3439 msg/sec, 1048939.4464 ns/msg)
+[honu] 09:28:42.962274 connected to storage server at nevis.cs.umd.edu:3264
+28163 messages sent in 29.600649042s (951.4318 msg/sec, 1051047.4396 ns/msg)
+[honu] 09:28:42.957542 connected to storage server at nevis.cs.umd.edu:3264
+28163 messages sent in 29.592021754s (951.7092 msg/sec, 1050741.1055 ns/msg)
+[honu] 09:28:42.956538 connected to storage server at nevis.cs.umd.edu:3264
+28299 messages sent in 29.603442177s (955.9361 msg/sec, 1046094.9919 ns/msg)
+[honu] 09:29:21.247256 connected to storage server at nevis.cs.umd.edu:3264
+28097 messages sent in 29.598092077s (949.2842 msg/sec, 1053425.3506 ns/msg)
+[honu] 09:29:21.250407 connected to storage server at nevis.cs.umd.edu:3264
+27950 messages sent in 29.595081153s (944.4137 msg/sec, 1058858.0019 ns/msg)
+[honu] 09:29:21.250407 connected to storage server at nevis.cs.umd.edu:3264
+28047 messages sent in 29.594387637s (947.7135 msg/sec, 1055171.2353 ns/msg)
+[honu] 09:29:21.248393 connected to storage server at nevis.cs.umd.edu:3264
+28140 messages sent in 29.59922168s (950.7007 msg/sec, 1051855.7811 ns/msg)
+[honu] 09:29:21.247254 connected to storage server at nevis.cs.umd.edu:3264
+28124 messages sent in 29.596140188s (950.2590 msg/sec, 1052344.6234 ns/msg)
+[honu] 09:29:21.251564 connected to storage server at nevis.cs.umd.edu:3264
+28125 messages sent in 29.593907909s (950.3645 msg/sec, 1052227.8368 ns/msg)
+[honu] 09:29:21.250970 connected to storage server at nevis.cs.umd.edu:3264
+28114 messages sent in 29.595216252s (949.9508 msg/sec, 1052686.0728 ns/msg)
+[honu] 09:29:21.252295 connected to storage server at nevis.cs.umd.edu:3264
+28097 messages sent in 29.596705898s (949.3286 msg/sec, 1053376.0152 ns/msg)
+[honu] 09:29:21.252010 connected to storage server at nevis.cs.umd.edu:3264
+28159 messages sent in 29.600683216s (951.2956 msg/sec, 1051197.9550 ns/msg)
+[honu] 09:29:21.249140 connected to storage server at nevis.cs.umd.edu:3264
+28042 messages sent in 29.60059545s (947.3458 msg/sec, 1055580.7521 ns/msg)
+[honu] 09:29:21.254164 connected to storage server at nevis.cs.umd.edu:3264
+28107 messages sent in 29.602688737s (949.4746 msg/sec, 1053214.1010 ns/msg)
+[honu] 09:29:21.253041 connected to storage server at nevis.cs.umd.edu:3264
+28134 messages sent in 29.599456278s (950.4904 msg/sec, 1052088.4438 ns/msg)
+[honu] 09:29:21.249491 connected to storage server at nevis.cs.umd.edu:3264
+28058 messages sent in 29.601192935s (947.8672 msg/sec, 1055000.1046 ns/msg)
+[honu] 09:29:21.249676 connected to storage server at nevis.cs.umd.edu:3264
+27952 messages sent in 29.599541297s (944.3390 msg/sec, 1058941.8037 ns/msg)
+[honu] 09:29:21.247399 connected to storage server at nevis.cs.umd.edu:3264
+28011 messages sent in 29.598701072s (946.3591 msg/sec, 1056681.3420 ns/msg)
+16 local 16 remote clients
+[honu] 09:30:36.582548 connected to storage server at nevis.cs.umd.edu:3264
+27185 messages sent in 29.601816121s (918.3558 msg/sec, 1088902.5610 ns/msg)
+[honu] 09:30:36.588870 connected to storage server at nevis.cs.umd.edu:3264
+27303 messages sent in 29.611044828s (922.0546 msg/sec, 1084534.4771 ns/msg)
+[honu] 09:30:36.587259 connected to storage server at nevis.cs.umd.edu:3264
+27261 messages sent in 29.613205511s (920.5690 msg/sec, 1086284.6378 ns/msg)
+[honu] 09:30:36.587504 connected to storage server at nevis.cs.umd.edu:3264
+27322 messages sent in 29.608318467s (922.7812 msg/sec, 1083680.4944 ns/msg)
+[honu] 09:30:36.589317 connected to storage server at nevis.cs.umd.edu:3264
+27402 messages sent in 29.613697546s (925.3150 msg/sec, 1080712.9971 ns/msg)
+[honu] 09:30:36.585971 connected to storage server at nevis.cs.umd.edu:3264
+27259 messages sent in 29.610730984s (920.5784 msg/sec, 1086273.5604 ns/msg)
+[honu] 09:30:36.590345 connected to storage server at nevis.cs.umd.edu:3264
+27318 messages sent in 29.611073113s (922.5603 msg/sec, 1083940.0071 ns/msg)
+[honu] 09:30:36.588056 connected to storage server at nevis.cs.umd.edu:3264
+27263 messages sent in 29.613557729s (920.6256 msg/sec, 1086217.8678 ns/msg)
+[honu] 09:30:36.587012 connected to storage server at nevis.cs.umd.edu:3264
+27293 messages sent in 29.609805666s (921.7555 msg/sec, 1084886.4422 ns/msg)
+[honu] 09:30:36.587005 connected to storage server at nevis.cs.umd.edu:3264
+27242 messages sent in 29.606767225s (920.1275 msg/sec, 1086805.9329 ns/msg)
+[honu] 09:30:36.585971 connected to storage server at nevis.cs.umd.edu:3264
+27258 messages sent in 29.60983816s (920.5724 msg/sec, 1086280.6574 ns/msg)
+[honu] 09:30:36.586314 connected to storage server at nevis.cs.umd.edu:3264
+27263 messages sent in 29.608916916s (920.7699 msg/sec, 1086047.6439 ns/msg)
+[honu] 09:30:36.588230 connected to storage server at nevis.cs.umd.edu:3264
+27252 messages sent in 29.610511414s (920.3488 msg/sec, 1086544.5257 ns/msg)
+[honu] 09:30:36.588062 connected to storage server at nevis.cs.umd.edu:3264
+27386 messages sent in 29.616830387s (924.6769 msg/sec, 1081458.7887 ns/msg)
+[honu] 09:30:36.588567 connected to storage server at nevis.cs.umd.edu:3264
+27355 messages sent in 29.614214162s (923.7118 msg/sec, 1082588.7100 ns/msg)
+[honu] 09:30:36.590859 connected to storage server at nevis.cs.umd.edu:3264
+27315 messages sent in 29.611881073s (922.4338 msg/sec, 1084088.6353 ns/msg)
+[honu] 09:31:55.336142 connected to storage server at nevis.cs.umd.edu:3264
+27249 messages sent in 29.608185264s (920.3198 msg/sec, 1086578.7832 ns/msg)
+[honu] 09:31:55.335789 connected to storage server at nevis.cs.umd.edu:3264
+27270 messages sent in 29.613317377s (920.8695 msg/sec, 1085930.2302 ns/msg)
+[honu] 09:31:55.336826 connected to storage server at nevis.cs.umd.edu:3264
+27314 messages sent in 29.613395059s (922.3529 msg/sec, 1084183.7541 ns/msg)
+[honu] 09:31:55.340158 connected to storage server at nevis.cs.umd.edu:3264
+27354 messages sent in 29.61737732s (923.5794 msg/sec, 1082743.9248 ns/msg)
+[honu] 09:31:55.342486 connected to storage server at nevis.cs.umd.edu:3264
+27291 messages sent in 29.610780827s (921.6576 msg/sec, 1085001.6792 ns/msg)
+[honu] 09:31:55.340422 connected to storage server at nevis.cs.umd.edu:3264
+27261 messages sent in 29.607698205s (920.7403 msg/sec, 1086082.6164 ns/msg)
+[honu] 09:31:55.340141 connected to storage server at nevis.cs.umd.edu:3264
+27234 messages sent in 29.612496937s (919.6793 msg/sec, 1087335.5709 ns/msg)
+[honu] 09:31:55.344065 connected to storage server at nevis.cs.umd.edu:3264
+27355 messages sent in 29.606552307s (923.9509 msg/sec, 1082308.6203 ns/msg)
+[honu] 09:31:55.341789 connected to storage server at nevis.cs.umd.edu:3264
+27309 messages sent in 29.610157817s (922.2849 msg/sec, 1084263.7159 ns/msg)
+[honu] 09:31:55.344103 connected to storage server at nevis.cs.umd.edu:3264
+27431 messages sent in 29.61347438s (926.3013 msg/sec, 1079562.3339 ns/msg)
+[honu] 09:31:55.343039 connected to storage server at nevis.cs.umd.edu:3264
+27271 messages sent in 29.61379418s (920.8884 msg/sec, 1085907.8941 ns/msg)
+[honu] 09:31:55.344841 connected to storage server at nevis.cs.umd.edu:3264
+27285 messages sent in 29.612184503s (921.4113 msg/sec, 1085291.7172 ns/msg)
+[honu] 09:31:55.340621 connected to storage server at nevis.cs.umd.edu:3264
+27222 messages sent in 29.609201555s (919.3764 msg/sec, 1087693.8342 ns/msg)
+[honu] 09:31:55.345120 connected to storage server at nevis.cs.umd.edu:3264
+27361 messages sent in 29.607047552s (924.1381 msg/sec, 1082089.3809 ns/msg)
+[honu] 09:31:55.347415 connected to storage server at nevis.cs.umd.edu:3264
+27342 messages sent in 29.61532796s (923.2381 msg/sec, 1083144.1723 ns/msg)
+[honu] 09:31:55.343188 connected to storage server at nevis.cs.umd.edu:3264
+27315 messages sent in 29.617770915s (922.2504 msg/sec, 1084304.2619 ns/msg)
+[honu] 09:32:38.108062 connected to storage server at nevis.cs.umd.edu:3264
+27283 messages sent in 29.616787348s (921.2005 msg/sec, 1085539.9827 ns/msg)
+[honu] 09:32:38.109259 connected to storage server at nevis.cs.umd.edu:3264
+27370 messages sent in 29.615566436s (924.1761 msg/sec, 1082044.8095 ns/msg)
+[honu] 09:32:38.109217 connected to storage server at nevis.cs.umd.edu:3264
+27453 messages sent in 29.615732622s (926.9735 msg/sec, 1078779.4639 ns/msg)
+[honu] 09:32:38.106530 connected to storage server at nevis.cs.umd.edu:3264
+27351 messages sent in 29.610158699s (923.7033 msg/sec, 1082598.7605 ns/msg)
+[honu] 09:32:38.111058 connected to storage server at nevis.cs.umd.edu:3264
+27314 messages sent in 29.600490029s (922.7550 msg/sec, 1083711.2847 ns/msg)
+[honu] 09:32:38.107253 connected to storage server at nevis.cs.umd.edu:3264
+27304 messages sent in 29.613939788s (921.9982 msg/sec, 1084600.7833 ns/msg)
+[honu] 09:32:38.111125 connected to storage server at nevis.cs.umd.edu:3264
+27339 messages sent in 29.611791651s (923.2471 msg/sec, 1083133.6790 ns/msg)
+[honu] 09:32:38.106995 connected to storage server at nevis.cs.umd.edu:3264
+27420 messages sent in 29.6110875s (926.0045 msg/sec, 1079908.3698 ns/msg)
+[honu] 09:32:38.109539 connected to storage server at nevis.cs.umd.edu:3264
+27348 messages sent in 29.615058293s (923.4491 msg/sec, 1082896.6759 ns/msg)
+[honu] 09:32:38.111720 connected to storage server at nevis.cs.umd.edu:3264
+27308 messages sent in 29.613497977s (922.1471 msg/sec, 1084425.7352 ns/msg)
+[honu] 09:32:38.110828 connected to storage server at nevis.cs.umd.edu:3264
+27515 messages sent in 29.61750638s (929.0114 msg/sec, 1076413.0976 ns/msg)
+[honu] 09:32:38.109877 connected to storage server at nevis.cs.umd.edu:3264
+27301 messages sent in 29.615859429s (921.8372 msg/sec, 1084790.2798 ns/msg)
+[honu] 09:32:38.110454 connected to storage server at nevis.cs.umd.edu:3264
+27482 messages sent in 29.617424855s (927.8997 msg/sec, 1077702.6728 ns/msg)
+[honu] 09:32:38.110497 connected to storage server at nevis.cs.umd.edu:3264
+27291 messages sent in 29.610278392s (921.6732 msg/sec, 1084983.2689 ns/msg)
+[honu] 09:32:38.111438 connected to storage server at nevis.cs.umd.edu:3264
+27376 messages sent in 29.611067607s (924.5192 msg/sec, 1081643.3229 ns/msg)
+[honu] 09:32:38.108854 connected to storage server at nevis.cs.umd.edu:3264
+27320 messages sent in 29.615876429s (922.4782 msg/sec, 1084036.4725 ns/msg)
+[honu] 09:33:12.500380 connected to storage server at nevis.cs.umd.edu:3264
+27334 messages sent in 29.6049903s (923.2903 msg/sec, 1083082.9846 ns/msg)
+[honu] 09:33:12.498470 connected to storage server at nevis.cs.umd.edu:3264
+27429 messages sent in 29.615801292s (926.1610 msg/sec, 1079725.8847 ns/msg)
+[honu] 09:33:12.498291 connected to storage server at nevis.cs.umd.edu:3264
+27405 messages sent in 29.605854873s (925.6615 msg/sec, 1080308.5157 ns/msg)
+[honu] 09:33:12.499391 connected to storage server at nevis.cs.umd.edu:3264
+27478 messages sent in 29.6072953s (928.0821 msg/sec, 1077490.9127 ns/msg)
+[honu] 09:33:12.494694 connected to storage server at nevis.cs.umd.edu:3264
+27407 messages sent in 29.609153389s (925.6259 msg/sec, 1080350.0343 ns/msg)
+[honu] 09:33:12.500662 connected to storage server at nevis.cs.umd.edu:3264
+27515 messages sent in 29.61245069s (929.1700 msg/sec, 1076229.3545 ns/msg)
+[honu] 09:33:12.496151 connected to storage server at nevis.cs.umd.edu:3264
+27474 messages sent in 29.606129016s (927.9835 msg/sec, 1077605.3365 ns/msg)
+[honu] 09:33:12.496172 connected to storage server at nevis.cs.umd.edu:3264
+27516 messages sent in 29.61224378s (929.2102 msg/sec, 1076182.7221 ns/msg)
+[honu] 09:33:12.499370 connected to storage server at nevis.cs.umd.edu:3264
+27369 messages sent in 29.608431773s (924.3651 msg/sec, 1081823.6608 ns/msg)
+[honu] 09:33:12.499619 connected to storage server at nevis.cs.umd.edu:3264
+27516 messages sent in 29.601301526s (929.5537 msg/sec, 1075785.0533 ns/msg)
+[honu] 09:33:12.498790 connected to storage server at nevis.cs.umd.edu:3264
+27504 messages sent in 29.612910376s (928.7841 msg/sec, 1076676.4971 ns/msg)
+[honu] 09:33:12.501721 connected to storage server at nevis.cs.umd.edu:3264
+27487 messages sent in 29.612583505s (928.2203 msg/sec, 1077330.5019 ns/msg)
+[honu] 09:33:12.506710 connected to storage server at nevis.cs.umd.edu:3264
+27418 messages sent in 29.604097444s (926.1556 msg/sec, 1079732.1994 ns/msg)
+[honu] 09:33:12.505439 connected to storage server at nevis.cs.umd.edu:3264
+27404 messages sent in 29.615928313s (925.3129 msg/sec, 1080715.5274 ns/msg)
+[honu] 09:33:12.505167 connected to storage server at nevis.cs.umd.edu:3264
+27501 messages sent in 29.610285351s (928.7651 msg/sec, 1076698.4965 ns/msg)
+[honu] 09:33:12.504170 connected to storage server at nevis.cs.umd.edu:3264
+27492 messages sent in 29.614200712s (928.3384 msg/sec, 1077193.3912 ns/msg)
+[honu] 09:33:47.679319 connected to storage server at nevis.cs.umd.edu:3264
+27325 messages sent in 29.610430628s (922.8167 msg/sec, 1083638.8153 ns/msg)
+[honu] 09:33:47.678811 connected to storage server at nevis.cs.umd.edu:3264
+27349 messages sent in 29.614481468s (923.5009 msg/sec, 1082835.9892 ns/msg)
+[honu] 09:33:47.678604 connected to storage server at nevis.cs.umd.edu:3264
+27391 messages sent in 29.612743475s (924.9734 msg/sec, 1081112.1710 ns/msg)
+[honu] 09:33:47.680213 connected to storage server at nevis.cs.umd.edu:3264
+27341 messages sent in 29.613189365s (923.2710 msg/sec, 1083105.5691 ns/msg)
+[honu] 09:33:47.671043 connected to storage server at nevis.cs.umd.edu:3264
+27404 messages sent in 29.614557218s (925.3557 msg/sec, 1080665.4947 ns/msg)
+[honu] 09:33:47.675429 connected to storage server at nevis.cs.umd.edu:3264
+27354 messages sent in 29.614025506s (923.6839 msg/sec, 1082621.3901 ns/msg)
+[honu] 09:33:47.673416 connected to storage server at nevis.cs.umd.edu:3264
+27385 messages sent in 29.612885304s (924.7664 msg/sec, 1081354.2196 ns/msg)
+[honu] 09:33:47.678326 connected to storage server at nevis.cs.umd.edu:3264
+27349 messages sent in 29.61020835s (923.6342 msg/sec, 1082679.7451 ns/msg)
+[honu] 09:33:47.676804 connected to storage server at nevis.cs.umd.edu:3264
+27301 messages sent in 29.610148296s (922.0150 msg/sec, 1084581.0885 ns/msg)
+[honu] 09:33:47.673297 connected to storage server at nevis.cs.umd.edu:3264
+27432 messages sent in 29.614906191s (926.2903 msg/sec, 1079575.1747 ns/msg)
+[honu] 09:33:47.678906 connected to storage server at nevis.cs.umd.edu:3264
+27252 messages sent in 29.61218774s (920.2967 msg/sec, 1086606.0377 ns/msg)
+[honu] 09:33:47.674377 connected to storage server at nevis.cs.umd.edu:3264
+27419 messages sent in 29.610267479s (925.9964 msg/sec, 1079917.8482 ns/msg)
+[honu] 09:33:47.678775 connected to storage server at nevis.cs.umd.edu:3264
+27300 messages sent in 29.616728066s (921.7764 msg/sec, 1084861.8339 ns/msg)
+[honu] 09:33:47.673544 connected to storage server at nevis.cs.umd.edu:3264
+27407 messages sent in 29.612799817s (925.5119 msg/sec, 1080483.0816 ns/msg)
+[honu] 09:33:47.676499 connected to storage server at nevis.cs.umd.edu:3264
+27370 messages sent in 29.614224248s (924.2180 msg/sec, 1081995.7708 ns/msg)
+[honu] 09:33:47.674369 connected to storage server at nevis.cs.umd.edu:3264
+27379 messages sent in 29.60917652s (924.6795 msg/sec, 1081455.7332 ns/msg)
+17 local 17 remote clients
+[honu] 09:35:00.060596 connected to storage server at nevis.cs.umd.edu:3264
+26719 messages sent in 29.624542084s (901.9211 msg/sec, 1108744.4172 ns/msg)
+[honu] 09:35:00.054193 connected to storage server at nevis.cs.umd.edu:3264
+26748 messages sent in 29.626258304s (902.8477 msg/sec, 1107606.4866 ns/msg)
+[honu] 09:35:00.054756 connected to storage server at nevis.cs.umd.edu:3264
+26679 messages sent in 29.627786089s (900.4723 msg/sec, 1110528.3590 ns/msg)
+[honu] 09:35:00.066277 connected to storage server at nevis.cs.umd.edu:3264
+26685 messages sent in 29.62586617s (900.7332 msg/sec, 1110206.7143 ns/msg)
+[honu] 09:35:00.057980 connected to storage server at nevis.cs.umd.edu:3264
+26730 messages sent in 29.622553511s (902.3530 msg/sec, 1108213.7490 ns/msg)
+[honu] 09:35:00.057707 connected to storage server at nevis.cs.umd.edu:3264
+26732 messages sent in 29.617112784s (902.5863 msg/sec, 1107927.3075 ns/msg)
+[honu] 09:35:00.060932 connected to storage server at nevis.cs.umd.edu:3264
+26661 messages sent in 29.625589488s (899.9315 msg/sec, 1111195.7349 ns/msg)
+[honu] 09:35:00.061550 connected to storage server at nevis.cs.umd.edu:3264
+26775 messages sent in 29.626540728s (903.7505 msg/sec, 1106500.1206 ns/msg)
+[honu] 09:35:00.067434 connected to storage server at nevis.cs.umd.edu:3264
+26662 messages sent in 29.626854229s (899.9268 msg/sec, 1111201.4938 ns/msg)
+[honu] 09:35:00.066960 connected to storage server at nevis.cs.umd.edu:3264
+26637 messages sent in 29.622420905s (899.2175 msg/sec, 1112077.9707 ns/msg)
+[honu] 09:35:00.059058 connected to storage server at nevis.cs.umd.edu:3264
+26657 messages sent in 29.6258474s (899.7886 msg/sec, 1111372.1499 ns/msg)
+[honu] 09:35:00.060933 connected to storage server at nevis.cs.umd.edu:3264
+26609 messages sent in 29.626962069s (898.1346 msg/sec, 1113418.8458 ns/msg)
+[honu] 09:35:00.063143 connected to storage server at nevis.cs.umd.edu:3264
+26707 messages sent in 29.623168263s (901.5579 msg/sec, 1109191.1582 ns/msg)
+[honu] 09:35:00.062794 connected to storage server at nevis.cs.umd.edu:3264
+26706 messages sent in 29.628236157s (901.3699 msg/sec, 1109422.4578 ns/msg)
+[honu] 09:35:00.056162 connected to storage server at nevis.cs.umd.edu:3264
+26688 messages sent in 29.623285438s (900.9129 msg/sec, 1109985.2158 ns/msg)
+[honu] 09:35:00.056488 connected to storage server at nevis.cs.umd.edu:3264
+26673 messages sent in 29.628346933s (900.2527 msg/sec, 1110799.1952 ns/msg)
+[honu] 09:35:00.061486 connected to storage server at nevis.cs.umd.edu:3264
+26656 messages sent in 29.620170552s (899.9273 msg/sec, 1111200.8761 ns/msg)
+[honu] 09:35:37.917682 connected to storage server at nevis.cs.umd.edu:3264
+26847 messages sent in 29.62401278s (906.2580 msg/sec, 1103438.4766 ns/msg)
+[honu] 09:35:37.916922 connected to storage server at nevis.cs.umd.edu:3264
+26741 messages sent in 29.622378977s (902.7297 msg/sec, 1107751.3547 ns/msg)
+[honu] 09:35:37.912301 connected to storage server at nevis.cs.umd.edu:3264
+26920 messages sent in 29.630034743s (908.5376 msg/sec, 1100669.9384 ns/msg)
+[honu] 09:35:37.916477 connected to storage server at nevis.cs.umd.edu:3264
+26749 messages sent in 29.62259284s (902.9932 msg/sec, 1107428.0474 ns/msg)
+[honu] 09:35:37.913378 connected to storage server at nevis.cs.umd.edu:3264
+26802 messages sent in 29.625463356s (904.6947 msg/sec, 1105345.2487 ns/msg)
+[honu] 09:35:37.913919 connected to storage server at nevis.cs.umd.edu:3264
+26823 messages sent in 29.618326512s (905.6217 msg/sec, 1104213.7909 ns/msg)
+[honu] 09:35:37.918587 connected to storage server at nevis.cs.umd.edu:3264
+26727 messages sent in 29.62741324s (902.1037 msg/sec, 1108519.9701 ns/msg)
+[honu] 09:35:37.918684 connected to storage server at nevis.cs.umd.edu:3264
+26751 messages sent in 29.619289376s (903.1614 msg/sec, 1107221.7628 ns/msg)
+[honu] 09:35:37.919092 connected to storage server at nevis.cs.umd.edu:3264
+26703 messages sent in 29.620001899s (901.5192 msg/sec, 1109238.7334 ns/msg)
+[honu] 09:35:37.918256 connected to storage server at nevis.cs.umd.edu:3264
+26745 messages sent in 29.625763156s (902.7616 msg/sec, 1107712.2137 ns/msg)
+[honu] 09:35:37.918004 connected to storage server at nevis.cs.umd.edu:3264
+26760 messages sent in 29.619929543s (903.4458 msg/sec, 1106873.3013 ns/msg)
+[honu] 09:35:37.916063 connected to storage server at nevis.cs.umd.edu:3264
+26733 messages sent in 29.630133553s (902.2234 msg/sec, 1108372.9306 ns/msg)
+[honu] 09:35:37.918911 connected to storage server at nevis.cs.umd.edu:3264
+26725 messages sent in 29.624047821s (902.1387 msg/sec, 1108476.9999 ns/msg)
+[honu] 09:35:37.919477 connected to storage server at nevis.cs.umd.edu:3264
+26816 messages sent in 29.628036359s (905.0887 msg/sec, 1104864.1244 ns/msg)
+[honu] 09:35:37.920597 connected to storage server at nevis.cs.umd.edu:3264
+26667 messages sent in 29.614049226s (900.4848 msg/sec, 1110512.9646 ns/msg)
+[honu] 09:35:37.918201 connected to storage server at nevis.cs.umd.edu:3264
+26719 messages sent in 29.62343137s (901.9549 msg/sec, 1108702.8470 ns/msg)
+[honu] 09:35:37.918482 connected to storage server at nevis.cs.umd.edu:3264
+26684 messages sent in 29.627707405s (900.6434 msg/sec, 1110317.3214 ns/msg)
+[honu] 09:37:17.276324 connected to storage server at nevis.cs.umd.edu:3264
+26531 messages sent in 29.631845578s (895.3543 msg/sec, 1116876.3174 ns/msg)
+[honu] 09:37:17.269081 connected to storage server at nevis.cs.umd.edu:3264
+26547 messages sent in 29.626278974s (896.0626 msg/sec, 1115993.4823 ns/msg)
+[honu] 09:37:17.276609 connected to storage server at nevis.cs.umd.edu:3264
+26650 messages sent in 29.629360475s (899.4457 msg/sec, 1111795.8902 ns/msg)
+[honu] 09:37:17.277932 connected to storage server at nevis.cs.umd.edu:3264
+26635 messages sent in 29.619979893s (899.2241 msg/sec, 1112069.8289 ns/msg)
+[honu] 09:37:17.277337 connected to storage server at nevis.cs.umd.edu:3264
+26544 messages sent in 29.626534371s (895.9536 msg/sec, 1116129.2334 ns/msg)
+[honu] 09:37:17.278440 connected to storage server at nevis.cs.umd.edu:3264
+26558 messages sent in 29.623581059s (896.5155 msg/sec, 1115429.6656 ns/msg)
+[honu] 09:37:17.280542 connected to storage server at nevis.cs.umd.edu:3264
+26571 messages sent in 29.629953338s (896.7615 msg/sec, 1115123.7567 ns/msg)
+[honu] 09:37:17.279977 connected to storage server at nevis.cs.umd.edu:3264
+26624 messages sent in 29.623328753s (898.7511 msg/sec, 1112655.0764 ns/msg)
+[honu] 09:37:17.277911 connected to storage server at nevis.cs.umd.edu:3264
+26559 messages sent in 29.627121468s (896.4421 msg/sec, 1115520.9710 ns/msg)
+[honu] 09:37:17.274931 connected to storage server at nevis.cs.umd.edu:3264
+26564 messages sent in 29.623480219s (896.7211 msg/sec, 1115173.9278 ns/msg)
+[honu] 09:37:17.282463 connected to storage server at nevis.cs.umd.edu:3264
+26567 messages sent in 29.628898719s (896.6584 msg/sec, 1115251.9561 ns/msg)
+[honu] 09:37:17.282307 connected to storage server at nevis.cs.umd.edu:3264
+26586 messages sent in 29.627256368s (897.3494 msg/sec, 1114393.1531 ns/msg)
+[honu] 09:37:17.274032 connected to storage server at nevis.cs.umd.edu:3264
+26626 messages sent in 29.621801911s (898.8650 msg/sec, 1112514.1558 ns/msg)
+[honu] 09:37:17.271197 connected to storage server at nevis.cs.umd.edu:3264
+26569 messages sent in 29.621323108s (896.9552 msg/sec, 1114882.8751 ns/msg)
+[honu] 09:37:17.276884 connected to storage server at nevis.cs.umd.edu:3264
+26590 messages sent in 29.626435493s (897.5093 msg/sec, 1114194.6406 ns/msg)
+[honu] 09:37:17.280012 connected to storage server at nevis.cs.umd.edu:3264
+26650 messages sent in 29.630347991s (899.4157 msg/sec, 1111832.9453 ns/msg)
+[honu] 09:37:17.280766 connected to storage server at nevis.cs.umd.edu:3264
+26621 messages sent in 29.623470643s (898.6455 msg/sec, 1112785.7948 ns/msg)
+[honu] 09:37:58.300765 connected to storage server at nevis.cs.umd.edu:3264
+26695 messages sent in 29.627719371s (901.0143 msg/sec, 1109860.2499 ns/msg)
+[honu] 09:37:58.304299 connected to storage server at nevis.cs.umd.edu:3264
+26718 messages sent in 29.626245059s (901.8355 msg/sec, 1108849.6541 ns/msg)
+[honu] 09:37:58.311958 connected to storage server at nevis.cs.umd.edu:3264
+26692 messages sent in 29.626193103s (900.9595 msg/sec, 1109927.8099 ns/msg)
+[honu] 09:37:58.309361 connected to storage server at nevis.cs.umd.edu:3264
+26832 messages sent in 29.624283171s (905.7434 msg/sec, 1104065.4133 ns/msg)
+[honu] 09:37:58.311988 connected to storage server at nevis.cs.umd.edu:3264
+26740 messages sent in 29.628310057s (902.5152 msg/sec, 1108014.5870 ns/msg)
+[honu] 09:37:58.303661 connected to storage server at nevis.cs.umd.edu:3264
+26721 messages sent in 29.627341568s (901.9034 msg/sec, 1108766.1977 ns/msg)
+[honu] 09:37:58.309373 connected to storage server at nevis.cs.umd.edu:3264
+26568 messages sent in 29.620312137s (896.9521 msg/sec, 1114886.7862 ns/msg)
+[honu] 09:37:58.309087 connected to storage server at nevis.cs.umd.edu:3264
+26707 messages sent in 29.621414956s (901.6112 msg/sec, 1109125.5085 ns/msg)
+[honu] 09:37:58.310404 connected to storage server at nevis.cs.umd.edu:3264
+26727 messages sent in 29.6220405s (902.2674 msg/sec, 1108318.9471 ns/msg)
+[honu] 09:37:58.310903 connected to storage server at nevis.cs.umd.edu:3264
+26758 messages sent in 29.621152807s (903.3409 msg/sec, 1107001.7493 ns/msg)
+[honu] 09:37:58.306912 connected to storage server at nevis.cs.umd.edu:3264
+26666 messages sent in 29.625305129s (900.1089 msg/sec, 1110976.7168 ns/msg)
+[honu] 09:37:58.305087 connected to storage server at nevis.cs.umd.edu:3264
+26758 messages sent in 29.629654425s (903.0817 msg/sec, 1107319.4717 ns/msg)
+[honu] 09:37:58.312542 connected to storage server at nevis.cs.umd.edu:3264
+26778 messages sent in 29.624374246s (903.9178 msg/sec, 1106295.2515 ns/msg)
+[honu] 09:37:58.308847 connected to storage server at nevis.cs.umd.edu:3264
+26735 messages sent in 29.62420048s (902.4716 msg/sec, 1108068.0935 ns/msg)
+[honu] 09:37:58.309343 connected to storage server at nevis.cs.umd.edu:3264
+26732 messages sent in 29.631176103s (902.1579 msg/sec, 1108453.3930 ns/msg)
+[honu] 09:37:58.307215 connected to storage server at nevis.cs.umd.edu:3264
+26792 messages sent in 29.62691023s (904.3130 msg/sec, 1105811.8181 ns/msg)
+[honu] 09:37:58.311727 connected to storage server at nevis.cs.umd.edu:3264
+26658 messages sent in 29.626981902s (899.7879 msg/sec, 1111373.0176 ns/msg)
+[honu] 09:38:31.483258 connected to storage server at nevis.cs.umd.edu:3264
+26776 messages sent in 29.624778603s (903.8380 msg/sec, 1106392.9864 ns/msg)
+[honu] 09:38:31.486966 connected to storage server at nevis.cs.umd.edu:3264
+26859 messages sent in 29.623313998s (906.6845 msg/sec, 1102919.4683 ns/msg)
+[honu] 09:38:31.485031 connected to storage server at nevis.cs.umd.edu:3264
+26710 messages sent in 29.622752026s (901.6718 msg/sec, 1109050.9931 ns/msg)
+[honu] 09:38:31.484279 connected to storage server at nevis.cs.umd.edu:3264
+26709 messages sent in 29.624899665s (901.5727 msg/sec, 1109172.9254 ns/msg)
+[honu] 09:38:31.489537 connected to storage server at nevis.cs.umd.edu:3264
+26624 messages sent in 29.613302153s (899.0554 msg/sec, 1112278.4763 ns/msg)
+[honu] 09:38:31.483496 connected to storage server at nevis.cs.umd.edu:3264
+26793 messages sent in 29.617035187s (904.6483 msg/sec, 1105401.9776 ns/msg)
+[honu] 09:38:31.491816 connected to storage server at nevis.cs.umd.edu:3264
+26671 messages sent in 29.623621688s (900.3288 msg/sec, 1110705.3237 ns/msg)
+[honu] 09:38:31.485806 connected to storage server at nevis.cs.umd.edu:3264
+26696 messages sent in 29.624390484s (901.1493 msg/sec, 1109693.9798 ns/msg)
+[honu] 09:38:31.489521 connected to storage server at nevis.cs.umd.edu:3264
+26901 messages sent in 29.625014281s (908.0502 msg/sec, 1101260.7071 ns/msg)
+[honu] 09:38:31.492347 connected to storage server at nevis.cs.umd.edu:3264
+26740 messages sent in 29.625763454s (902.5928 msg/sec, 1107919.3513 ns/msg)
+[honu] 09:38:31.485323 connected to storage server at nevis.cs.umd.edu:3264
+26767 messages sent in 29.62663412s (903.4776 msg/sec, 1106834.3154 ns/msg)
+[honu] 09:38:31.491319 connected to storage server at nevis.cs.umd.edu:3264
+26820 messages sent in 29.630511279s (905.1481 msg/sec, 1104791.6211 ns/msg)
+[honu] 09:38:31.483773 connected to storage server at nevis.cs.umd.edu:3264
+26697 messages sent in 29.628706503s (901.0518 msg/sec, 1109814.0803 ns/msg)
+[honu] 09:38:31.495470 connected to storage server at nevis.cs.umd.edu:3264
+26789 messages sent in 29.622889463s (904.3345 msg/sec, 1105785.5636 ns/msg)
+[honu] 09:38:31.495430 connected to storage server at nevis.cs.umd.edu:3264
+26704 messages sent in 29.62025532s (901.5452 msg/sec, 1109206.6851 ns/msg)
+[honu] 09:38:31.496810 connected to storage server at nevis.cs.umd.edu:3264
+26666 messages sent in 29.61801078s (900.3306 msg/sec, 1110703.1718 ns/msg)
+[honu] 09:38:31.490065 connected to storage server at nevis.cs.umd.edu:3264
+26797 messages sent in 29.625658116s (904.5200 msg/sec, 1105558.7609 ns/msg)
+18 local 18 remote clients
+[honu] 09:40:08.262492 connected to storage server at nevis.cs.umd.edu:3264
+25663 messages sent in 29.63342154s (866.0154 msg/sec, 1154713.8503 ns/msg)
+[honu] 09:40:08.263842 connected to storage server at nevis.cs.umd.edu:3264
+25806 messages sent in 29.631180016s (870.9069 msg/sec, 1148228.3196 ns/msg)
+[honu] 09:40:08.270190 connected to storage server at nevis.cs.umd.edu:3264
+25663 messages sent in 29.636341702s (865.9301 msg/sec, 1154827.6391 ns/msg)
+[honu] 09:40:08.272836 connected to storage server at nevis.cs.umd.edu:3264
+25754 messages sent in 29.636354986s (869.0003 msg/sec, 1150747.6503 ns/msg)
+[honu] 09:40:08.264415 connected to storage server at nevis.cs.umd.edu:3264
+25784 messages sent in 29.62949977s (870.2138 msg/sec, 1149142.8704 ns/msg)
+[honu] 09:40:08.267740 connected to storage server at nevis.cs.umd.edu:3264
+25750 messages sent in 29.635978643s (868.8763 msg/sec, 1150911.7920 ns/msg)
+[honu] 09:40:08.270207 connected to storage server at nevis.cs.umd.edu:3264
+25758 messages sent in 29.633201869s (869.2277 msg/sec, 1150446.5358 ns/msg)
+[honu] 09:40:08.264100 connected to storage server at nevis.cs.umd.edu:3264
+25629 messages sent in 29.634814852s (864.8274 msg/sec, 1156300.0840 ns/msg)
+[honu] 09:40:08.269435 connected to storage server at nevis.cs.umd.edu:3264
+25729 messages sent in 29.633214519s (868.2487 msg/sec, 1151743.7335 ns/msg)
+[honu] 09:40:08.270216 connected to storage server at nevis.cs.umd.edu:3264
+25706 messages sent in 29.632115498s (867.5047 msg/sec, 1152731.4828 ns/msg)
+[honu] 09:40:08.270769 connected to storage server at nevis.cs.umd.edu:3264
+25769 messages sent in 29.634454505s (869.5622 msg/sec, 1150004.0555 ns/msg)
+[honu] 09:40:08.272322 connected to storage server at nevis.cs.umd.edu:3264
+25592 messages sent in 29.636378693s (863.5333 msg/sec, 1158032.9280 ns/msg)
+[honu] 09:40:08.271464 connected to storage server at nevis.cs.umd.edu:3264
+25672 messages sent in 29.633591791s (866.3142 msg/sec, 1154315.6665 ns/msg)
+[honu] 09:40:08.271248 connected to storage server at nevis.cs.umd.edu:3264
+25719 messages sent in 29.638094126s (867.7683 msg/sec, 1152381.2794 ns/msg)
+[honu] 09:40:08.271804 connected to storage server at nevis.cs.umd.edu:3264
+25658 messages sent in 29.631181157s (865.9122 msg/sec, 1154851.5534 ns/msg)
+[honu] 09:40:08.266778 connected to storage server at nevis.cs.umd.edu:3264
+25739 messages sent in 29.636186557s (868.4991 msg/sec, 1151411.7315 ns/msg)
+[honu] 09:40:08.266730 connected to storage server at nevis.cs.umd.edu:3264
+25680 messages sent in 29.631167508s (866.6550 msg/sec, 1153861.6631 ns/msg)
+[honu] 09:40:08.266729 connected to storage server at nevis.cs.umd.edu:3264
+25780 messages sent in 29.637737147s (869.8370 msg/sec, 1149640.6962 ns/msg)
+[honu] 09:40:42.933337 connected to storage server at nevis.cs.umd.edu:3264
+25932 messages sent in 29.636058451s (875.0151 msg/sec, 1142837.3612 ns/msg)
+[honu] 09:40:42.919055 connected to storage server at nevis.cs.umd.edu:3264
+25868 messages sent in 29.631951041s (872.9766 msg/sec, 1145506.0709 ns/msg)
+[honu] 09:40:42.934620 connected to storage server at nevis.cs.umd.edu:3264
+25973 messages sent in 29.626974449s (876.6673 msg/sec, 1140683.5733 ns/msg)
+[honu] 09:40:42.921921 connected to storage server at nevis.cs.umd.edu:3264
+25916 messages sent in 29.632969325s (874.5664 msg/sec, 1143423.7276 ns/msg)
+[honu] 09:40:42.919957 connected to storage server at nevis.cs.umd.edu:3264
+25948 messages sent in 29.634660578s (875.5963 msg/sec, 1142078.7952 ns/msg)
+[honu] 09:40:42.922947 connected to storage server at nevis.cs.umd.edu:3264
+25923 messages sent in 29.62954833s (874.9037 msg/sec, 1142983.0008 ns/msg)
+[honu] 09:40:42.921592 connected to storage server at nevis.cs.umd.edu:3264
+25896 messages sent in 29.628195514s (874.0323 msg/sec, 1144122.4712 ns/msg)
+[honu] 09:40:42.934762 connected to storage server at nevis.cs.umd.edu:3264
+25834 messages sent in 29.634818423s (871.7448 msg/sec, 1147124.6583 ns/msg)
+[honu] 09:40:42.932130 connected to storage server at nevis.cs.umd.edu:3264
+25955 messages sent in 29.632011303s (875.9108 msg/sec, 1141668.7075 ns/msg)
+[honu] 09:40:42.933156 connected to storage server at nevis.cs.umd.edu:3264
+25740 messages sent in 29.630342923s (868.7041 msg/sec, 1151139.9737 ns/msg)
+[honu] 09:40:42.926044 connected to storage server at nevis.cs.umd.edu:3264
+25877 messages sent in 29.62685s (873.4307 msg/sec, 1144910.5383 ns/msg)
+[honu] 09:40:42.925854 connected to storage server at nevis.cs.umd.edu:3264
+25881 messages sent in 29.628024171s (873.5311 msg/sec, 1144778.9564 ns/msg)
+[honu] 09:40:42.932918 connected to storage server at nevis.cs.umd.edu:3264
+25871 messages sent in 29.626489299s (873.2388 msg/sec, 1145162.1236 ns/msg)
+[honu] 09:40:42.934254 connected to storage server at nevis.cs.umd.edu:3264
+25783 messages sent in 29.622401559s (870.3886 msg/sec, 1148912.1343 ns/msg)
+[honu] 09:40:42.930643 connected to storage server at nevis.cs.umd.edu:3264
+25818 messages sent in 29.638256977s (871.1039 msg/sec, 1147968.7418 ns/msg)
+[honu] 09:40:42.920982 connected to storage server at nevis.cs.umd.edu:3264
+25862 messages sent in 29.628318603s (872.8811 msg/sec, 1145631.3743 ns/msg)
+[honu] 09:40:42.928776 connected to storage server at nevis.cs.umd.edu:3264
+25990 messages sent in 29.620410532s (877.4355 msg/sec, 1139684.8993 ns/msg)
+[honu] 09:40:42.932401 connected to storage server at nevis.cs.umd.edu:3264
+25781 messages sent in 29.63438805s (869.9690 msg/sec, 1149466.1980 ns/msg)
+[honu] 09:41:19.340457 connected to storage server at nevis.cs.umd.edu:3264
+25783 messages sent in 29.646271372s (869.6878 msg/sec, 1149837.9309 ns/msg)
+[honu] 09:41:19.339543 connected to storage server at nevis.cs.umd.edu:3264
+25686 messages sent in 29.631879241s (866.8367 msg/sec, 1153619.8412 ns/msg)
+[honu] 09:41:19.339543 connected to storage server at nevis.cs.umd.edu:3264
+25750 messages sent in 29.648966479s (868.4957 msg/sec, 1151416.1739 ns/msg)
+[honu] 09:41:19.346618 connected to storage server at nevis.cs.umd.edu:3264
+25644 messages sent in 29.648560667s (864.9324 msg/sec, 1156159.7515 ns/msg)
+[honu] 09:41:19.352745 connected to storage server at nevis.cs.umd.edu:3264
+25668 messages sent in 29.644793309s (865.8519 msg/sec, 1154931.9506 ns/msg)
+[honu] 09:41:19.354818 connected to storage server at nevis.cs.umd.edu:3264
+25653 messages sent in 29.647032045s (865.2805 msg/sec, 1155694.5404 ns/msg)
+[honu] 09:41:19.344774 connected to storage server at nevis.cs.umd.edu:3264
+25716 messages sent in 29.64627566s (867.4277 msg/sec, 1152833.8645 ns/msg)
+[honu] 09:41:19.346108 connected to storage server at nevis.cs.umd.edu:3264
+25682 messages sent in 29.645908258s (866.2916 msg/sec, 1154345.7775 ns/msg)
+[honu] 09:41:19.342731 connected to storage server at nevis.cs.umd.edu:3264
+25697 messages sent in 29.644859918s (866.8282 msg/sec, 1153631.1600 ns/msg)
+[honu] 09:41:19.344792 connected to storage server at nevis.cs.umd.edu:3264
+25703 messages sent in 29.641101728s (867.1405 msg/sec, 1153215.6452 ns/msg)
+[honu] 09:41:19.355076 connected to storage server at nevis.cs.umd.edu:3264
+25613 messages sent in 29.648987803s (863.8743 msg/sec, 1157575.7546 ns/msg)
+[honu] 09:41:19.347415 connected to storage server at nevis.cs.umd.edu:3264
+25609 messages sent in 29.638582088s (864.0427 msg/sec, 1157350.2319 ns/msg)
+[honu] 09:41:19.344258 connected to storage server at nevis.cs.umd.edu:3264
+25712 messages sent in 29.636370692s (867.5826 msg/sec, 1152627.9827 ns/msg)
+[honu] 09:41:19.349737 connected to storage server at nevis.cs.umd.edu:3264
+25706 messages sent in 29.647481296s (867.0551 msg/sec, 1153329.2343 ns/msg)
+[honu] 09:41:19.352489 connected to storage server at nevis.cs.umd.edu:3264
+25663 messages sent in 29.646922668s (865.6210 msg/sec, 1155239.9434 ns/msg)
+[honu] 09:41:19.342958 connected to storage server at nevis.cs.umd.edu:3264
+25625 messages sent in 29.637528455s (864.6133 msg/sec, 1156586.4763 ns/msg)
+[honu] 09:41:19.347128 connected to storage server at nevis.cs.umd.edu:3264
+25759 messages sent in 29.638740253s (869.0990 msg/sec, 1150616.8816 ns/msg)
+[honu] 09:41:19.351671 connected to storage server at nevis.cs.umd.edu:3264
+25644 messages sent in 29.641708256s (865.1323 msg/sec, 1155892.5384 ns/msg)
+[honu] 09:42:09.511261 connected to storage server at nevis.cs.umd.edu:3264
+25561 messages sent in 29.635697143s (862.5071 msg/sec, 1159410.7094 ns/msg)
+[honu] 09:42:09.511529 connected to storage server at nevis.cs.umd.edu:3264
+25456 messages sent in 29.638711453s (858.8767 msg/sec, 1164311.4179 ns/msg)
+[honu] 09:42:09.513691 connected to storage server at nevis.cs.umd.edu:3264
+25605 messages sent in 29.632410135s (864.0877 msg/sec, 1157289.9877 ns/msg)
+[honu] 09:42:09.520091 connected to storage server at nevis.cs.umd.edu:3264
+25565 messages sent in 29.642236585s (862.4518 msg/sec, 1159485.1001 ns/msg)
+[honu] 09:42:09.521757 connected to storage server at nevis.cs.umd.edu:3264
+25686 messages sent in 29.632648589s (866.8142 msg/sec, 1153649.7932 ns/msg)
+[honu] 09:42:09.516949 connected to storage server at nevis.cs.umd.edu:3264
+25555 messages sent in 29.635353162s (862.3147 msg/sec, 1159669.4644 ns/msg)
+[honu] 09:42:09.521285 connected to storage server at nevis.cs.umd.edu:3264
+25626 messages sent in 29.635962216s (864.6927 msg/sec, 1156480.2238 ns/msg)
+[honu] 09:42:09.516953 connected to storage server at nevis.cs.umd.edu:3264
+25627 messages sent in 29.633081958s (864.8105 msg/sec, 1156322.7049 ns/msg)
+[honu] 09:42:09.516395 connected to storage server at nevis.cs.umd.edu:3264
+25494 messages sent in 29.635117614s (860.2632 msg/sec, 1162434.9892 ns/msg)
+[honu] 09:42:09.520928 connected to storage server at nevis.cs.umd.edu:3264
+25653 messages sent in 29.635364407s (865.6212 msg/sec, 1155239.7149 ns/msg)
+[honu] 09:42:09.518086 connected to storage server at nevis.cs.umd.edu:3264
+25601 messages sent in 29.640848065s (863.7067 msg/sec, 1157800.4010 ns/msg)
+[honu] 09:42:09.523282 connected to storage server at nevis.cs.umd.edu:3264
+25601 messages sent in 29.632772768s (863.9421 msg/sec, 1157484.9720 ns/msg)
+[honu] 09:42:09.521025 connected to storage server at nevis.cs.umd.edu:3264
+25695 messages sent in 29.635391707s (867.0376 msg/sec, 1153352.4696 ns/msg)
+[honu] 09:42:09.523284 connected to storage server at nevis.cs.umd.edu:3264
+25626 messages sent in 29.636151346s (864.6872 msg/sec, 1156487.6042 ns/msg)
+[honu] 09:42:09.523794 connected to storage server at nevis.cs.umd.edu:3264
+25540 messages sent in 29.636608567s (861.7720 msg/sec, 1160399.7090 ns/msg)
+[honu] 09:42:09.517839 connected to storage server at nevis.cs.umd.edu:3264
+25696 messages sent in 29.638225674s (866.9885 msg/sec, 1153417.8734 ns/msg)
+[honu] 09:42:09.522260 connected to storage server at nevis.cs.umd.edu:3264
+25532 messages sent in 29.630289917s (861.6858 msg/sec, 1160515.8200 ns/msg)
+[honu] 09:42:09.513645 connected to storage server at nevis.cs.umd.edu:3264
+25647 messages sent in 29.640747384s (865.2616 msg/sec, 1155719.8652 ns/msg)
+[honu] 09:42:45.605772 connected to storage server at nevis.cs.umd.edu:3264
+25752 messages sent in 29.648541809s (868.5756 msg/sec, 1151310.2597 ns/msg)
+[honu] 09:42:45.614771 connected to storage server at nevis.cs.umd.edu:3264
+25859 messages sent in 29.644194104s (872.3125 msg/sec, 1146378.2089 ns/msg)
+[honu] 09:42:45.615075 connected to storage server at nevis.cs.umd.edu:3264
+25887 messages sent in 29.649724177s (873.0941 msg/sec, 1145351.8823 ns/msg)
+[honu] 09:42:45.610829 connected to storage server at nevis.cs.umd.edu:3264
+25821 messages sent in 29.641230073s (871.1177 msg/sec, 1147950.5082 ns/msg)
+[honu] 09:42:45.612923 connected to storage server at nevis.cs.umd.edu:3264
+25794 messages sent in 29.644502613s (870.1107 msg/sec, 1149279.0034 ns/msg)
+[honu] 09:42:45.613741 connected to storage server at nevis.cs.umd.edu:3264
+25787 messages sent in 29.645597853s (869.8425 msg/sec, 1149633.4530 ns/msg)
+[honu] 09:42:45.612215 connected to storage server at nevis.cs.umd.edu:3264
+25804 messages sent in 29.641802721s (870.5274 msg/sec, 1148728.9847 ns/msg)
+[honu] 09:42:45.613461 connected to storage server at nevis.cs.umd.edu:3264
+25871 messages sent in 29.640001621s (872.8407 msg/sec, 1145684.4197 ns/msg)
+[honu] 09:42:45.609863 connected to storage server at nevis.cs.umd.edu:3264
+25837 messages sent in 29.647361507s (871.4772 msg/sec, 1147476.9326 ns/msg)
+[honu] 09:42:45.617538 connected to storage server at nevis.cs.umd.edu:3264
+25817 messages sent in 29.649609557s (870.7366 msg/sec, 1148452.9402 ns/msg)
+[honu] 09:42:45.617733 connected to storage server at nevis.cs.umd.edu:3264
+25873 messages sent in 29.646751466s (872.7094 msg/sec, 1145856.7412 ns/msg)
+[honu] 09:42:45.614310 connected to storage server at nevis.cs.umd.edu:3264
+25870 messages sent in 29.643669749s (872.6990 msg/sec, 1145870.4967 ns/msg)
+[honu] 09:42:45.614814 connected to storage server at nevis.cs.umd.edu:3264
+25819 messages sent in 29.6467558s (870.8879 msg/sec, 1148253.4490 ns/msg)
+[honu] 09:42:45.613694 connected to storage server at nevis.cs.umd.edu:3264
+25806 messages sent in 29.643818059s (870.5356 msg/sec, 1148718.0524 ns/msg)
+[honu] 09:42:45.613077 connected to storage server at nevis.cs.umd.edu:3264
+25810 messages sent in 29.646482195s (870.5923 msg/sec, 1148643.2466 ns/msg)
+[honu] 09:42:45.618006 connected to storage server at nevis.cs.umd.edu:3264
+25687 messages sent in 29.648101212s (866.3961 msg/sec, 1154206.4551 ns/msg)
+[honu] 09:42:45.609206 connected to storage server at nevis.cs.umd.edu:3264
+25746 messages sent in 29.652987619s (868.2430 msg/sec, 1151751.2475 ns/msg)
+[honu] 09:42:45.606703 connected to storage server at nevis.cs.umd.edu:3264
+25848 messages sent in 29.650362822s (871.7600 msg/sec, 1147104.7208 ns/msg)

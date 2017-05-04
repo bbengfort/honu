@@ -1,0 +1,504 @@
+1 remote clients - 0 hyperion 1 lagoon
+[honu] 22:23:13.784223 created linearizable consistency storage
+[honu] 22:23:13.784489 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:26:33.220916 48088 accesses (0 reads, 48088 writes) in 29.99821114s -- 1603.0289 accesses/second
+[honu] 22:26:33.220939 honu has gracefully shutdown
+[honu] 22:26:34.345684 created linearizable consistency storage
+[honu] 22:26:34.346279 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:27:07.697029 48667 accesses (0 reads, 48667 writes) in 29.998379888s -- 1622.3209 accesses/second
+[honu] 22:27:07.697075 honu has gracefully shutdown
+[honu] 22:27:09.897679 created linearizable consistency storage
+[honu] 22:27:09.897945 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:27:42.796873 48341 accesses (0 reads, 48341 writes) in 29.998858031s -- 1611.4280 accesses/second
+[honu] 22:27:42.796929 honu has gracefully shutdown
+[honu] 22:27:44.078610 created linearizable consistency storage
+[honu] 22:27:44.079197 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:28:17.531008 47406 accesses (0 reads, 47406 writes) in 29.998119744s -- 1580.2990 accesses/second
+[honu] 22:28:17.531065 honu has gracefully shutdown
+[honu] 22:29:01.969399 created linearizable consistency storage
+[honu] 22:29:01.970018 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:29:49.806966 46924 accesses (0 reads, 46924 writes) in 29.998763985s -- 1564.1978 accesses/second
+[honu] 22:29:49.807013 honu has gracefully shutdown
+1 remote clients - 1 hyperion 0 lagoon
+[honu] 22:30:18.463509 created linearizable consistency storage
+[honu] 22:30:18.464099 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:31:00.036087 30201 accesses (0 reads, 30201 writes) in 29.99889616s -- 1006.7370 accesses/second
+[honu] 22:31:00.036133 honu has gracefully shutdown
+[honu] 22:31:00.793756 created linearizable consistency storage
+[honu] 22:31:00.794369 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:31:33.409398 30222 accesses (0 reads, 30222 writes) in 29.998272641s -- 1007.4580 accesses/second
+[honu] 22:31:33.409419 honu has gracefully shutdown
+[honu] 22:31:34.498018 created linearizable consistency storage
+[honu] 22:31:34.498620 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:32:08.757503 30142 accesses (0 reads, 30142 writes) in 29.998904676s -- 1004.7700 accesses/second
+[honu] 22:32:08.757527 honu has gracefully shutdown
+[honu] 22:32:10.114518 created linearizable consistency storage
+[honu] 22:32:10.115126 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:32:54.938872 30106 accesses (0 reads, 30106 writes) in 29.999050775s -- 1003.5651 accesses/second
+[honu] 22:32:54.938914 honu has gracefully shutdown
+[honu] 22:32:55.611106 created linearizable consistency storage
+[honu] 22:32:55.611400 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:33:40.632119 30168 accesses (0 reads, 30168 writes) in 29.9989007s -- 1005.6368 accesses/second
+[honu] 22:33:40.632137 honu has gracefully shutdown
+2 remote clients - 1 hyperion 1 lagoon
+[honu] 22:35:00.321410 created linearizable consistency storage
+[honu] 22:35:00.322078 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:38:34.298771 84305 accesses (0 reads, 84305 writes) in 30.001134338s -- 2810.0604 accesses/second
+[honu] 22:38:34.298796 honu has gracefully shutdown
+[honu] 22:38:34.762069 created linearizable consistency storage
+[honu] 22:38:34.762709 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:39:08.186898 84232 accesses (0 reads, 84232 writes) in 30.001403055s -- 2807.6020 accesses/second
+[honu] 22:39:08.186925 honu has gracefully shutdown
+[honu] 22:39:09.238326 created linearizable consistency storage
+[honu] 22:39:09.238586 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:39:43.896419 84274 accesses (0 reads, 84274 writes) in 30.000174075s -- 2809.1170 accesses/second
+[honu] 22:39:43.896442 honu has gracefully shutdown
+[honu] 22:39:45.258272 created linearizable consistency storage
+[honu] 22:39:45.258538 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:40:22.314121 83881 accesses (0 reads, 83881 writes) in 30.003521401s -- 2795.7052 accesses/second
+[honu] 22:40:22.314141 honu has gracefully shutdown
+[honu] 22:40:23.564546 created linearizable consistency storage
+[honu] 22:40:23.565140 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 22:41:16.502847 84562 accesses (0 reads, 84562 writes) in 30.007007986s -- 2818.0750 accesses/second
+[honu] 22:41:16.502893 honu has gracefully shutdown
+3 remote clients - 2 hyperion 1 lagoon
+[honu] 08:04:10.346387 created linearizable consistency storage
+[honu] 08:04:10.346979 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:04:59.560843 115857 accesses (0 reads, 115857 writes) in 30.004014658s -- 3861.3833 accesses/second
+[honu] 08:04:59.560863 honu has gracefully shutdown
+[honu] 08:05:00.154352 created linearizable consistency storage
+[honu] 08:05:00.154627 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:05:34.194012 115981 accesses (0 reads, 115981 writes) in 30.00697541s -- 3865.1346 accesses/second
+[honu] 08:05:34.194053 honu has gracefully shutdown
+[honu] 08:05:34.747792 created linearizable consistency storage
+[honu] 08:05:34.748076 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:06:08.764259 115859 accesses (0 reads, 115859 writes) in 30.004774592s -- 3861.3521 accesses/second
+[honu] 08:06:08.764279 honu has gracefully shutdown
+[honu] 08:06:09.365520 created linearizable consistency storage
+[honu] 08:06:09.365795 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:06:42.037985 116242 accesses (0 reads, 116242 writes) in 30.005141161s -- 3874.0694 accesses/second
+[honu] 08:06:42.038026 honu has gracefully shutdown
+[honu] 08:06:42.592283 created linearizable consistency storage
+[honu] 08:06:42.592569 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:07:15.980892 116318 accesses (0 reads, 116318 writes) in 30.003083865s -- 3876.8681 accesses/second
+[honu] 08:07:15.980949 honu has gracefully shutdown
+3 remote clients - 1 hyperion 2 lagoon
+[honu] 08:11:31.750607 created linearizable consistency storage
+[honu] 08:11:31.751256 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:12:07.952481 140473 accesses (0 reads, 140473 writes) in 30.003848036s -- 4681.8328 accesses/second
+[honu] 08:12:07.952507 honu has gracefully shutdown
+[honu] 08:12:08.472827 created linearizable consistency storage
+[honu] 08:12:08.473454 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:13:08.309158 141450 accesses (0 reads, 141450 writes) in 30.00473804s -- 4714.2555 accesses/second
+[honu] 08:13:08.309199 honu has gracefully shutdown
+[honu] 08:13:08.738589 created linearizable consistency storage
+[honu] 08:13:08.738858 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:14:03.767176 141006 accesses (0 reads, 141006 writes) in 30.002586099s -- 4699.7949 accesses/second
+[honu] 08:14:03.767199 honu has gracefully shutdown
+[honu] 08:14:04.320675 created linearizable consistency storage
+[honu] 08:14:04.320944 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:14:39.027304 141246 accesses (0 reads, 141246 writes) in 30.004392096s -- 4707.5108 accesses/second
+[honu] 08:14:39.027388 honu has gracefully shutdown
+[honu] 08:14:40.895694 created linearizable consistency storage
+[honu] 08:14:40.896300 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:15:16.043628 142272 accesses (0 reads, 142272 writes) in 30.00488977s -- 4741.6272 accesses/second
+[honu] 08:15:16.043672 honu has gracefully shutdown
+4 remote clients - 2 hyperion 2 lagoon
+[honu] 08:16:44.460564 created linearizable consistency storage
+[honu] 08:16:44.461161 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:17:58.761479 174360 accesses (0 reads, 174360 writes) in 30.00599985s -- 5810.8379 accesses/second
+[honu] 08:17:58.761522 honu has gracefully shutdown
+[honu] 08:17:59.480363 created linearizable consistency storage
+[honu] 08:17:59.480628 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:18:34.293058 172918 accesses (0 reads, 172918 writes) in 30.005125262s -- 5762.9488 accesses/second
+[honu] 08:18:34.293081 honu has gracefully shutdown
+[honu] 08:18:34.808522 created linearizable consistency storage
+[honu] 08:18:34.809148 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:19:09.890147 174010 accesses (0 reads, 174010 writes) in 30.005535641s -- 5799.2632 accesses/second
+[honu] 08:19:09.890190 honu has gracefully shutdown
+[honu] 08:19:13.686957 created linearizable consistency storage
+[honu] 08:19:13.687246 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:19:48.671257 174737 accesses (0 reads, 174737 writes) in 30.007215837s -- 5823.1660 accesses/second
+[honu] 08:19:48.671280 honu has gracefully shutdown
+[honu] 08:19:49.157142 created linearizable consistency storage
+[honu] 08:19:49.157795 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:20:27.162391 174222 accesses (0 reads, 174222 writes) in 30.005085729s -- 5806.4157 accesses/second
+[honu] 08:20:27.162412 honu has gracefully shutdown
+5 remote clients - 3 hyperion 2 lagoon
+[honu] 08:22:26.847229 created linearizable consistency storage
+[honu] 08:22:26.847844 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:23:06.331463 208993 accesses (0 reads, 208993 writes) in 30.004693366s -- 6965.3436 accesses/second
+[honu] 08:23:06.331502 honu has gracefully shutdown
+[honu] 08:23:07.382643 created linearizable consistency storage
+[honu] 08:23:07.382933 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:23:43.737500 208912 accesses (0 reads, 208912 writes) in 30.000327237s -- 6963.6574 accesses/second
+[honu] 08:23:43.737523 honu has gracefully shutdown
+[honu] 08:25:17.872513 created linearizable consistency storage
+[honu] 08:25:17.872780 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:25:58.809318 208600 accesses (0 reads, 208600 writes) in 30.006114114s -- 6951.9165 accesses/second
+[honu] 08:25:58.809365 honu has gracefully shutdown
+[honu] 08:25:59.347563 created linearizable consistency storage
+[honu] 08:25:59.348157 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:26:37.300276 208498 accesses (0 reads, 208498 writes) in 30.002421927s -- 6949.3723 accesses/second
+[honu] 08:26:37.300319 honu has gracefully shutdown
+[honu] 08:26:37.832967 created linearizable consistency storage
+[honu] 08:26:37.833553 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:27:38.080131 208909 accesses (0 reads, 208909 writes) in 30.004196303s -- 6962.6594 accesses/second
+[honu] 08:27:38.080154 honu has gracefully shutdown
+5 remote clients - 2 hyperion 3 lagoon
+[honu] 08:29:02.537646 created linearizable consistency storage
+[honu] 08:29:02.537936 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:29:36.868014 232000 accesses (0 reads, 232000 writes) in 30.010620978s -- 7730.5965 accesses/second
+[honu] 08:29:36.868059 honu has gracefully shutdown
+[honu] 08:29:37.279233 created linearizable consistency storage
+[honu] 08:29:37.279514 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:30:12.928435 232234 accesses (0 reads, 232234 writes) in 30.004554944s -- 7739.9582 accesses/second
+[honu] 08:30:12.928456 honu has gracefully shutdown
+[honu] 08:30:14.619988 created linearizable consistency storage
+[honu] 08:30:14.620279 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:31:02.098068 232053 accesses (0 reads, 232053 writes) in 30.005908049s -- 7733.5770 accesses/second
+[honu] 08:31:02.098111 honu has gracefully shutdown
+[honu] 08:31:03.232566 created linearizable consistency storage
+[honu] 08:31:03.233162 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:31:40.644357 233671 accesses (0 reads, 233671 writes) in 30.005263876s -- 7787.6669 accesses/second
+[honu] 08:31:40.644379 honu has gracefully shutdown
+[honu] 08:31:41.667542 created linearizable consistency storage
+[honu] 08:31:41.668147 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:32:26.870384 230972 accesses (0 reads, 230972 writes) in 30.000886046s -- 7698.8393 accesses/second
+[honu] 08:32:26.870445 honu has gracefully shutdown
+6 remote clients - 3 hyperion 3 lagoon
+[honu] 08:32:54.601136 created linearizable consistency storage
+[honu] 08:32:54.601731 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:33:43.517864 265249 accesses (0 reads, 265249 writes) in 30.00660684s -- 8839.6866 accesses/second
+[honu] 08:33:43.517884 honu has gracefully shutdown
+[honu] 08:34:02.834385 created linearizable consistency storage
+[honu] 08:34:02.834649 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:34:57.525874 265822 accesses (0 reads, 265822 writes) in 30.005882313s -- 8858.9963 accesses/second
+[honu] 08:34:57.525893 honu has gracefully shutdown
+[honu] 08:34:58.691597 created linearizable consistency storage
+[honu] 08:34:58.692213 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:35:44.741682 266065 accesses (0 reads, 266065 writes) in 30.006740022s -- 8866.8412 accesses/second
+[honu] 08:35:44.741747 honu has gracefully shutdown
+[honu] 08:35:46.124753 created linearizable consistency storage
+[honu] 08:35:46.125374 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:36:24.398607 266389 accesses (0 reads, 266389 writes) in 30.011071346s -- 8876.3576 accesses/second
+[honu] 08:36:24.398657 honu has gracefully shutdown
+[honu] 08:36:26.746795 created linearizable consistency storage
+[honu] 08:36:26.747412 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:37:23.335492 265980 accesses (0 reads, 265980 writes) in 30.005577302s -- 8864.3520 accesses/second
+[honu] 08:37:23.335515 honu has gracefully shutdown
+8 remote clients - 4 hyperion 4 lagoon
+[honu] 08:39:41.251767 created linearizable consistency storage
+[honu] 08:39:41.252052 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:40:17.792065 362552 accesses (0 reads, 362552 writes) in 30.012753107s -- 12079.9314 accesses/second
+[honu] 08:40:17.792107 honu has gracefully shutdown
+[honu] 08:40:18.453827 created linearizable consistency storage
+[honu] 08:40:18.454433 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:40:53.424059 362272 accesses (0 reads, 362272 writes) in 30.013563418s -- 12070.2762 accesses/second
+[honu] 08:40:53.424083 honu has gracefully shutdown
+[honu] 08:40:53.828754 created linearizable consistency storage
+[honu] 08:40:53.829383 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:41:43.506953 363259 accesses (0 reads, 363259 writes) in 30.008493459s -- 12105.2062 accesses/second
+[honu] 08:41:43.506974 honu has gracefully shutdown
+[honu] 08:41:43.860657 created linearizable consistency storage
+[honu] 08:41:43.860931 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:42:18.516084 362982 accesses (0 reads, 362982 writes) in 30.007755767s -- 12096.2728 accesses/second
+[honu] 08:42:18.516105 honu has gracefully shutdown
+[honu] 08:42:18.935303 created linearizable consistency storage
+[honu] 08:42:18.935780 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:42:58.665084 362379 accesses (0 reads, 362379 writes) in 30.012752944s -- 12074.1673 accesses/second
+[honu] 08:42:58.665127 honu has gracefully shutdown
+10 remote clients - 5 hyperion 5 lagoon
+[honu] 08:43:27.995777 created linearizable consistency storage
+[honu] 08:43:27.996437 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:44:04.829205 443427 accesses (0 reads, 443427 writes) in 30.003720576s -- 14779.0671 accesses/second
+[honu] 08:44:04.829234 honu has gracefully shutdown
+[honu] 08:44:05.175293 created linearizable consistency storage
+[honu] 08:44:05.175594 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:44:41.125766 443474 accesses (0 reads, 443474 writes) in 30.008087332s -- 14778.4827 accesses/second
+[honu] 08:44:41.125786 honu has gracefully shutdown
+[honu] 08:44:43.480103 created linearizable consistency storage
+[honu] 08:44:43.480705 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:45:21.245470 444054 accesses (0 reads, 444054 writes) in 30.005579834s -- 14799.0475 accesses/second
+[honu] 08:45:21.245497 honu has gracefully shutdown
+[honu] 08:45:21.569102 created linearizable consistency storage
+[honu] 08:45:21.569698 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:45:56.907585 443664 accesses (0 reads, 443664 writes) in 30.014252345s -- 14781.7775 accesses/second
+[honu] 08:45:56.907623 honu has gracefully shutdown
+[honu] 08:45:57.449203 created linearizable consistency storage
+[honu] 08:45:57.449820 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:46:35.620209 443011 accesses (0 reads, 443011 writes) in 30.008156872s -- 14763.0193 accesses/second
+[honu] 08:46:35.620251 honu has gracefully shutdown
+12 remote clients - 6 hyperion 6 lagoon
+[honu] 08:47:33.537125 created linearizable consistency storage
+[honu] 08:47:33.537729 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:48:19.177963 521721 accesses (0 reads, 521721 writes) in 30.015196184s -- 17381.8954 accesses/second
+[honu] 08:48:19.177985 honu has gracefully shutdown
+[honu] 08:48:19.491004 created linearizable consistency storage
+[honu] 08:48:19.491281 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:48:54.157671 523240 accesses (0 reads, 523240 writes) in 30.010732086s -- 17435.0962 accesses/second
+[honu] 08:48:54.157715 honu has gracefully shutdown
+[honu] 08:48:54.631668 created linearizable consistency storage
+[honu] 08:48:54.632261 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:49:29.218230 522294 accesses (0 reads, 522294 writes) in 30.008626172s -- 17404.7954 accesses/second
+[honu] 08:49:29.218288 honu has gracefully shutdown
+[honu] 08:49:29.582764 created linearizable consistency storage
+[honu] 08:49:29.583400 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:50:05.841737 521702 accesses (0 reads, 521702 writes) in 30.008862617s -- 17384.9308 accesses/second
+[honu] 08:50:05.841780 honu has gracefully shutdown
+[honu] 08:50:06.694808 created linearizable consistency storage
+[honu] 08:50:06.695482 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:50:40.516589 521824 accesses (0 reads, 521824 writes) in 30.014578103s -- 17385.6850 accesses/second
+[honu] 08:50:40.516609 honu has gracefully shutdown
+14 remote clients - 7 hyperion 7 lagoon
+[honu] 08:51:03.216327 created linearizable consistency storage
+[honu] 08:51:03.216591 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:51:59.610925 596287 accesses (0 reads, 596287 writes) in 30.013626837s -- 19867.2091 accesses/second
+[honu] 08:51:59.610949 honu has gracefully shutdown
+[honu] 08:52:00.912857 created linearizable consistency storage
+[honu] 08:52:00.913151 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:53:02.151213 597889 accesses (0 reads, 597889 writes) in 30.009861617s -- 19923.0842 accesses/second
+[honu] 08:53:02.151258 honu has gracefully shutdown
+[honu] 08:53:03.063971 created linearizable consistency storage
+[honu] 08:53:03.064228 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:54:25.399281 597353 accesses (0 reads, 597353 writes) in 30.017269009s -- 19900.3114 accesses/second
+[honu] 08:54:25.399359 honu has gracefully shutdown
+[honu] 08:54:25.992448 created linearizable consistency storage
+[honu] 08:54:25.992717 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:54:59.555761 598787 accesses (0 reads, 598787 writes) in 30.011121409s -- 19952.1701 accesses/second
+[honu] 08:54:59.555779 honu has gracefully shutdown
+[honu] 08:54:59.990244 created linearizable consistency storage
+[honu] 08:54:59.990503 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:56:03.405438 597832 accesses (0 reads, 597832 writes) in 30.010964113s -- 19920.4530 accesses/second
+[honu] 08:56:03.405484 honu has gracefully shutdown
+16 remote clients - 8 hyperion 8 lagoon
+[honu] 08:56:29.327022 created linearizable consistency storage
+[honu] 08:56:29.327633 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:57:03.903121 668007 accesses (0 reads, 668007 writes) in 30.020354133s -- 22251.8028 accesses/second
+[honu] 08:57:03.903156 honu has gracefully shutdown
+[honu] 08:57:04.280092 created linearizable consistency storage
+[honu] 08:57:04.280364 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 08:59:39.365618 668498 accesses (0 reads, 668498 writes) in 30.0147986s -- 22272.2800 accesses/second
+[honu] 08:59:39.365666 honu has gracefully shutdown
+[honu] 08:59:41.146821 created linearizable consistency storage
+[honu] 08:59:41.147111 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:00:36.667316 668430 accesses (0 reads, 668430 writes) in 30.013886929s -- 22270.6909 accesses/second
+[honu] 09:00:36.667389 honu has gracefully shutdown
+[honu] 09:00:37.029894 created linearizable consistency storage
+[honu] 09:00:37.030170 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:01:27.960505 668192 accesses (0 reads, 668192 writes) in 30.008292568s -- 22266.9117 accesses/second
+[honu] 09:01:27.960529 honu has gracefully shutdown
+[honu] 09:01:28.325307 created linearizable consistency storage
+[honu] 09:01:28.325916 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:02:02.676909 666757 accesses (0 reads, 666757 writes) in 30.02683961s -- 22205.3672 accesses/second
+[honu] 09:02:02.676949 honu has gracefully shutdown
+18 remote clients - 9 hyperion 9 lagoon
+[honu] 09:02:29.493877 created linearizable consistency storage
+[honu] 09:02:29.494487 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:03:28.740328 728059 accesses (0 reads, 728059 writes) in 30.019063638s -- 24253.2215 accesses/second
+[honu] 09:03:28.740354 honu has gracefully shutdown
+[honu] 09:03:29.141070 created linearizable consistency storage
+[honu] 09:03:29.141337 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:04:03.844675 729932 accesses (0 reads, 729932 writes) in 30.030190358s -- 24306.6058 accesses/second
+[honu] 09:04:03.844700 honu has gracefully shutdown
+[honu] 09:04:04.258693 created linearizable consistency storage
+[honu] 09:04:04.259305 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:04:39.512921 727727 accesses (0 reads, 727727 writes) in 30.013110434s -- 24246.9704 accesses/second
+[honu] 09:04:39.512968 honu has gracefully shutdown
+[honu] 09:04:40.141581 created linearizable consistency storage
+[honu] 09:04:40.142179 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:05:14.638828 728472 accesses (0 reads, 728472 writes) in 30.037514037s -- 24252.0736 accesses/second
+[honu] 09:05:14.638852 honu has gracefully shutdown
+[honu] 09:05:15.512059 created linearizable consistency storage
+[honu] 09:05:15.512650 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:05:56.859633 728179 accesses (0 reads, 728179 writes) in 30.019800512s -- 24256.6235 accesses/second
+[honu] 09:05:56.859685 honu has gracefully shutdown
+20 remote clients - 10 hyperion 10 lagoon
+[honu] 09:06:22.697813 created linearizable consistency storage
+[honu] 09:06:22.698465 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:07:53.270650 781851 accesses (0 reads, 781851 writes) in 30.02847828s -- 26036.9837 accesses/second
+[honu] 09:07:53.270694 honu has gracefully shutdown
+[honu] 09:07:53.634862 created linearizable consistency storage
+[honu] 09:07:53.635126 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:08:28.234962 783761 accesses (0 reads, 783761 writes) in 30.028128445s -- 26100.8941 accesses/second
+[honu] 09:08:28.234988 honu has gracefully shutdown
+[honu] 09:08:28.954300 created linearizable consistency storage
+[honu] 09:08:28.954566 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:09:03.030458 782038 accesses (0 reads, 782038 writes) in 30.028306678s -- 26043.3600 accesses/second
+[honu] 09:09:03.030487 honu has gracefully shutdown
+[honu] 09:09:03.504597 created linearizable consistency storage
+[honu] 09:09:03.505200 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:09:37.221294 783426 accesses (0 reads, 783426 writes) in 30.012900812s -- 26102.9750 accesses/second
+[honu] 09:09:37.221359 honu has gracefully shutdown
+[honu] 09:09:37.658683 created linearizable consistency storage
+[honu] 09:09:37.658970 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:10:15.875559 782908 accesses (0 reads, 782908 writes) in 30.015172853s -- 26083.7412 accesses/second
+[honu] 09:10:15.875578 honu has gracefully shutdown
+22 remote clients - 11 hyperion 11 lagoon
+[honu] 09:10:38.473357 created linearizable consistency storage
+[honu] 09:10:38.473652 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:11:55.163370 834503 accesses (0 reads, 834503 writes) in 30.022387476s -- 27796.0239 accesses/second
+[honu] 09:11:55.163387 honu has gracefully shutdown
+[honu] 09:11:55.557056 created linearizable consistency storage
+[honu] 09:11:55.557325 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:12:33.810275 835183 accesses (0 reads, 835183 writes) in 30.023409785s -- 27817.7264 accesses/second
+[honu] 09:12:33.810297 honu has gracefully shutdown
+[honu] 09:12:34.311421 created linearizable consistency storage
+[honu] 09:12:34.311700 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:13:08.721398 834078 accesses (0 reads, 834078 writes) in 30.031777743s -- 27773.1810 accesses/second
+[honu] 09:13:08.721438 honu has gracefully shutdown
+[honu] 09:13:09.252869 created linearizable consistency storage
+[honu] 09:13:09.253142 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:13:45.368176 834711 accesses (0 reads, 834711 writes) in 30.011616099s -- 27812.9307 accesses/second
+[honu] 09:13:45.368228 honu has gracefully shutdown
+[honu] 09:13:45.974853 created linearizable consistency storage
+[honu] 09:13:45.975463 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:14:25.622795 836008 accesses (0 reads, 836008 writes) in 30.020732761s -- 27847.6880 accesses/second
+[honu] 09:14:25.622834 honu has gracefully shutdown
+24 remote clients - 12 hyperion 12 lagoon
+[honu] 09:14:43.685822 created linearizable consistency storage
+[honu] 09:14:43.686425 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:15:39.261078 885999 accesses (0 reads, 885999 writes) in 30.013029722s -- 29520.4785 accesses/second
+[honu] 09:15:39.261108 honu has gracefully shutdown
+[honu] 09:15:39.713003 created linearizable consistency storage
+[honu] 09:15:39.713622 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:16:14.750514 886099 accesses (0 reads, 886099 writes) in 30.024265238s -- 29512.7622 accesses/second
+[honu] 09:16:14.750559 honu has gracefully shutdown
+[honu] 09:16:15.504388 created linearizable consistency storage
+[honu] 09:16:15.504667 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:16:53.998638 886880 accesses (0 reads, 886880 writes) in 30.015063063s -- 29547.8306 accesses/second
+[honu] 09:16:53.998663 honu has gracefully shutdown
+[honu] 09:16:57.445862 created linearizable consistency storage
+[honu] 09:16:57.446126 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:17:36.604830 885319 accesses (0 reads, 885319 writes) in 30.030324973s -- 29480.8332 accesses/second
+[honu] 09:17:36.604853 honu has gracefully shutdown
+[honu] 09:17:37.178862 created linearizable consistency storage
+[honu] 09:17:37.179152 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:18:13.667048 887135 accesses (0 reads, 887135 writes) in 30.022316104s -- 29549.1859 accesses/second
+[honu] 09:18:13.667071 honu has gracefully shutdown
+26 remote clients - 13 hyperion 13 lagoon
+[honu] 09:18:38.677599 created linearizable consistency storage
+[honu] 09:18:38.678213 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:19:41.256351 935847 accesses (0 reads, 935847 writes) in 30.035820897s -- 31157.6968 accesses/second
+[honu] 09:19:41.256370 honu has gracefully shutdown
+[honu] 09:19:41.704851 created linearizable consistency storage
+[honu] 09:19:41.705444 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:20:16.445669 936272 accesses (0 reads, 936272 writes) in 30.041363534s -- 31166.0953 accesses/second
+[honu] 09:20:16.445732 honu has gracefully shutdown
+[honu] 09:20:16.801238 created linearizable consistency storage
+[honu] 09:20:16.801558 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:20:52.432627 938555 accesses (0 reads, 938555 writes) in 30.044952338s -- 31238.3588 accesses/second
+[honu] 09:20:52.432670 honu has gracefully shutdown
+[honu] 09:20:52.841545 created linearizable consistency storage
+[honu] 09:20:52.841838 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:21:29.260270 939047 accesses (0 reads, 939047 writes) in 30.043057114s -- 31256.7059 accesses/second
+[honu] 09:21:29.260296 honu has gracefully shutdown
+[honu] 09:21:29.629241 created linearizable consistency storage
+[honu] 09:21:29.629514 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:22:04.802190 936831 accesses (0 reads, 936831 writes) in 30.016478948s -- 31210.5561 accesses/second
+[honu] 09:22:04.802229 honu has gracefully shutdown
+28 remote clients - 14 hyperion 14 lagoon
+[honu] 09:22:34.752834 created linearizable consistency storage
+[honu] 09:22:34.753116 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:23:39.129116 977055 accesses (0 reads, 977055 writes) in 30.017980991s -- 32548.9912 accesses/second
+[honu] 09:23:39.129160 honu has gracefully shutdown
+[honu] 09:23:39.537558 created linearizable consistency storage
+[honu] 09:23:39.537833 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:24:17.869978 976609 accesses (0 reads, 976609 writes) in 30.024787205s -- 32526.7584 accesses/second
+[honu] 09:24:17.870001 honu has gracefully shutdown
+[honu] 09:24:18.374570 created linearizable consistency storage
+[honu] 09:24:18.375169 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:24:52.552186 975289 accesses (0 reads, 975289 writes) in 30.016261157s -- 32492.0214 accesses/second
+[honu] 09:24:52.552209 honu has gracefully shutdown
+[honu] 09:24:52.966581 created linearizable consistency storage
+[honu] 09:24:52.966849 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:25:28.445812 976745 accesses (0 reads, 976745 writes) in 30.041392884s -- 32513.3060 accesses/second
+[honu] 09:25:28.445833 honu has gracefully shutdown
+[honu] 09:25:28.866723 created linearizable consistency storage
+[honu] 09:25:28.866997 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:26:06.754641 977485 accesses (0 reads, 977485 writes) in 30.027690986s -- 32552.7860 accesses/second
+[honu] 09:26:06.754662 honu has gracefully shutdown
+30 remote clients - 15 hyperion 15 lagoon
+[honu] 09:26:33.598617 created linearizable consistency storage
+[honu] 09:26:33.598881 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:27:24.814090 1006165 accesses (0 reads, 1006165 writes) in 30.037856293s -- 33496.5648 accesses/second
+[honu] 09:27:24.814113 honu has gracefully shutdown
+[honu] 09:27:25.360457 created linearizable consistency storage
+[honu] 09:27:25.361054 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:28:06.406206 1010222 accesses (0 reads, 1010222 writes) in 30.041839342s -- 33627.1687 accesses/second
+[honu] 09:28:06.406229 honu has gracefully shutdown
+[honu] 09:28:06.812652 created linearizable consistency storage
+[honu] 09:28:06.812942 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:28:41.976461 1010987 accesses (0 reads, 1010987 writes) in 30.0138394s -- 33684.0278 accesses/second
+[honu] 09:28:41.976485 honu has gracefully shutdown
+[honu] 09:28:42.494636 created linearizable consistency storage
+[honu] 09:28:42.494922 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:29:17.964991 1013013 accesses (0 reads, 1013013 writes) in 30.041799485s -- 33720.1172 accesses/second
+[honu] 09:29:17.965009 honu has gracefully shutdown
+[honu] 09:29:18.597593 created linearizable consistency storage
+[honu] 09:29:18.597883 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:29:58.821064 1007369 accesses (0 reads, 1007369 writes) in 30.022109859s -- 33554.2374 accesses/second
+[honu] 09:29:58.821085 honu has gracefully shutdown
+32 remote clients - 16 hyperion 16 lagoon
+[honu] 09:30:22.888937 created linearizable consistency storage
+[honu] 09:30:22.889539 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:31:54.767592 1036124 accesses (0 reads, 1036124 writes) in 30.056104207s -- 34472.9973 accesses/second
+[honu] 09:31:54.767614 honu has gracefully shutdown
+[honu] 09:31:55.203667 created linearizable consistency storage
+[honu] 09:31:55.203993 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:32:37.591779 1036026 accesses (0 reads, 1036026 writes) in 30.059156255s -- 34466.2369 accesses/second
+[honu] 09:32:37.591798 honu has gracefully shutdown
+[honu] 09:32:38.076083 created linearizable consistency storage
+[honu] 09:32:38.076666 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:33:12.023391 1038389 accesses (0 reads, 1038389 writes) in 30.025534862s -- 34583.5305 accesses/second
+[honu] 09:33:12.023413 honu has gracefully shutdown
+[honu] 09:33:12.492599 created linearizable consistency storage
+[honu] 09:33:12.492866 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:33:47.174269 1041490 accesses (0 reads, 1041490 writes) in 30.016867144s -- 34696.8255 accesses/second
+[honu] 09:33:47.174310 honu has gracefully shutdown
+[honu] 09:33:47.676904 created linearizable consistency storage
+[honu] 09:33:47.677176 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:34:24.156127 1037722 accesses (0 reads, 1037722 writes) in 30.046585984s -- 34537.1018 accesses/second
+[honu] 09:34:24.156152 honu has gracefully shutdown
+34 remote clients - 17 hyperion 17 lagoon
+[honu] 09:34:45.414452 created linearizable consistency storage
+[honu] 09:34:45.414729 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:35:37.016093 1065072 accesses (0 reads, 1065072 writes) in 30.065767959s -- 35424.7396 accesses/second
+[honu] 09:35:37.016114 honu has gracefully shutdown
+[honu] 09:35:37.566567 created linearizable consistency storage
+[honu] 09:35:37.566830 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:37:16.520486 1067708 accesses (0 reads, 1067708 writes) in 30.048486333s -- 35532.8381 accesses/second
+[honu] 09:37:16.520526 honu has gracefully shutdown
+[honu] 09:37:17.117339 created linearizable consistency storage
+[honu] 09:37:17.117640 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:37:57.818305 1062030 accesses (0 reads, 1062030 writes) in 30.015784328s -- 35382.3838 accesses/second
+[honu] 09:37:57.818353 honu has gracefully shutdown
+[honu] 09:37:58.295056 created linearizable consistency storage
+[honu] 09:37:58.295350 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:38:30.752468 1066945 accesses (0 reads, 1066945 writes) in 30.044849469s -- 35511.7439 accesses/second
+[honu] 09:38:30.752486 honu has gracefully shutdown
+[honu] 09:38:31.307151 created linearizable consistency storage
+[honu] 09:38:31.307430 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:39:06.849880 1067358 accesses (0 reads, 1067358 writes) in 30.051859675s -- 35517.2030 accesses/second
+[honu] 09:39:06.849902 honu has gracefully shutdown
+36 remote clients - 18 hyperion 18 lagoon
+[honu] 09:39:34.274404 created linearizable consistency storage
+[honu] 09:39:34.275016 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:40:42.604626 1080094 accesses (0 reads, 1080094 writes) in 30.028852152s -- 35968.5410 accesses/second
+[honu] 09:40:42.604648 honu has gracefully shutdown
+[honu] 09:40:43.072550 created linearizable consistency storage
+[honu] 09:40:43.072835 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:41:18.843232 1085637 accesses (0 reads, 1085637 writes) in 30.057400927s -- 36118.7916 accesses/second
+[honu] 09:41:18.843274 honu has gracefully shutdown
+[honu] 09:41:19.329175 created linearizable consistency storage
+[honu] 09:41:19.329441 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:42:08.898376 1077628 accesses (0 reads, 1077628 writes) in 30.087031073s -- 35817.0269 accesses/second
+[honu] 09:42:08.898436 honu has gracefully shutdown
+[honu] 09:42:09.432549 created linearizable consistency storage
+[honu] 09:42:09.433155 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:42:44.157125 1075469 accesses (0 reads, 1075469 writes) in 30.019424283s -- 35825.7703 accesses/second
+[honu] 09:42:44.157166 honu has gracefully shutdown
+[honu] 09:42:44.614145 created linearizable consistency storage
+[honu] 09:42:44.614412 honu storage server listening on nevis.cs.umd.edu:3264
+[honu] 09:43:19.752927 1082688 accesses (0 reads, 1082688 writes) in 30.013656009s -- 36073.1795 accesses/second
+[honu] 09:43:19.752952 honu has gracefully shutdown
