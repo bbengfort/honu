@@ -19,6 +19,7 @@ type Entry struct {
 	Version *Version // The conflict-free version of the entry
 	Parent  *Version // The version of the parent the entry was derived from
 	Value   []byte   // The data value of the entry
+	Current uint64   // The current version scalar
 }
 
 //===========================================================================

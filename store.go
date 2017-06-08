@@ -51,18 +51,22 @@ type Store interface {
 // key to create a cross-object version history.
 type LinearizableStore struct {
 	sync.RWMutex
-	pid       uint64              // the local process id
-	current   uint64              // the current version scalar
-	lastWrite *Version            // the version of the last write
-	namespace map[string]*Entry   // maps keys to the latest entry
-	versions  map[*Version]*Entry // maps versions to entries
+	pid       uint64            // the local process id
+	current   uint64            // the current version scalar
+	lastWrite *Version          // the version of the last write
+	namespace map[string]*Entry // maps keys to the latest entry
+	history   *History          // tracks the verion history chain
 }
 
 // Init the store creating the internal data structures.
 func (s *LinearizableStore) Init(pid uint64) {
 	s.pid = pid
 	s.namespace = make(map[string]*Entry)
-	s.versions = make(map[*Version]*Entry)
+
+	// Create, initialize and run the history.
+	s.history = new(History)
+	s.history.Init()
+	s.history.Run()
 }
 
 // Get the most recently seen value and version pair for a specific key.
@@ -109,8 +113,8 @@ func (s *LinearizableStore) Put(key string, value []byte) (string, error) {
 	}
 
 	// Update the namespace, versions, and last write
-	s.versions[version] = entry
 	s.namespace[key] = entry
+	s.history.Append(entry.Key, entry.Parent, entry.Version)
 	s.lastWrite = version
 
 	// Return the version and no error for this method
@@ -119,6 +123,9 @@ func (s *LinearizableStore) Put(key string, value []byte) (string, error) {
 
 // Update the current version counter with the global value.
 func (s *LinearizableStore) Update(key string, version Version) {
+	s.Lock()
+	defer s.Unlock()
+
 	if version.Scalar > s.current {
 		s.current = version.Scalar
 	}
@@ -145,19 +152,21 @@ func (s *LinearizableStore) Snapshot(path string) error {
 // entry in the store. Each object has its own independent scalar component.
 type SequentialStore struct {
 	sync.RWMutex
-	pid       uint64             // the local process id
-	current   map[string]uint64  // map of keys to current version scalar
-	namespace map[string]*Entry  // maps keys to the latest entry
-	versions  map[*Version]Entry // maps versions to entry values
+	pid       uint64            // the local process id
+	namespace map[string]*Entry // maps keys to the latest entry
+	history   *History          // tracks the verion history chain
 
 }
 
 // Init the store creating the internal data structures.
 func (s *SequentialStore) Init(pid uint64) {
 	s.pid = pid
-	s.current = make(map[string]uint64)
 	s.namespace = make(map[string]*Entry)
-	s.versions = make(map[*Version]Entry)
+
+	// Create, initialize and run the history.
+	s.history = new(History)
+	s.history.Init()
+	s.history.Run()
 }
 
 // get is an internal method surrounded by a read lock that fetches the
@@ -247,27 +256,24 @@ func (s *SequentialStore) Put(key string, value []byte) (string, error) {
 	defer entry.Unlock()
 
 	// Create the version for the new entry
-	// TODO: Remove this!
-	s.Lock()
-	s.current[key]++
-	s.Unlock()
-	entry.Version = &Version{s.current[key], s.pid}
+	entry.Current++
+	entry.Version = &Version{entry.Current, s.pid}
 
 	// Update the value
 	entry.Value = value
 
 	// Store the version in the version history and return it
-	// TODO: Remove this!
-	s.Lock()
-	s.versions[entry.Version] = *entry
-	s.Unlock()
+	s.history.Append(entry.Key, entry.Parent, entry.Version)
 	return entry.Version.String(), nil
 }
 
 // Update the current version counter with the global value.
 func (s *SequentialStore) Update(key string, version Version) {
-	if version.Scalar > s.current[key] {
-		s.current[key] = version.Scalar
+	entry := s.get(key, true)
+	defer entry.Unlock()
+
+	if version.Scalar > entry.Current {
+		entry.Current = version.Scalar
 	}
 }
 
