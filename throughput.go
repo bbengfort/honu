@@ -40,11 +40,12 @@ func (c *Client) write(done chan<- bool, echan chan<- error, results chan<- *Lat
 	c.latency += latency
 
 	// Assert monotonically increasing version numbers
-	if reply.Version <= c.version {
+	current, _ := ParseVersion(reply.Version)
+	if current.LesserEqual(c.version) {
 		echan <- errors.New("monotonically increasing version error")
 		return
 	}
-	c.version = reply.Version
+	c.version = &current
 
 	// Send the result to be written to disk
 	result := &Latency{
@@ -66,7 +67,7 @@ func (c *Client) Run(key string, duration time.Duration, outpath string) error {
 	// Initialize the client
 	c.key = key
 	c.messages = 0
-	c.version = 0
+	c.version = nil
 	c.latency = 0
 
 	// Initialize the channels

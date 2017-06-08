@@ -40,6 +40,11 @@ func main() {
 					Usage:  "relax to sequential consistency",
 					EnvVar: "HONU_SEQUENTIAL_CONSISTENCY",
 				},
+				cli.Uint64Flag{
+					Name:   "p, pid",
+					Usage:  "unique process id of server",
+					EnvVar: "HONU_PROCESS_ID",
+				},
 			},
 		},
 		{
@@ -134,7 +139,7 @@ func main() {
 
 // Run the storage server
 func serve(c *cli.Context) error {
-	server := honu.NewServer(c.Bool("relax"))
+	server := honu.NewServer(c.Uint64("pid"), c.Bool("relax"))
 
 	if err := server.Run(c.String("addr")); err != nil {
 		return cli.NewExitError(err.Error(), 1)
@@ -166,7 +171,7 @@ func get(c *cli.Context) error {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
-	fmt.Printf("version %d, value: %s\n", version, string(value))
+	fmt.Printf("version %s, value: %s\n", version, string(value))
 	return nil
 }
 
@@ -177,7 +182,7 @@ func put(c *cli.Context) error {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
-	fmt.Printf("key %s now at version %d\n", c.String("key"), version)
+	fmt.Printf("key %s now at version %s\n", c.String("key"), version)
 	return nil
 }
 

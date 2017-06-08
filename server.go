@@ -20,9 +20,9 @@ import (
 const DefaultAddr = ":3264"
 
 // NewServer creates and initializes a server.
-func NewServer(sequential bool) *Server {
+func NewServer(pid uint64, sequential bool) *Server {
 	server := new(Server)
-	server.store = NewStore(sequential)
+	server.store = NewStore(pid, sequential)
 
 	return server
 }
@@ -95,7 +95,7 @@ func (s *Server) GetValue(ctx context.Context, in *pb.GetRequest) (*pb.GetReply,
 		reply.Error = err.Error()
 	} else {
 		reply.Success = true
-		debug("get key %s returns version %d", reply.Key, reply.Version)
+		debug("get key %s returns version %s", reply.Key, reply.Version)
 	}
 
 	return reply, nil
@@ -118,7 +118,7 @@ func (s *Server) PutValue(ctx context.Context, in *pb.PutRequest) (*pb.PutReply,
 		reply.Error = err.Error()
 	} else {
 		reply.Success = true
-		debug("put key %s to version %d", reply.Key, reply.Version)
+		debug("put key %s to version %s", reply.Key, reply.Version)
 	}
 
 	return reply, nil

@@ -18,7 +18,7 @@ const timeout = 10 * time.Second
 // of each key as it generates work.
 type Client struct {
 	key      string           // the key the client manages
-	version  uint64           // current version of the key (must be increasing)
+	version  *Version         // current version of the key (must be increasing)
 	addr     string           // the address of the server
 	conn     *grpc.ClientConn // the connection to the server
 	rpc      pb.StorageClient // the transport to make requests on
@@ -74,9 +74,9 @@ func (c *Client) IsConnected() bool {
 }
 
 // Get composes a Get Request and returns the value and version.
-func (c *Client) Get(key string) ([]byte, uint64, error) {
+func (c *Client) Get(key string) ([]byte, string, error) {
 	if !c.IsConnected() {
-		return nil, 0, errors.New("not connected, cannot make a request")
+		return nil, "", errors.New("not connected, cannot make a request")
 	}
 
 	req := &pb.GetRequest{
@@ -89,21 +89,21 @@ func (c *Client) Get(key string) ([]byte, uint64, error) {
 
 	if err != nil {
 		warn(err.Error())
-		return nil, 0, err
+		return nil, "", err
 	}
 
 	if !reply.Success {
 		warn(reply.Error)
-		return nil, 0, errors.New(reply.Error)
+		return nil, "", errors.New(reply.Error)
 	}
 
 	return reply.Value, reply.Version, nil
 }
 
 // Put composes a Put request and returns the version created.
-func (c *Client) Put(key string, value []byte) (uint64, error) {
+func (c *Client) Put(key string, value []byte) (string, error) {
 	if !c.IsConnected() {
-		return 0, errors.New("not connected, cannot make a request")
+		return "", errors.New("not connected, cannot make a request")
 	}
 
 	req := &pb.PutRequest{
@@ -116,12 +116,12 @@ func (c *Client) Put(key string, value []byte) (uint64, error) {
 
 	if err != nil {
 		warn(err.Error())
-		return 0, err
+		return "", err
 	}
 
 	if !reply.Success {
 		warn(reply.Error)
-		return 0, errors.New(reply.Error)
+		return "", errors.New(reply.Error)
 	}
 
 	return reply.Version, nil

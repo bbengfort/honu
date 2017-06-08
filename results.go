@@ -21,7 +21,7 @@ type Latency struct {
 	Delay   time.Duration // the amount of time the message took
 	Bytes   int           // the number of bytes in the message
 	Key     string        // the key that was sent
-	Version uint64        // the version of the key written
+	Version string        // the version of the key written
 	Success bool          // if the write was successful or not
 }
 
@@ -29,7 +29,7 @@ type Latency struct {
 // msgid,key,version,ts,latency,bytes,success
 func (l *Latency) String() string {
 	return fmt.Sprintf(
-		"%d,%s,%d,%s,%d,%d,%t",
+		"%d,%s,%s,%s,%d,%d,%t",
 		l.Message,
 		l.Key,
 		l.Version,

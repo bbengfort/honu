@@ -10,7 +10,7 @@ message GetRequest {
 // GetReply is a response from the server to the client with the value
 message GetReply {
     bool success = 1;   // if the get operation was successful
-    uint64 version = 2; // the current version of the value
+    string version = 2; // the current version of the value
     string key = 3;     // the key of the request for debugging
     bytes value = 4;    // the current value for the given key
     string error = 5;   // the error that occurred if not success
@@ -27,7 +27,7 @@ message PutRequest {
 message PutReply {
     bool success = 1;   // if the put operation was successful
     string key = 2;     // the key of the request for debugging
-    uint64 version = 3; // the created version of the key/value
+    string version = 3; // the created version of the key/value
     string error = 4;   // the error that occurred if not success
 }
 
