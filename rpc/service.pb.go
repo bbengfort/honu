@@ -2,18 +2,6 @@
 // source: service.proto
 // DO NOT EDIT!
 
-/*
-Package rpc is a generated protocol buffer package.
-
-It is generated from these files:
-	service.proto
-
-It has these top-level messages:
-	GetRequest
-	GetReply
-	PutRequest
-	PutReply
-*/
 package rpc
 
 import proto "github.com/golang/protobuf/proto"
@@ -30,12 +18,6 @@ var _ = proto.Marshal
 var _ = fmt.Errorf
 var _ = math.Inf
 
-// This is a compile-time assertion to ensure that this generated file
-// is compatible with the proto package it is being compiled against.
-// A compilation error at this line likely means your copy of the
-// proto package needs to be updated.
-const _ = proto.ProtoPackageIsVersion2 // please upgrade the proto package
-
 // GetRequest is sent from a client to the server to read a value for a key
 type GetRequest struct {
 	Key string `protobuf:"bytes,1,opt,name=key" json:"key,omitempty"`
@@ -44,7 +26,7 @@ type GetRequest struct {
 func (m *GetRequest) Reset()                    { *m = GetRequest{} }
 func (m *GetRequest) String() string            { return proto.CompactTextString(m) }
 func (*GetRequest) ProtoMessage()               {}
-func (*GetRequest) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{0} }
+func (*GetRequest) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
 
 func (m *GetRequest) GetKey() string {
 	if m != nil {
@@ -65,7 +47,7 @@ type GetReply struct {
 func (m *GetReply) Reset()                    { *m = GetReply{} }
 func (m *GetReply) String() string            { return proto.CompactTextString(m) }
 func (*GetReply) ProtoMessage()               {}
-func (*GetReply) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{1} }
+func (*GetReply) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{1} }
 
 func (m *GetReply) GetSuccess() bool {
 	if m != nil {
@@ -111,7 +93,7 @@ type PutRequest struct {
 func (m *PutRequest) Reset()                    { *m = PutRequest{} }
 func (m *PutRequest) String() string            { return proto.CompactTextString(m) }
 func (*PutRequest) ProtoMessage()               {}
-func (*PutRequest) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{2} }
+func (*PutRequest) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{2} }
 
 func (m *PutRequest) GetKey() string {
 	if m != nil {
@@ -138,7 +120,7 @@ type PutReply struct {
 func (m *PutReply) Reset()                    { *m = PutReply{} }
 func (m *PutReply) String() string            { return proto.CompactTextString(m) }
 func (*PutReply) ProtoMessage()               {}
-func (*PutReply) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{3} }
+func (*PutReply) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{3} }
 
 func (m *PutReply) GetSuccess() bool {
 	if m != nil {
@@ -280,9 +262,9 @@ var _Storage_serviceDesc = grpc.ServiceDesc{
 	Metadata: "service.proto",
 }
 
-func init() { proto.RegisterFile("service.proto", fileDescriptor0) }
+func init() { proto.RegisterFile("service.proto", fileDescriptor1) }
 
-var fileDescriptor0 = []byte{
+var fileDescriptor1 = []byte{
 	// 241 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x7c, 0x91, 0x31, 0x4f, 0xc3, 0x30,
 	0x10, 0x85, 0x9b, 0xa4, 0xa5, 0xe1, 0x44, 0x05, 0xb2, 0x18, 0x2c, 0x06, 0x54, 0x79, 0xea, 0x80,

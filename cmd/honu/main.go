@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/bbengfort/honu"
@@ -41,9 +42,26 @@ func main() {
 					EnvVar: "HONU_SEQUENTIAL_CONSISTENCY",
 				},
 				cli.Uint64Flag{
-					Name:   "p, pid",
+					Name:   "i, pid",
 					Usage:  "unique process id of server",
+					Value:  1,
 					EnvVar: "HONU_PROCESS_ID",
+				},
+				cli.StringFlag{
+					Name:   "p, peers",
+					Usage:  "comma delmited list of address of remote replicas",
+					EnvVar: "HONU_PEERS",
+				},
+				cli.StringFlag{
+					Name:   "d, delay",
+					Usage:  "parsable duration of anti-entropy delay",
+					Value:  "1s",
+					EnvVar: "HONU_ANTI_ENTROPY_DELAY",
+				},
+				cli.BoolFlag{
+					Name:   "s, standalone",
+					Usage:  "disable replication and run in standalone mode",
+					EnvVar: "HONU_STANDALONE_MODE",
 				},
 			},
 		},
@@ -139,8 +157,29 @@ func main() {
 
 // Run the storage server
 func serve(c *cli.Context) error {
+	// Create the server
 	server := honu.NewServer(c.Uint64("pid"), c.Bool("relax"))
 
+	// Parse the peers variable
+	var peers []string
+	if c.String("peers") != "" {
+		peers = strings.Split(c.String("peers"), ",")
+	}
+
+	// Run replication service
+	if !c.Bool("standalone") && len(peers) > 0 {
+		// Parse the delay variable
+		delay, err := time.ParseDuration(c.String("delay"))
+		if err != nil {
+			return cli.NewExitError(err.Error(), 1)
+		}
+
+		if err := server.Replicate(peers, delay); err != nil {
+			return cli.NewExitError(err.Error(), 1)
+		}
+	}
+
+	// Run the server (blocks)
 	if err := server.Run(c.String("addr")); err != nil {
 		return cli.NewExitError(err.Error(), 1)
 	}

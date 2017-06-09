@@ -30,12 +30,25 @@ func NewStore(pid uint64, sequential bool) Store {
 
 }
 
+// Locker is an interface for defining the sync.RWMutex methods including
+// Lock and Unlock for write protection from sync.Locker and RLock and RUnlock
+// for read protection.
+type Locker interface {
+	sync.Locker
+	RLock()
+	RUnlock()
+}
+
 // Store is an interface for multiple in-memory storage types under the hood.
 type Store interface {
+	Locker
 	Init(pid uint64)                                          // Initialize the store
 	Get(key string) (value []byte, version string, err error) // Get a value and version for a given key
+	GetEntry(key string) *Entry                               // Get the entire entry without a lock
 	Put(key string, value []byte) (version string, err error) // Put a value for a given key and get associated version
-	Update(key string, version Version)                       // Update the version scalar from a remote source
+	PutEntry(key string, entry *Entry) (modified bool)        // Put the entry without modifying the version
+	View() map[string]Version                                 // Returns a map containing the latest version of all keys
+	Update(key string, version *Version)                      // Update the version scalar from a remote source
 	Snapshot(path string) error                               // Write a snapshot of the version history to disk
 }
 
@@ -62,6 +75,7 @@ type LinearizableStore struct {
 func (s *LinearizableStore) Init(pid uint64) {
 	s.pid = pid
 	s.namespace = make(map[string]*Entry)
+	s.lastWrite = &NullVersion
 
 	// Create, initialize and run the history.
 	s.history = new(History)
@@ -87,6 +101,16 @@ func (s *LinearizableStore) Get(key string) (value []byte, version string, err e
 	version = entry.Version.String()
 	value = entry.Value
 	return value, version, err
+}
+
+// GetEntry returns the entire entry from the namespace without a lock.
+// Returns nil if the given key is not in the store.
+func (s *LinearizableStore) GetEntry(key string) *Entry {
+	entry, ok := s.namespace[key]
+	if !ok {
+		return nil
+	}
+	return entry
 }
 
 // Put a value into the namespace, incrementing the version across all
@@ -121,14 +145,61 @@ func (s *LinearizableStore) Put(key string, value []byte) (string, error) {
 	return version.String(), nil
 }
 
-// Update the current version counter with the global value.
-func (s *LinearizableStore) Update(key string, version Version) {
+// PutEntry without modifying version information. Returns true if the entry
+// is modified or not -- will only put an entry that has a greater version
+// than the current entry.
+//
+// This method is also responsible for updating the lamport clock.
+func (s *LinearizableStore) PutEntry(key string, entry *Entry) bool {
 	s.Lock()
 	defer s.Unlock()
 
+	// Get the current version
+	current, ok := s.namespace[key]
+	if !ok {
+		current = &Entry{Key: &key, Version: &NullVersion, Parent: &NullVersion}
+	}
+
+	// If entry is less than or equal to current version, do not put.
+	if entry.Version.LesserEqual(current.Version) {
+		return false
+	}
+
+	// Update the version scalar
+	if entry.Version.Scalar > s.current {
+		s.current = entry.Version.Scalar
+	}
+
+	// Update the entry
+	current.Version = entry.Version
+	current.Parent = entry.Parent
+	current.Value = entry.Value
+
+	// Update the namespace, versions, and last write
+	s.namespace[key] = current
+	s.history.Append(current.Key, current.Parent, current.Version)
+	s.lastWrite = current.Version
+	return true
+}
+
+// Update the current version counter with the global value.
+func (s *LinearizableStore) Update(key string, version *Version) {
 	if version.Scalar > s.current {
 		s.current = version.Scalar
 	}
+}
+
+// View returns the current version for every key in the namespace.
+func (s *LinearizableStore) View() map[string]Version {
+	s.RLock()
+	defer s.RUnlock()
+
+	view := make(map[string]Version)
+	for key, entry := range s.namespace {
+		view[key] = *entry.Version
+	}
+
+	return view
 }
 
 // Snapshot the current version history to disk, writing the version data to
@@ -217,6 +288,16 @@ func (s *SequentialStore) Get(key string) (value []byte, version string, err err
 	return entry.Value, entry.Version.String(), nil
 }
 
+// GetEntry returns the entire entry from the namespace without a lock.
+// Returns nil if the given key is not in the store.
+func (s *SequentialStore) GetEntry(key string) *Entry {
+	entry, ok := s.namespace[key]
+	if !ok {
+		return nil
+	}
+	return entry
+}
+
 // make is an internal method that surrounds the store in a write lock to
 // create an empty entry for the given key. It returns a write locked entry to
 // ensure that the caller can update the entry with values before unlock but
@@ -230,7 +311,7 @@ func (s *SequentialStore) make(key string) *Entry {
 	defer s.Unlock()
 
 	// Create a write locked entry
-	entry := &Entry{Key: &key}
+	entry := &Entry{Key: &key, Version: &NullVersion, Parent: &NullVersion}
 	entry.Lock()
 
 	// Insert the entry into the namespace and return it
@@ -267,14 +348,68 @@ func (s *SequentialStore) Put(key string, value []byte) (string, error) {
 	return entry.Version.String(), nil
 }
 
+// PutEntry without modifying version information. Returns true if the entry
+// is modified or not -- will only put an entry that has a greater version
+// than the current entry.
+//
+// This method is also responsible for updating the lamport clock.
+func (s *SequentialStore) PutEntry(key string, entry *Entry) bool {
+	// Attempt to get the write-locked version from the store
+	current := s.get(key, true)
+
+	// Make an empty entry if there was no entry already in the store.
+	if current == nil {
+		current = s.make(key)
+	}
+
+	// Ensure the entry is unlocked when done
+	defer current.Unlock()
+
+	// If entry is less than or equal to current version, do not put.
+	if entry.Version.LesserEqual(current.Version) {
+		return false
+	}
+
+	// Update the scalar with the new information.
+	if entry.Version.Scalar > current.Current {
+		current.Current = entry.Version.Scalar
+	}
+
+	// Replace current entry with new information.
+	current.Version = entry.Version
+	current.Parent = entry.Parent
+	current.Value = entry.Value
+
+	// Store the version in the version history and return true.
+	s.history.Append(current.Key, current.Parent, current.Version)
+	return true
+}
+
 // Update the current version counter with the global value.
-func (s *SequentialStore) Update(key string, version Version) {
+func (s *SequentialStore) Update(key string, version *Version) {
 	entry := s.get(key, true)
+	if entry == nil {
+		entry = s.make(key)
+	}
+
 	defer entry.Unlock()
 
 	if version.Scalar > entry.Current {
 		entry.Current = version.Scalar
 	}
+}
+
+// View returns the current version for every key in the namespace.
+func (s *SequentialStore) View() map[string]Version {
+	s.RLock()
+	defer s.RUnlock()
+
+	view := make(map[string]Version)
+	for key, entry := range s.namespace {
+		view[key] = *entry.Version
+	}
+
+	return view
 }
 
 // Snapshot the current version history to disk, writing the version data to

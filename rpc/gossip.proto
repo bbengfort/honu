@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package rpc;
+
+
+// Version represents the latest conflict-free version number for an object.
+message Version {
+    uint64 scalar = 1;
+    uint64 pid = 2;
+}
+
+// Entry represents a key/value entry that is being synchronized.
+message Entry {
+    Version parent = 1;
+    Version version = 2;
+    bytes value = 3;
+}
+
+// PullRequest sends a vector of versions to a remote and expects any more
+// recent versions of objects in reply.
+message PullRequest {
+    map<string, Version> versions = 1;
+}
+
+// PullReply contains the entries for objects that have a later version. It
+// may also contain an optional pull request to initiate a push in return.
+// It returns successful acknowledgement if any synchronization takes place.
+message PullReply {
+    bool success = 1;
+    map<string, Entry> entries = 2;
+    PullRequest pull = 3;
+}
+
+// PushRequest sends a vector of entries to a remote expecting them to be
+// synchronized at the remote namespace.
+message PushRequest {
+    map<string, Entry> entries = 1;
+}
+
+// PushReply returns successful acknowledgement if syncrhonization took place.
+message PushReply {
+    bool success = 1;
+}
+
+
+// The Gossip service defines communications for bilateral anti-entropy.
+service Gossip {
+    rpc Push(PushRequest) returns (PushReply) {};
+    rpc Pull(PullRequest) returns (PullReply) {};
+}

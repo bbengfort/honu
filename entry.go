@@ -5,6 +5,8 @@ import (
 	"strconv"
 	"strings"
 	"sync"
+
+	pb "github.com/bbengfort/honu/rpc"
 )
 
 //===========================================================================
@@ -20,6 +22,28 @@ type Entry struct {
 	Parent  *Version // The version of the parent the entry was derived from
 	Value   []byte   // The data value of the entry
 	Current uint64   // The current version scalar
+}
+
+//===========================================================================
+// Temporary to/from Protobuf
+//===========================================================================
+
+func (e *Entry) topb() *pb.Entry {
+	return &pb.Entry{
+		Parent:  e.Parent.topb(),
+		Version: e.Version.topb(),
+		Value:   e.Value,
+	}
+}
+
+// not thread safe
+func (e *Entry) frompb(in *pb.Entry) {
+	e.Parent = new(Version)
+	e.Version = new(Version)
+
+	e.Parent.frompb(in.Parent)
+	e.Version.frompb(in.Version)
+	e.Value = in.Value
 }
 
 //===========================================================================
@@ -125,6 +149,22 @@ func (v Version) LesserEqual(o *Version) bool {
 		return v.PID <= o.PID
 	}
 	return v.Scalar < o.Scalar
+}
+
+//===========================================================================
+// Temporary to/from Protobuf
+//===========================================================================
+
+func (v *Version) topb() *pb.Version {
+	return &pb.Version{
+		Scalar: v.Scalar,
+		Pid:    v.PID,
+	}
+}
+
+func (v *Version) frompb(in *pb.Version) {
+	v.Scalar = in.Scalar
+	v.PID = in.Pid
 }
 
 //===========================================================================

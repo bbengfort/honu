@@ -31,11 +31,14 @@ func NewServer(pid uint64, sequential bool) *Server {
 // in a thread-safe fashion (because the store is surrounded by locks).
 type Server struct {
 	sync.Mutex
-	store    Store     // The in-memory key/value store
-	started  time.Time // The time the first message was received
-	finished time.Time // The time of the last message to be received
-	reads    uint64    // The number of reads to the server
-	writes   uint64    // The number of writes to the server
+	store    Store         // The in-memory key/value store
+	addr     string        // The IP address of the local server
+	peers    []string      // IP addresses of replica peers
+	delay    time.Duration // The anti-entropy delay
+	started  time.Time     // The time the first message was received
+	finished time.Time     // The time of the last message to be received
+	reads    uint64        // The number of reads to the server
+	writes   uint64        // The number of writes to the server
 }
 
 //===========================================================================
@@ -49,6 +52,9 @@ func (s *Server) Run(addr string) error {
 		addr = DefaultAddr
 	}
 
+	// Store the addr on the server
+	s.addr = addr
+
 	// Create the TCP channel to receive connections
 	lis, err := net.Listen("tcp", addr)
 	if err != nil {
@@ -58,6 +64,7 @@ func (s *Server) Run(addr string) error {
 	// Create the gRPC handler for RPC messages
 	srv := grpc.NewServer()
 	pb.RegisterStorageServer(srv, s)
+	pb.RegisterGossipServer(srv, s)
 
 	// Capture interrupt and shutdown gracefully
 	go signalHandler(s.Shutdown)
@@ -65,6 +72,20 @@ func (s *Server) Run(addr string) error {
 	info("honu storage server listening on %s", addr)
 	srv.Serve(lis)
 
+	return nil
+}
+
+// Replicate the Honu server using anti-entropy.
+func (s *Server) Replicate(peers []string, delay time.Duration) error {
+	// Store the peers and delay on the server
+	s.peers = peers
+	s.delay = delay
+
+	// Schedule the anti-entropy delay
+	time.AfterFunc(s.delay, s.AntiEntropy)
+
+	// Give notice and return no error
+	info("replicating to %d peers with anti-entropy interval %s", len(peers), delay)
 	return nil
 }
 
