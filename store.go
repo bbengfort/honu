@@ -50,6 +50,8 @@ type Store interface {
 	View() map[string]Version                                 // Returns a map containing the latest version of all keys
 	Update(key string, version *Version)                      // Update the version scalar from a remote source
 	Snapshot(path string) error                               // Write a snapshot of the version history to disk
+	Length() int                                              // Returns the number of items in the store (number of keys)
+
 }
 
 //===========================================================================
@@ -205,7 +207,13 @@ func (s *LinearizableStore) View() map[string]Version {
 // Snapshot the current version history to disk, writing the version data to
 // the specified path. Returns any I/O errors if snapshotting is unsuccessful.
 func (s *LinearizableStore) Snapshot(path string) error {
-	return fmt.Errorf("not implemented yet")
+	return fmt.Errorf("version history snapshot not implemented yet")
+}
+
+// Length returns the number of items in the Store, namely the number of keys
+// in the namespace. This does not reflect the number of versions.
+func (s *LinearizableStore) Length() int {
+	return len(s.namespace)
 }
 
 //===========================================================================
@@ -415,5 +423,11 @@ func (s *SequentialStore) View() map[string]Version {
 // Snapshot the current version history to disk, writing the version data to
 // the specified path. Returns any I/O errors if snapshotting is unsuccessful.
 func (s *SequentialStore) Snapshot(path string) error {
-	return fmt.Errorf("not implemented yet")
+	return fmt.Errorf("version history snapshot not implemented yet")
+}
+
+// Length returns the number of items in the Store, namely the number of keys
+// in the namespace. This does not reflect the number of versions.
+func (s *SequentialStore) Length() int {
+	return len(s.namespace)
 }

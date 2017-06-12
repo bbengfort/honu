@@ -63,7 +63,7 @@ func (c *Client) write(done chan<- bool, echan chan<- error, results chan<- *Lat
 }
 
 // Run the write throughput workload
-func (c *Client) Run(key string, duration time.Duration, outpath string) error {
+func (c *Client) Run(key string, duration time.Duration, outpath string, aggregate bool) error {
 	// Initialize the client
 	c.key = key
 	c.messages = 0
@@ -74,7 +74,7 @@ func (c *Client) Run(key string, duration time.Duration, outpath string) error {
 	timer := time.NewTimer(duration)
 	echan := make(chan error, 1)
 	done := make(chan bool, 1)
-	results, err := Results(outpath)
+	results, err := Results(outpath, aggregate)
 
 	if err != nil {
 		return err
@@ -98,6 +98,9 @@ func (c *Client) Run(key string, duration time.Duration, outpath string) error {
 			latency := float64(c.latency.Nanoseconds()) / float64(c.messages)
 			msg := fmt.Sprintf("%d messages sent in %s (%0.4f msg/sec, %0.4f ns/msg)", c.messages, c.latency, throughput, latency)
 			fmt.Println(msg)
+
+			// HACK need to instead block on the results channel
+			time.Sleep(time.Millisecond * 500)
 			return nil
 		case err := <-echan:
 			results <- nil // close the results file

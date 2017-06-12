@@ -63,6 +63,22 @@ func main() {
 					Usage:  "disable replication and run in standalone mode",
 					EnvVar: "HONU_STANDALONE_MODE",
 				},
+				cli.StringFlag{
+					Name:   "u, uptime",
+					Usage:  "pass a parsable duration to shut the server down after",
+					EnvVar: "HONU_SERVER_UPTIME",
+				},
+				cli.StringFlag{
+					Name:   "w, stats",
+					Usage:  "path on disk to write JSON stats to on shutdown",
+					Value:  "",
+					EnvVar: "HONU_SERVER_RESULTS",
+				},
+				cli.StringFlag{
+					Name:  "c, history",
+					Usage: "path on disk to write version history to on shutdown",
+					Value: "",
+				},
 			},
 		},
 		{
@@ -134,9 +150,15 @@ func main() {
 					EnvVar: "HONU_RUN_DURATION",
 				},
 				cli.StringFlag{
-					Name:  "w, results",
-					Usage: "path on disk to write results to",
-					Value: "",
+					Name:   "w, results",
+					Usage:  "path on disk to write results to",
+					Value:  "",
+					EnvVar: "HONU_CLIENT_RESULTS",
+				},
+				cli.BoolFlag{
+					Name:   "A, aggregate",
+					Usage:  "aggregate run value distribution",
+					EnvVar: "HONU_AGG_CLIENT_RESULTS",
 				},
 				cli.BoolFlag{
 					Name:   "X, disabled",
@@ -166,6 +188,9 @@ func serve(c *cli.Context) error {
 		peers = strings.Split(c.String("peers"), ",")
 	}
 
+	// Set the stats and version dump paths
+	server.Measure(c.String("stats"), c.String("history"))
+
 	// Run replication service
 	if !c.Bool("standalone") && len(peers) > 0 {
 		// Parse the delay variable
@@ -177,6 +202,17 @@ func serve(c *cli.Context) error {
 		if err := server.Replicate(peers, delay); err != nil {
 			return cli.NewExitError(err.Error(), 1)
 		}
+	}
+
+	// Set the uptime timer
+	if c.String("uptime") != "" {
+		// Parse the delay variable
+		uptime, err := time.ParseDuration(c.String("uptime"))
+		if err != nil {
+			return cli.NewExitError(err.Error(), 1)
+		}
+
+		server.Uptime(uptime)
 	}
 
 	// Run the server (blocks)
@@ -237,7 +273,7 @@ func run(c *cli.Context) error {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
-	if err := client.Run(c.String("key"), duration, c.String("results")); err != nil {
+	if err := client.Run(c.String("key"), duration, c.String("results"), c.Bool("aggregate")); err != nil {
 		return cli.NewExitError(err.Error(), 1)
 	}
 

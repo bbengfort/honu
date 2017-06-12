@@ -34,6 +34,7 @@ func (s *Server) AntiEntropy() {
 	)
 
 	if err != nil {
+		s.syncs[peer].Misses++
 		warn(err.Error())
 		return
 	}
@@ -57,16 +58,19 @@ func (s *Server) AntiEntropy() {
 	// Send the pull request
 	rep, err := client.Pull(context.Background(), req)
 	if err != nil {
+		s.syncs[peer].Misses++
 		warn(err.Error())
 		return
 	}
 
 	// Handle the pull response
 	if !rep.Success {
+		s.syncs[peer].Misses++
 		debug("no synchronization occurred")
 		return
 	}
 
+	s.syncs[peer].Pulls++
 	var items uint64
 
 	for key, pbentry := range rep.Entries {
@@ -92,11 +96,14 @@ func (s *Server) AntiEntropy() {
 		}
 
 		go func() {
+			s.syncs[peer].Pushes++
 			client.Push(context.Background(), push)
 		}()
 	}
 
-	// Log anti-entropy success
+	// Log anti-entropy success and metrics
+	s.syncs[peer].Syncs++
+	s.syncs[peer].Versions += items
 	info("synchronized %d items to %s", items, peer)
 }
 
@@ -179,4 +186,17 @@ func (s *Server) Push(ctx context.Context, in *pb.PushRequest) (*pb.PushReply, e
 	}
 
 	return reply, nil
+}
+
+//===========================================================================
+// Per-peer metrics for syncrhonization
+//===========================================================================
+
+// SyncStats represents per-peer pairwise metrics of synchronization.
+type SyncStats struct {
+	Syncs    uint64 // Total number of anti-entropy sessions between peers
+	Pulls    uint64 // Number of successful pull exchanges between peers
+	Pushes   uint64 // Number of successful push exchanges between peers
+	Misses   uint64 // Number of unsuccessful exchanges between peers
+	Versions uint64 // The total number of object versions exchanged
 }

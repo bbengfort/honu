@@ -3,6 +3,7 @@ package honu
 import (
 	"fmt"
 	"net"
+	"os"
 	"sync"
 	"time"
 
@@ -24,6 +25,14 @@ func NewServer(pid uint64, sequential bool) *Server {
 	server := new(Server)
 	server.store = NewStore(pid, sequential)
 
+	// Save the server type for analytics
+	// TODO: refactor to use reflect to check the name of the struct.
+	if sequential {
+		server.stype = "sequential"
+	} else {
+		server.stype = "linearizable"
+	}
+
 	return server
 }
 
@@ -31,14 +40,18 @@ func NewServer(pid uint64, sequential bool) *Server {
 // in a thread-safe fashion (because the store is surrounded by locks).
 type Server struct {
 	sync.Mutex
-	store    Store         // The in-memory key/value store
-	addr     string        // The IP address of the local server
-	peers    []string      // IP addresses of replica peers
-	delay    time.Duration // The anti-entropy delay
-	started  time.Time     // The time the first message was received
-	finished time.Time     // The time of the last message to be received
-	reads    uint64        // The number of reads to the server
-	writes   uint64        // The number of writes to the server
+	store    Store                 // The in-memory key/value store
+	addr     string                // The IP address of the local server
+	peers    []string              // IP addresses of replica peers
+	delay    time.Duration         // The anti-entropy delay
+	stype    string                // The type of storage being used
+	started  time.Time             // The time the first message was received
+	finished time.Time             // The time of the last message to be received
+	reads    uint64                // The number of reads to the server
+	writes   uint64                // The number of writes to the server
+	syncs    map[string]*SyncStats // Per-peer metrics of anti-entropy synchronizations
+	stats    string                // Path to write metrics to
+	history  string                // Path to write version history to
 }
 
 //===========================================================================
@@ -75,11 +88,35 @@ func (s *Server) Run(addr string) error {
 	return nil
 }
 
+// Uptime sets a fixed amount of time to keep the server up for, shutting it
+// down when the duration has passed and exiting gracefully.
+func (s *Server) Uptime(d time.Duration) {
+	time.AfterFunc(d, func() {
+		defer os.Exit(0)
+
+		info("shutting down server after %s uptime", d)
+		s.Shutdown()
+	})
+}
+
+// Measure the Honu server activity on shutdown. Pass in the paths to write
+// stats and history to on shutdown. If empty strings, they will be ignored.
+func (s *Server) Measure(stats, history string) {
+	s.stats = stats
+	s.history = history
+}
+
 // Replicate the Honu server using anti-entropy.
 func (s *Server) Replicate(peers []string, delay time.Duration) error {
 	// Store the peers and delay on the server
 	s.peers = peers
 	s.delay = delay
+
+	// Create the sync stats objects for each peer
+	s.syncs = make(map[string]*SyncStats)
+	for _, peer := range peers {
+		s.syncs[peer] = new(SyncStats)
+	}
 
 	// Schedule the anti-entropy delay
 	time.AfterFunc(s.delay, s.AntiEntropy)
@@ -91,7 +128,25 @@ func (s *Server) Replicate(peers []string, delay time.Duration) error {
 
 // Shutdown the Huno server, printing metrics.
 func (s *Server) Shutdown() error {
-	info(s.Metrics())
+	// Save the version history snapshot
+	if s.history != "" {
+		if err := s.store.Snapshot(s.history); err != nil {
+			warn(err.Error())
+		} else {
+			info("version history snapshot saved to %s", s.history)
+		}
+
+	}
+
+	// Save the results stats to disk for analysis
+	if err := s.Metrics(s.stats); err != nil {
+		warn(err.Error())
+	} else {
+		if s.stats != "" {
+			info("server stats saved to %s", s.stats)
+		}
+	}
+
 	return nil
 }
 
@@ -149,11 +204,15 @@ func (s *Server) PutValue(ctx context.Context, in *pb.PutRequest) (*pb.PutReply,
 // Server metrics
 //===========================================================================
 
-// Metrics returns a string representation of the throughput of the server.
-func (s *Server) Metrics() string {
+// Metrics writes server-side statistics as a JSON line to the specified path
+// on disk. This function also logs the overall metrics (usually on shutdown)
+// so if the path is an empty string, the metrics can be reported to the log
+// without being saved to disk.
+func (s *Server) Metrics(path string) error {
 	s.Lock()
 	defer s.Unlock()
 
+	// Compute the final metrics
 	var throughput float64
 	duration := s.finished.Sub(s.started)
 	accesses := s.reads + s.writes
@@ -161,10 +220,34 @@ func (s *Server) Metrics() string {
 		throughput = float64(accesses) / duration.Seconds()
 	}
 
-	return fmt.Sprintf(
+	// Log the metrics
+	info(
 		"%d accesses (%d reads, %d writes) in %s -- %0.4f accesses/second",
 		accesses, s.reads, s.writes, duration, throughput,
 	)
+
+	// Compose the metrics to write to the given path.
+	if path != "" {
+		// Create the JSON data to write to disk
+		data := make(map[string]interface{})
+		data["started"] = s.started
+		data["finished"] = s.finished
+		data["timestamp"] = time.Now()
+		data["duration"] = duration.Seconds()
+		data["reads"] = s.reads
+		data["writes"] = s.writes
+		data["throughput"] = throughput
+		data["store"] = s.stype
+		data["nkeys"] = s.store.Length()
+		data["syncs"] = s.syncs
+
+		// Now write that data to disk
+		if err := appendJSON(path, data); err != nil {
+			return fmt.Errorf("could not append server metrics to %s: %s", path, err)
+		}
+	}
+
+	return nil
 }
 
 // enter is called when an RPC method is started, it updates the count of the
