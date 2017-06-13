@@ -22,6 +22,10 @@ Therefore the experimental dimensions are as follows:
 1. sequential vs. linearizable
 2. multi-key vs. single-key
 
-Resulting in 4 total experiments. Each experiment has several trials with an increasing number of clients from 1-32. Clients are distributed to hyperion and lagoon in a round-robin fashion such that at most only 16 processes on each box are running at a time. At conclusion we had 128 data points, 32 in each of our four experiments.
+Resulting in 4 total experiments. Each experiment has several trials with an increasing number of clients from 1-32. Clients are distributed to hyperion and lagoon in a round-robin fashion such that at most only 16 processes on each box are running at a time. At the conclusion of all runs we had 128 data points, 32 in each of our four experiments.
 
 ## Results
+
+[![Throughput of Single Key Writes](figures/single-key-throughput.png)](figures/single-key-throughput.png)
+
+[![Throughput of Multiple Key Writes](figures/multi-key-throughput.png)](figures/multi-key-throughput.png)
