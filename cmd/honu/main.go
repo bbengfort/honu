@@ -19,7 +19,7 @@ func main() {
 	// Instantiate the command line application
 	app := cli.NewApp()
 	app.Name = "honu"
-	app.Version = "0.3"
+	app.Version = "0.4"
 	app.Usage = "throughput testing for a volatile, in-memory key/value store"
 
 	// Define commands available to the application

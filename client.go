@@ -40,7 +40,7 @@ func (c *Client) Connect(addr string) error {
 		return fmt.Errorf("could not connect to %s: %s", c.addr, err)
 	}
 
-	info("connected to storage server at %s", c.addr)
+	debug("connected to storage server at %s", c.addr)
 	c.rpc = pb.NewStorageClient(c.conn)
 	return nil
 }

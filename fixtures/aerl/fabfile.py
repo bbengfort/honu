@@ -20,10 +20,8 @@ Fabric command definitions for running anti-entropy reinforcement learning.
 import os
 import re
 
-from copy import copy
-from multiprocessing import Lock
+from fabric.api import execute
 from fabric.api import env, run, cd, parallel, get
-from fabric.api import roles, task, execute, settings
 
 
 ##########################################################################
@@ -46,7 +44,13 @@ ports = re.compile(r'.+\.(\d{4})')
 # Fabric Env
 env.colorize_errors = True
 env.dedupe_hosts = False
-env.hosts = addrs + [CLIENTA, CLIENTB]
+env.hosts = [
+    "nevis.cs.umd.edu",
+    "lagoon.cs.umd.edu",
+    "hyperion.cs.umd.edu",
+    "73.223.113.112",
+    "minecraft.willz.org:31264",
+]
 env.user = "benjamin"
 
 
@@ -107,3 +111,13 @@ def experiment():
         host = unfix(addr, suffix=".3266")
         host = unfix(addr, suffix=".3267")
         execute(serve, host=host, addr=addr)
+
+
+@parallel
+def results(remotepath="/data/honu/results.jsonl", localpath=None):
+    if localpath:
+        localpath = os.path.join(localpath, "%(host)s", "%(path)s")
+    else:
+        localpath = "%(host)s/%(path)s"
+
+    get(remotepath, localpath)

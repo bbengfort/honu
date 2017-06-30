@@ -39,6 +39,7 @@ func (s *Server) AntiEntropy() {
 		warn(err.Error())
 		return
 	}
+	defer conn.Close()
 
 	// Create a gossip client
 	client := pb.NewGossipClient(conn)
