@@ -1,7 +1,6 @@
 package honu
 
 import (
-	"math/rand"
 	"time"
 
 	"google.golang.org/grpc"
@@ -21,7 +20,9 @@ func (s *Server) AntiEntropy() {
 
 	// Select a random peer for pairwise anti-entropy
 	// TODO: update probabilities and message counts
-	peer := s.peers[rand.Intn(len(s.peers))]
+	reward := 0
+	arm := s.bandit.Select()
+	peer := s.peers[arm]
 
 	// TODO: do better at ignoring self-connections
 	if peer == s.addr {
@@ -70,6 +71,7 @@ func (s *Server) AntiEntropy() {
 		return
 	}
 
+	reward++ // add reward for a successful pull request
 	s.syncs[peer].Pulls++
 	var items uint64
 
@@ -95,11 +97,17 @@ func (s *Server) AntiEntropy() {
 			items++
 		}
 
+		reward++ // add reward for a push request
+
 		go func() {
 			s.syncs[peer].Pushes++
 			client.Push(context.Background(), push)
 		}()
 	}
+
+	// Update the bandit with the reward
+	// TODO: should reward == items?
+	s.bandit.Update(arm, reward)
 
 	// Log anti-entropy success and metrics
 	s.syncs[peer].Syncs++

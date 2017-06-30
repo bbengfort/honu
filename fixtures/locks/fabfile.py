@@ -19,7 +19,6 @@ Fabric command definitions for running lock tests.
 
 import os
 import random
-import multiprocessing as mp
 
 from fabric.api import env, run, cd, parallel, get
 from fabric.api import roles, task, execute, settings

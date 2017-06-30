@@ -19,7 +19,7 @@ func main() {
 	// Instantiate the command line application
 	app := cli.NewApp()
 	app.Name = "honu"
-	app.Version = "0.2"
+	app.Version = "0.3"
 	app.Usage = "throughput testing for a volatile, in-memory key/value store"
 
 	// Define commands available to the application
@@ -78,6 +78,18 @@ func main() {
 					Name:  "c, history",
 					Usage: "path on disk to write version history to on shutdown",
 					Value: "",
+				},
+				cli.StringFlag{
+					Name:   "b, bandit",
+					Usage:  "bandit strategy for random peer selection",
+					Value:  "uniform",
+					EnvVar: "HONU_BANDIT_STRATEGY",
+				},
+				cli.Float64Flag{
+					Name:   "e, epsilon",
+					Usage:  "value of epsilon for epsilon greedy selection",
+					Value:  0.2,
+					EnvVar: "HONU_BANDIT_EPSILON",
 				},
 			},
 		},
@@ -199,7 +211,10 @@ func serve(c *cli.Context) error {
 			return cli.NewExitError(err.Error(), 1)
 		}
 
-		if err := server.Replicate(peers, delay); err != nil {
+		bandit := c.String("bandit")
+		epsilon := c.Float64("epsilon")
+
+		if err := server.Replicate(peers, delay, bandit, epsilon); err != nil {
 			return cli.NewExitError(err.Error(), 1)
 		}
 	}

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net"
 	"os"
+	"strings"
 	"sync"
 	"time"
 
@@ -50,6 +51,7 @@ type Server struct {
 	reads    uint64                // The number of reads to the server
 	writes   uint64                // The number of writes to the server
 	syncs    map[string]*SyncStats // Per-peer metrics of anti-entropy synchronizations
+	bandit   BanditStrategy        // Peer selection bandit strategy
 	stats    string                // Path to write metrics to
 	history  string                // Path to write version history to
 }
@@ -107,10 +109,26 @@ func (s *Server) Measure(stats, history string) {
 }
 
 // Replicate the Honu server using anti-entropy.
-func (s *Server) Replicate(peers []string, delay time.Duration) error {
+func (s *Server) Replicate(peers []string, delay time.Duration, strategy string, epsilon float64) error {
 	// Store the peers and delay on the server
 	s.peers = peers
 	s.delay = delay
+
+	// Create the peer selection strategy
+	strategy = strings.ToLower(strategy)
+	switch strategy {
+	case "uniform":
+		s.bandit = new(Uniform)
+	case "epsilon":
+		s.bandit = &EpsilonGreedy{Epsilon: epsilon}
+	case "annealing":
+		s.bandit = new(AnnealingEpsilonGreedy)
+	default:
+		return fmt.Errorf("no peer selection bandit strategy named  %s", strategy)
+	}
+
+	// Initialize the bandit with the number of cases
+	s.bandit.Init(len(s.peers))
 
 	// Create the sync stats objects for each peer
 	s.syncs = make(map[string]*SyncStats)
@@ -220,10 +238,19 @@ func (s *Server) Metrics(path string) error {
 		throughput = float64(accesses) / duration.Seconds()
 	}
 
+	var syncs uint64
+	for _, stats := range s.syncs {
+		syncs += stats.Syncs
+	}
+
 	// Log the metrics
 	info(
 		"%d accesses (%d reads, %d writes) in %s -- %0.4f accesses/second",
 		accesses, s.reads, s.writes, duration, throughput,
+	)
+	info(
+		"stored %d items after %d successful synchronizations",
+		s.store.Length(), syncs,
 	)
 
 	// Compose the metrics to write to the given path.
@@ -240,6 +267,7 @@ func (s *Server) Metrics(path string) error {
 		data["store"] = s.stype
 		data["nkeys"] = s.store.Length()
 		data["syncs"] = s.syncs
+		data["bandit"] = s.bandit.Serialize()
 
 		// Now write that data to disk
 		if err := appendJSON(path, data); err != nil {

@@ -10,3 +10,4 @@ The current listing of experiments is as follows:
 2. [Throughput for Local Clients on Standalone Honu](local/README.md)
 3. [Throughput of Standalone Honu on Metal with Multiple Processes](metal/README.md)
 4. [Comparison of Standalone Storage Locking Mechanisms](locks/README.md)
+5. [Reinforcement Learning of Anti-Entropy Topologies](aerl/README.md)
