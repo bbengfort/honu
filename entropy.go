@@ -68,6 +68,7 @@ func (s *Server) AntiEntropy() {
 	// Handle the pull response
 	if !rep.Success {
 		s.syncs[peer].Misses++
+		s.bandit.Update(arm, 0)
 		debug("no synchronization occurred")
 		return
 	}

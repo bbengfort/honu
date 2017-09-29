@@ -30,7 +30,8 @@ type BanditStrategy interface {
 type EpsilonGreedy struct {
 	Epsilon float64   // Probability of selecting maximizing value
 	counts  []uint64  // Number of times each index was selected
-	values  []float64 // Reward values condition by frequency
+	values  []float64 // Reward values conditioned by frequency
+	history []int     // History of reward values per iteration
 }
 
 // Init the bandit with nArms number of possible choices, which are referred
@@ -38,6 +39,7 @@ type EpsilonGreedy struct {
 func (b *EpsilonGreedy) Init(nArms int) {
 	b.counts = make([]uint64, nArms, nArms)
 	b.values = make([]float64, nArms, nArms)
+	b.history = make([]int, 0, 100000)
 }
 
 // Select the arm with the maximizing value with probability epsilon,
@@ -72,6 +74,8 @@ func (b *EpsilonGreedy) Update(arm, reward int) {
 
 	value := b.values[arm]
 	b.values[arm] = ((n-1)/n)*value + (1/n)*float64(reward)
+
+	b.history = append(b.history, reward)
 }
 
 // Counts returns the frequency each arm was selected
@@ -91,6 +95,7 @@ func (b *EpsilonGreedy) Serialize() interface{} {
 	data["epsilon"] = b.Epsilon
 	data["counts"] = b.counts
 	data["values"] = b.values
+	data["history"] = b.history
 	return data
 }
 
@@ -103,8 +108,9 @@ func (b *EpsilonGreedy) Serialize() interface{} {
 // to an exploring learning strategy at start and prefering exploitation as
 // more selections are made.
 type AnnealingEpsilonGreedy struct {
-	counts []uint64  // Number of times each index was selected
-	values []float64 // Reward values condition by frequency
+	counts  []uint64  // Number of times each index was selected
+	values  []float64 // Reward values condition by frequency
+	history []int     // History of reward values per iteration
 }
 
 // Init the bandit with nArms number of possible choices, which are referred
@@ -112,6 +118,7 @@ type AnnealingEpsilonGreedy struct {
 func (b *AnnealingEpsilonGreedy) Init(nArms int) {
 	b.counts = make([]uint64, nArms, nArms)
 	b.values = make([]float64, nArms, nArms)
+	b.history = make([]int, 0, 100000)
 }
 
 // Epsilon is computed by the current number of trials such that the more
@@ -159,6 +166,8 @@ func (b *AnnealingEpsilonGreedy) Update(arm, reward int) {
 
 	value := b.values[arm]
 	b.values[arm] = ((n-1)/n)*value + (1/n)*float64(reward)
+
+	b.history = append(b.history, reward)
 }
 
 // Counts returns the frequency each arm was selected
@@ -178,6 +187,7 @@ func (b *AnnealingEpsilonGreedy) Serialize() interface{} {
 	data["epsilon"] = b.Epsilon()
 	data["counts"] = b.counts
 	data["values"] = b.values
+	data["history"] = b.history
 	return data
 }
 
@@ -189,8 +199,9 @@ func (b *AnnealingEpsilonGreedy) Serialize() interface{} {
 // While it tracks the frequency of selection and the reward costs, this
 // information does not affect the way it selects values.
 type Uniform struct {
-	counts []uint64  // Number of times each index was selected
-	values []float64 // Reward values condition by frequency
+	counts  []uint64  // Number of times each index was selected
+	values  []float64 // Reward values condition by frequency
+	history []int     // History of reward values per iteration
 }
 
 // Init the bandit with nArms number of possible choices, which are referred
@@ -198,6 +209,7 @@ type Uniform struct {
 func (b *Uniform) Init(nArms int) {
 	b.counts = make([]uint64, nArms, nArms)
 	b.values = make([]float64, nArms, nArms)
+	b.history = make([]int, 0, 100000)
 }
 
 // Select the arm with equal probability for each choice.
@@ -214,6 +226,8 @@ func (b *Uniform) Update(arm, reward int) {
 
 	value := b.values[arm]
 	b.values[arm] = ((n-1)/n)*value + (1/n)*float64(reward)
+
+	b.history = append(b.history, reward)
 }
 
 // Counts returns the frequency each arm was selected
@@ -232,5 +246,6 @@ func (b *Uniform) Serialize() interface{} {
 	data["strategy"] = "uniform selection"
 	data["counts"] = b.counts
 	data["values"] = b.values
+	data["history"] = b.history
 	return data
 }
