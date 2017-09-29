@@ -1,11 +1,15 @@
 {
 	"ImportPath": "github.com/bbengfort/honu",
-	"GoVersion": "go1.8",
+	"GoVersion": "go1.9",
 	"GodepVersion": "v79",
 	"Packages": [
 		"./..."
 	],
 	"Deps": [
+		{
+			"ImportPath": "github.com/bbengfort/x/stats",
+			"Rev": "8c3a316b7bc7771f0665334a767634af039c40f9"
+		},
 		{
 			"ImportPath": "github.com/golang/protobuf/proto",
 			"Rev": "69b215d01a5606c843240eab4937eab3acee6530"
@@ -47,6 +51,10 @@
 		{
 			"ImportPath": "golang.org/x/net/trace",
 			"Rev": "da118f7b8e5954f39d0d2130ab35d4bf0e3cb344"
+		},
+		{
+			"ImportPath": "golang.org/x/sync/errgroup",
+			"Rev": "f52d1811a62927559de87708c8913c1650ce4f26"
 		},
 		{
 			"ImportPath": "golang.org/x/text/secure/bidirule",

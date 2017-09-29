@@ -32,92 +32,55 @@ from fabric.api import env, run, cd, parallel, get
 NEVIS = "nevis.cs.umd.edu"
 HYPERION = "hyperion.cs.umd.edu"
 LAGOON = "lagoon.cs.umd.edu"
-CLIENTA = "client.hyperion.cs.umd.edu"
-CLIENTB = "client.lagoon.cs.umd.edu"
+ERIS = "eris.cs.umd.edu"
+SEDNA = "keleher.duckdns.org"
 
 # Paths
 workspace = "/data/honu"
+repo = "~/workspace/go/src/github.com/bbengfort/honu"
 
-# Regular Expressions
-ports = re.compile(r'.+\.(\d{4})')
+# Fabric Env
+env.hosts = [NEVIS, HYPERION, LAGOON, ERIS, SEDNA]
 
 # Fabric Env
 env.colorize_errors = True
-env.dedupe_hosts = False
-env.hosts = [
-    "nevis.cs.umd.edu",
-    "lagoon.cs.umd.edu",
-    "hyperion.cs.umd.edu",
-    "73.223.113.112",
-    "minecraft.willz.org:31264",
-]
-env.user = "benjamin"
+env.use_ssh_config = True
+env.forward_agent = True
 
 
 ##########################################################################
-## Helper Functions
+## Task Helper Functions
 ##########################################################################
 
-def unfix(s, prefix=None, suffix=None):
+def pproc_command(commands):
     """
-    Remove a prefix or a suffix or both from a string.
+    Creates a pproc command from a list of command strings.
     """
-    if prefix and s.startswith(prefix):
-        s = s[len(prefix):]
-
-    if suffix and s.endswith(suffix):
-        s = s[:-1 * len(suffix)]
-
-    return s
-
-
-def get_peers(addr):
-    peers = set(addrs)
-    peers.remove(addr)
-    return ",".join(peers)
+    commands = " ".join([
+        "\"{}\"".format(command) for command in commands
+    ])
+    return "pproc {}".format(commands)
 
 
 ##########################################################################
 ## Honu Commands
 ##########################################################################
 
-def serve(uptime="35s", addr=":3264"):
-    peers = get_peers(addr)
-    addr = ":" + ports.match(addr).group(1)
-
-    with cd(workspace):
-        cmd = "honu serve -d 200ms -a {} -u {} -w replica.jsonl -p {}".format(
-            addr, uptime, peers
-        )
-        run(cmd)
-
-
-def workload(duration="30s"):
-    with cd(workspace):
-        cmd = "honu run -w /dev/null -A -a :3264 -d {} -k foo".format(duration)
-        run(cmd)
+@parallel
+def update():
+    """
+    Update honu by pulling the repository and installing the command.
+    """
+    with cd(repo):
+        run("git pull")
+        run("godep restore")
+        run("go install ./...")
 
 
 @parallel
-def experiment():
-    if env.host.startswith("client."):
-        host = unfix(env.host, prefix="client.")
-        execute(workload, host=host)
-
-    else:
-        addr = env.host_string
-        host = unfix(addr, suffix=".3264")
-        host = unfix(addr, suffix=".3265")
-        host = unfix(addr, suffix=".3266")
-        host = unfix(addr, suffix=".3267")
-        execute(serve, host=host, addr=addr)
-
-
-@parallel
-def results(remotepath="/data/honu/results.jsonl", localpath=None):
-    if localpath:
-        localpath = os.path.join(localpath, "%(host)s", "%(path)s")
-    else:
-        localpath = "%(host)s/%(path)s"
-
-    get(remotepath, localpath)
+def version():
+    """
+    Get the current honu version number
+    """
+    with cd(repo):
+        run("honu --version")
