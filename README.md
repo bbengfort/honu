@@ -95,3 +95,35 @@ Hopefully this will help run experiments without typing in tons of arguments at 
 ## Experiments and Results
 
 For more, see [experiments and fixtures](fixtures/README.md), which contains detailed listings of the various results and methods that employ Honu.
+
+To run the anti-entropy reinforcement learning experiments:
+
+```
+$ cd fixtures/aerl
+```
+
+This directory contains the `fabfile.py` that runs the various ssh commands against the UMD replica servers. Install fabric with pip:
+
+```
+$ pip2 install fabric
+```
+
+Write go code to change the behavior of the system, then push it to Github. To update the code on the servers:
+
+```
+$ fab update
+```
+
+Make sure you're in the same working directory as the `fabfile.py`. To clean up previous results:
+
+```
+$ fab cleanup
+```
+
+And finally, to run clients with the specified configuration:
+
+```
+$ fab bench
+```
+
+Note that the configuration is found in `config.json` that declares the setup for each of the hosts.
