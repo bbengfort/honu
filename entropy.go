@@ -100,10 +100,8 @@ func (s *Server) AntiEntropy() {
 
 		reward++ // add reward for a push request
 
-		go func() {
-			s.syncs[peer].Pushes++
-			client.Push(context.Background(), push)
-		}()
+		s.syncs[peer].Pushes++
+		client.Push(context.Background(), push)
 	}
 
 	// Update the bandit with the reward
@@ -151,7 +149,7 @@ func (s *Server) Pull(ctx context.Context, in *pb.PullRequest) (*pb.PullReply, e
 			// First create the protobuf version
 			var vers *pb.Version
 			if entry == nil {
-				vers = &pb.Version{0, 0}
+				vers = nil
 			} else {
 				vers = entry.Version.topb()
 			}

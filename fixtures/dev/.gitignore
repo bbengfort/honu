@@ -1,0 +1,4 @@
+envs/*.sh 
+!envs/honu.sh
+metrics.json
+results.json

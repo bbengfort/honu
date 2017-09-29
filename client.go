@@ -8,6 +8,7 @@ import (
 	"golang.org/x/net/context"
 
 	pb "github.com/bbengfort/honu/rpc"
+	"github.com/bbengfort/x/stats"
 	"google.golang.org/grpc"
 )
 
@@ -17,13 +18,12 @@ const timeout = 10 * time.Second
 // client works with a single key and maintains information about the version
 // of each key as it generates work.
 type Client struct {
-	key      string           // the key the client manages
-	version  *Version         // current version of the key (must be increasing)
-	addr     string           // the address of the server
-	conn     *grpc.ClientConn // the connection to the server
-	rpc      pb.StorageClient // the transport to make requests on
-	messages uint64           // the number of messages sent
-	latency  time.Duration    // the total latency for all messages
+	key     string           // the key the client accesses
+	version *Version         // current version of the key (must be increasing)
+	addr    string           // the address of the server
+	conn    *grpc.ClientConn // the connection to the server
+	rpc     pb.StorageClient // the transport to make requests on
+	metrics *stats.Benchmark // client-side latency benchmarks
 }
 
 // Connect creates the connection and rpc client to the server
@@ -85,7 +85,6 @@ func (c *Client) Get(key string) ([]byte, string, error) {
 
 	debug("send get %s", req.Key)
 	reply, err := c.rpc.GetValue(context.Background(), req)
-	c.messages++
 
 	if err != nil {
 		warn(err.Error())

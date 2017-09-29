@@ -78,9 +78,11 @@ You can create a .env file in the local directory that you're running honu from 
 HONU_PROCESS_ID=1
 HONU_SERVER_ADDR=:3264
 HONU_PEERS=""
-HONU_ANTI_ENTROPY_DELAY=1s
-HONU_SEQUENTIAL_CONSISTENCY=false
 HONU_STANDALONE_MODE=false
+HONU_ANTI_ENTROPY_DELAY=1s
+HONU_BANDIT_STRATEGY=uniform
+HONU_SEQUENTIAL_CONSISTENCY=false
+HONU_RANDOM_SEED=42
 
 # Client and Experiment Configuration
 HONU_LOCAL_KEY=foo

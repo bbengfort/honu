@@ -84,7 +84,7 @@ func (s *Server) Run(addr string) error {
 	// Capture interrupt and shutdown gracefully
 	go signalHandler(s.Shutdown)
 
-	info("honu storage server listening on %s", addr)
+	status("honu storage server listening on %s", addr)
 	srv.Serve(lis)
 
 	return nil
@@ -244,11 +244,14 @@ func (s *Server) Metrics(path string) error {
 	}
 
 	// Log the metrics
-	info(
-		"%d accesses (%d reads, %d writes) in %s -- %0.4f accesses/second",
-		accesses, s.reads, s.writes, duration, throughput,
-	)
-	info(
+	if accesses > 0 {
+		status(
+			"%d accesses (%d reads, %d writes) in %s -- %0.4f accesses/second",
+			accesses, s.reads, s.writes, duration, throughput,
+		)
+	}
+
+	status(
 		"stored %d items after %d successful synchronizations",
 		s.store.Length(), syncs,
 	)

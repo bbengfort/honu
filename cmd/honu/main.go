@@ -19,7 +19,7 @@ func main() {
 	// Instantiate the command line application
 	app := cli.NewApp()
 	app.Name = "honu"
-	app.Version = "0.4"
+	app.Version = honu.PackageVersion
 	app.Usage = "throughput testing for a volatile, in-memory key/value store"
 
 	// Define commands available to the application
@@ -138,11 +138,10 @@ func main() {
 			},
 		},
 		{
-			Name:     "run",
+			Name:     "bench",
 			Usage:    "run the throughput experiment",
-			Action:   run,
+			Action:   bench,
 			Category: "client",
-			Before:   initClient,
 			Flags: []cli.Flag{
 				cli.StringFlag{
 					Name:   "a, addr",
@@ -151,31 +150,25 @@ func main() {
 					EnvVar: "HONU_SERVER_ADDR",
 				},
 				cli.StringFlag{
-					Name:   "k, key",
-					Usage:  "name or key to create a workload on",
-					EnvVar: "HONU_LOCAL_KEY",
-				},
-				cli.StringFlag{
 					Name:   "d, duration",
 					Usage:  "parsable duration to run for",
 					Value:  "10s",
 					EnvVar: "HONU_RUN_DURATION",
 				},
 				cli.StringFlag{
-					Name:   "w, results",
+					Name:   "o, results",
 					Usage:  "path on disk to write results to",
 					Value:  "",
 					EnvVar: "HONU_CLIENT_RESULTS",
 				},
-				cli.BoolFlag{
-					Name:   "A, aggregate",
-					Usage:  "aggregate run value distribution",
-					EnvVar: "HONU_AGG_CLIENT_RESULTS",
+				cli.IntFlag{
+					Name:  "w, workers",
+					Usage: "number of worker clients to initialize",
+					Value: 1,
 				},
-				cli.BoolFlag{
-					Name:   "X, disabled",
-					Usage:  "exit without running throughput",
-					EnvVar: "HONU_RUN_DISABLED",
+				cli.StringFlag{
+					Name:  "p, prefix",
+					Usage: "key for clients to access, char for prefix, blank for random",
 				},
 			},
 		},
@@ -277,18 +270,19 @@ func put(c *cli.Context) error {
 }
 
 // Run the throughput experiment
-func run(c *cli.Context) error {
-	if c.Bool("disabled") {
-		fmt.Println("this client is disabled, exiting")
-		return nil
-	}
-
+func bench(c *cli.Context) error {
 	duration, err := time.ParseDuration(c.String("duration"))
 	if err != nil {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
-	if err := client.Run(c.String("key"), duration, c.String("results"), c.Bool("aggregate")); err != nil {
+	extra := make(map[string]interface{})
+	bench, err := honu.NewBenchmark(c.Int("workers"), c.String("prefix"), extra)
+	if err != nil {
+		return cli.NewExitError(err.Error(), 1)
+	}
+
+	if err := bench.Run(c.String("addr"), c.String("results"), duration); err != nil {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
