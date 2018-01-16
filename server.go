@@ -271,6 +271,8 @@ func (s *Server) Metrics(path string) error {
 		data["nkeys"] = s.store.Length()
 		data["syncs"] = s.syncs
 		data["bandit"] = s.bandit.Serialize()
+		data["peers"] = s.peers
+		data["host"] = s.addr
 
 		// Now write that data to disk
 		if err := appendJSON(path, data); err != nil {

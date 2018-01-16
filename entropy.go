@@ -19,13 +19,18 @@ func (s *Server) AntiEntropy() {
 	defer time.AfterFunc(s.delay, s.AntiEntropy)
 
 	// Select a random peer for pairwise anti-entropy
-	// TODO: update probabilities and message counts
-	reward := 0
+	reward := 0.0
 	arm := s.bandit.Select()
 	peer := s.peers[arm]
 
+	// Ensure we update the reward for the bandit when we are done.
+	defer func() { s.bandit.Update(arm, reward) }()
+
 	// TODO: do better at ignoring self-connections
 	if peer == s.addr {
+		// Penalize self selection by a lot
+		reward = -1.0
+		s.syncs[peer].Misses++
 		return
 	}
 
@@ -68,12 +73,11 @@ func (s *Server) AntiEntropy() {
 	// Handle the pull response
 	if !rep.Success {
 		s.syncs[peer].Misses++
-		s.bandit.Update(arm, 0)
 		debug("no synchronization occurred")
 		return
 	}
 
-	reward++ // add reward for a successful pull request
+	reward += 0.45 // add reward for a successful pull request
 	s.syncs[peer].Pulls++
 	var items uint64
 
@@ -83,6 +87,11 @@ func (s *Server) AntiEntropy() {
 		if s.store.PutEntry(key, entry) {
 			items++
 		}
+	}
+
+	if items > 1 {
+		// add reward for multi-items
+		reward += 0.05
 	}
 
 	// Send the push request (bilateral)
@@ -99,15 +108,16 @@ func (s *Server) AntiEntropy() {
 			items++
 		}
 
-		reward++ // add reward for a push request
+		reward += 0.45 // add reward for a push request
+
+		if len(rep.Pull.Versions) > 1 {
+			// add reward for multi-items
+			reward += 0.05
+		}
 
 		s.syncs[peer].Pushes++
 		client.Push(context.Background(), push)
 	}
-
-	// Update the bandit with the reward
-	// TODO: should reward == items?
-	s.bandit.Update(arm, reward)
 
 	// Log anti-entropy success and metrics
 	s.syncs[peer].Syncs++
@@ -178,7 +188,7 @@ func (s *Server) Pull(ctx context.Context, in *pb.PullRequest) (*pb.PullReply, e
 	return reply, nil
 }
 
-// Push handles incoming push reqeuests, accepting any entries in the request
+// Push handles incoming push requests, accepting any entries in the request
 // that are later than the current view. It returns success if any
 // synchronization occurs, otherwise false for a late push.
 func (s *Server) Push(ctx context.Context, in *pb.PushRequest) (*pb.PushReply, error) {
