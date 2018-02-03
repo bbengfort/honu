@@ -48,8 +48,13 @@ func NewBenchmark(workers int, prefix string, extra map[string]interface{}) (*Be
 }
 
 // Run the benchmark with the specified duration
-func (b *Benchmark) Run(addr, outpath string, duration time.Duration) error {
-	status("starting throughput benchmark with %d clients", b.workers)
+func (b *Benchmark) Run(addr, outpath string, duration, delay time.Duration) error {
+	if delay > 0 {
+		status("delaying benchmark for %s", delay)
+		time.Sleep(delay)
+	}
+
+	status("starting throughput benchmark with %d clients for %s", b.workers, duration)
 
 	group := new(errgroup.Group)
 	for _, client := range b.clients {

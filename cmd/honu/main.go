@@ -156,6 +156,11 @@ func main() {
 					EnvVar: "HONU_RUN_DURATION",
 				},
 				cli.StringFlag{
+					Name:  "D, delay",
+					Usage: "parseable duration to delay start of benchmark",
+					Value: "",
+				},
+				cli.StringFlag{
 					Name:   "o, results",
 					Usage:  "path on disk to write results to",
 					Value:  "",
@@ -276,13 +281,21 @@ func bench(c *cli.Context) error {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
+	// If a delay is specified parse how long to delay for
+	var delay time.Duration
+	if c.String("delay") != "" {
+		if delay, err = time.ParseDuration(c.String("delay")); err != nil {
+			return cli.NewExitError(err.Error(), 1)
+		}
+	}
+
 	extra := make(map[string]interface{})
 	bench, err := honu.NewBenchmark(c.Int("workers"), c.String("prefix"), extra)
 	if err != nil {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
-	if err := bench.Run(c.String("addr"), c.String("results"), duration); err != nil {
+	if err := bench.Run(c.String("addr"), c.String("results"), duration, delay); err != nil {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
