@@ -278,6 +278,7 @@ func (s *Server) Metrics(path string) error {
 		if err := appendJSON(path, data); err != nil {
 			return fmt.Errorf("could not append server metrics to %s: %s", path, err)
 		}
+		status("metrics written to %s", path)
 	}
 
 	return nil

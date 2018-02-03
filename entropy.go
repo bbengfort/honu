@@ -237,19 +237,10 @@ func (s *Server) Push(ctx context.Context, in *pb.PushRequest) (*pb.PushReply, e
 type Syncs map[string]*SyncStats
 
 // Serialize the syncs to save to JSON format.
-func (s Syncs) Serialize() map[string]map[string]interface{} {
-	data := make(map[string]map[string]interface{})
+func (s Syncs) Serialize() map[string]interface{} {
+	data := make(map[string]interface{})
 	for peer, stats := range s {
-		info := make(map[string]interface{})
-		info["Syncs"] = stats.Syncs
-		info["Pulls"] = stats.Pulls
-		info["Pushes"] = stats.Pushes
-		info["Misses"] = stats.Misses
-		info["Versions"] = stats.Versions
-		info["PullLatency"] = stats.PullLatency.Serialize()
-		info["PushLatency"] = stats.PushLatency.Serialize()
-
-		data[peer] = info
+		data[peer] = stats.Serialize()
 	}
 	return data
 }
@@ -289,4 +280,21 @@ func (s *SyncStats) Update(latency time.Duration, method string) error {
 	}
 
 	return nil
+}
+
+// Serialize the SyncStats to write to disk
+func (s *SyncStats) Serialize() map[string]interface{} {
+	if !s.initialized {
+		s.Init()
+	}
+
+	data := make(map[string]interface{})
+	data["Syncs"] = s.Syncs
+	data["Pulls"] = s.Pulls
+	data["Pushes"] = s.Pushes
+	data["Misses"] = s.Misses
+	data["Versions"] = s.Versions
+	data["PullLatency"] = s.PullLatency.Serialize()
+	data["PushLatency"] = s.PushLatency.Serialize()
+	return data
 }
