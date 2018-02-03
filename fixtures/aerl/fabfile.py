@@ -211,7 +211,7 @@ def getmerge(name="metrics.json", path="data", suffix=None):
     Get the results.json and the metrics.json files and save them with the
     specified suffix to the localpath.
     """
-    remote = os.path.join("/", "data", "honu", name)
+    remote = os.path.join(workspace, name)
     hostname = addrs[env.host]
     local = os.path.join(path, hostname, add_suffix(name, suffix))
     local  = unique_name(local)
