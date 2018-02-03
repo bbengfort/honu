@@ -41,19 +41,19 @@ func NewServer(pid uint64, sequential bool) *Server {
 // in a thread-safe fashion (because the store is surrounded by locks).
 type Server struct {
 	sync.Mutex
-	store    Store                 // The in-memory key/value store
-	addr     string                // The IP address of the local server
-	peers    []string              // IP addresses of replica peers
-	delay    time.Duration         // The anti-entropy delay
-	stype    string                // The type of storage being used
-	started  time.Time             // The time the first message was received
-	finished time.Time             // The time of the last message to be received
-	reads    uint64                // The number of reads to the server
-	writes   uint64                // The number of writes to the server
-	syncs    map[string]*SyncStats // Per-peer metrics of anti-entropy synchronizations
-	bandit   BanditStrategy        // Peer selection bandit strategy
-	stats    string                // Path to write metrics to
-	history  string                // Path to write version history to
+	store    Store          // The in-memory key/value store
+	addr     string         // The IP address of the local server
+	peers    []string       // IP addresses of replica peers
+	delay    time.Duration  // The anti-entropy delay
+	stype    string         // The type of storage being used
+	started  time.Time      // The time the first message was received
+	finished time.Time      // The time of the last message to be received
+	reads    uint64         // The number of reads to the server
+	writes   uint64         // The number of writes to the server
+	syncs    Syncs          // Per-peer metrics of anti-entropy synchronizations
+	bandit   BanditStrategy // Peer selection bandit strategy
+	stats    string         // Path to write metrics to
+	history  string         // Path to write version history to
 }
 
 //===========================================================================
@@ -269,7 +269,7 @@ func (s *Server) Metrics(path string) error {
 		data["throughput"] = throughput
 		data["store"] = s.stype
 		data["nkeys"] = s.store.Length()
-		data["syncs"] = s.syncs
+		data["syncs"] = s.syncs.Serialize()
 		data["bandit"] = s.bandit.Serialize()
 		data["peers"] = s.peers
 		data["host"] = s.addr

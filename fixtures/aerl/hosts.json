@@ -1,0 +1,170 @@
+{
+  "alia-seoul-5": {
+    "hostname": "52.78.80.220",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-ap-northeast-2.pem",
+    "port": 22
+  },
+  "alia-seoul-4": {
+    "hostname": "13.124.197.160",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-ap-northeast-2.pem",
+    "port": 22
+  },
+  "alia-seoul-6": {
+    "hostname": "13.125.157.187",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-ap-northeast-2.pem",
+    "port": 22
+  },
+  "alia-virginia-18": {
+    "hostname": "54.174.157.2",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-us-east-1.pem",
+    "port": 22
+  },
+  "alia-virginia-17": {
+    "hostname": "34.205.32.77",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-us-east-1.pem",
+    "port": 22
+  },
+  "alia-london-2": {
+    "hostname": "35.177.151.236",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-eu-west-2.pem",
+    "port": 22
+  },
+  "alia-london-3": {
+    "hostname": "35.178.37.112",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-eu-west-2.pem",
+    "port": 22
+  },
+  "alia-virginia-16": {
+    "hostname": "52.90.169.182",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-us-east-1.pem",
+    "port": 22
+  },
+  "alia-frankfurt-14": {
+    "hostname": "54.93.103.237",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-eu-central-1.pem",
+    "port": 22
+  },
+  "alia-frankfurt-15": {
+    "hostname": "54.93.81.255",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-eu-central-1.pem",
+    "port": 22
+  },
+  "alia-frankfurt-13": {
+    "hostname": "18.194.139.211",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-eu-central-1.pem",
+    "port": 22
+  },
+  "alia-ohio-20": {
+    "hostname": "18.219.2.71",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-us-east-2.pem",
+    "port": 22
+  },
+  "alia-ohio-21": {
+    "hostname": "18.219.97.54",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-us-east-2.pem",
+    "port": 22
+  },
+  "alia-london-1": {
+    "hostname": "35.177.180.39",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-eu-west-2.pem",
+    "port": 22
+  },
+  "alia-sydney-12": {
+    "hostname": "13.210.70.111",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-ap-southeast-2.pem",
+    "port": 22
+  },
+  "alia-sydney-10": {
+    "hostname": "13.210.241.122",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-ap-southeast-2.pem",
+    "port": 22
+  },
+  "alia-sydney-11": {
+    "hostname": "54.252.236.51",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-ap-southeast-2.pem",
+    "port": 22
+  },
+  "alia-sao-paulo-7": {
+    "hostname": "18.231.115.18",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-sa-east-1.pem",
+    "port": 22
+  },
+  "alia-sao-paulo-8": {
+    "hostname": "54.233.190.204",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-sa-east-1.pem",
+    "port": 22
+  },
+  "alia-sao-paulo-9": {
+    "hostname": "54.207.86.19",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-sa-east-1.pem",
+    "port": 22
+  },
+  "alia-california-23": {
+    "hostname": "13.57.249.42",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-us-west-1.pem",
+    "port": 22
+  },
+  "alia-california-22": {
+    "hostname": "52.53.158.163",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-us-west-1.pem",
+    "port": 22
+  },
+  "alia-california-24": {
+    "hostname": "54.215.190.114",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-us-west-1.pem",
+    "port": 22
+  },
+  "alia-ohio-19": {
+    "hostname": "13.59.202.70",
+    "forward_agent": true,
+    "user": "ubuntu",
+    "key": "~/.ssh/alia-us-east-2.pem",
+    "port": 22
+  }
+}

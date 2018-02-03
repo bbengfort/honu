@@ -21,31 +21,9 @@ import os
 import json
 
 from fabric.contrib import files
+from dotenv import load_dotenv, find_dotenv
 from fabric.api import env, run, cd, parallel, get
 
-
-##########################################################################
-## Environment
-##########################################################################
-
-# Names
-NEVIS = "nevis.cs.umd.edu"
-HYPERION = "hyperion.cs.umd.edu"
-LAGOON = "lagoon.cs.umd.edu"
-ERIS = "eris.cs.umd.edu"
-SEDNA = "keleher.duckdns.org"
-
-# Paths
-workspace = "/data/honu"
-repo = "~/workspace/go/src/github.com/bbengfort/honu"
-
-# Fabric Env
-env.hosts = [NEVIS, HYPERION, LAGOON, ERIS, SEDNA]
-
-# Fabric Env
-env.colorize_errors = True
-env.use_ssh_config = True
-env.forward_agent = True
 
 ##########################################################################
 ## Environment Helpers
@@ -65,6 +43,33 @@ def parse_bool(val):
         if val in {'no', 'n', 'false', 'f', '0'}:
             return False
     return bool(val)
+
+
+##########################################################################
+## Environment
+##########################################################################
+
+## Load the environment
+load_dotenv(find_dotenv())
+
+## Local paths
+fixtures = os.path.dirname(__file__)
+hostinfo = os.path.join(fixtures, "hosts.json")
+
+## Remote Paths
+workspace = "/data/honu"
+repo = "~/workspace/go/src/github.com/bbengfort/honu"
+
+## Load Hosts
+hosts = load_hosts(hostinfo)
+addrs = {info['hostname']: host for host, info in hosts.items()}
+env.hosts = sorted(list(hosts.keys()))
+
+## Fabric Env
+env.user = "ubuntu"
+env.colorize_errors = True
+env.use_ssh_config = True
+env.forward_agent = True
 
 
 ##########################################################################
@@ -111,6 +116,31 @@ def unique_name(path, start=0, maxtries=1000):
     raise ValueError(
         "could not get a unique path after {} tries".format(maxtries)
     )
+
+
+def make_replica_args(config, host):
+    name = addrs[host]
+    info = hosts[name]
+
+    args = config['replicas'].copy()
+    args['pid'] = int(name.split("-")[-1])
+    args['peers'] = ",".join([
+        hosts[peer]['hostname'] + ":3264"
+        for peer in hosts
+        if peer != name
+    ])
+    return " ".join(["--{} {}".format(k,v) for k,v in args.items()])
+
+
+def make_client_args(config, host):
+    name = addrs[host]
+    if name not in config["clients"]["hosts"]:
+        return None
+
+    args = config['clients']['config'].copy()
+    args['prefix'] = config["clients"]["hosts"][name]
+    return " ".join(["--{} {}".format(k,v) for k,v in args.items()])
+
 
 ##########################################################################
 ## Honu Commands
@@ -162,24 +192,14 @@ def bench(config="config.json"):
     with open(config, 'r') as f:
         config = json.load(f)
 
-    peers = [
-        replica["addr"]
-        for host in config.values()
-        for replica in host["replicas"]
-    ]
+    # Create the serve command
+    args = make_replica_args(config, env.host)
+    command.append("honu serve {}".format(args))
 
-    for proc in config[env.host]['replicas']:
-        proc["peers"] = ",".join([peer for peer in peers if peer != proc["addr"]])
-        proc["addr"] = ":" + proc["addr"].split(":")[-1]
-        
-        args = " ".join(["--{} {}".format(k,v) for k,v in proc.items()])
-        cmd = "honu serve {}".format(args)
-        command.append(cmd)
-
-    for client in config[env.host]['clients']:
-        args = " ".join(["--{} {}".format(k,v) for k,v in client.items()])
-        cmd = "honu bench {}".format(args)
-        command.append(cmd)
+    # Create the bench command
+    args = make_client_args(config, env.host)
+    if args:
+        command.append("honu bench {}".format(args))
 
     with cd(workspace):
         run(pproc_command(command))
@@ -192,7 +212,8 @@ def getmerge(name="metrics.json", path="data", suffix=None):
     specified suffix to the localpath.
     """
     remote = os.path.join("/", "data", "honu", name)
-    local = os.path.join(path, env.host, add_suffix(name, suffix))
+    hostname = addrs[env.host]
+    local = os.path.join(path, hostname, add_suffix(name, suffix))
     local  = unique_name(local)
     if files.exists(remote):
         get(remote, local)

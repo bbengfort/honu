@@ -1,11 +1,13 @@
 package honu
 
 import (
+	"fmt"
 	"time"
 
 	"google.golang.org/grpc"
 
 	pb "github.com/bbengfort/honu/rpc"
+	"github.com/bbengfort/x/stats"
 	"golang.org/x/net/context"
 )
 
@@ -63,12 +65,15 @@ func (s *Server) AntiEntropy() {
 	}
 
 	// Send the pull request
+	pullStart := time.Now()
 	rep, err := client.Pull(context.Background(), req)
 	if err != nil {
 		s.syncs[peer].Misses++
 		warn(err.Error())
 		return
 	}
+	pullLatency := time.Since(pullStart)
+	s.syncs[peer].Update(pullLatency, "pull")
 
 	// Handle the pull response
 	if !rep.Success {
@@ -77,7 +82,15 @@ func (s *Server) AntiEntropy() {
 		return
 	}
 
-	reward += 0.45 // add reward for a successful pull request
+	reward += 0.25 // add reward for a successful pull request
+
+	// add reward for low latency pull requests
+	if pullLatency < 5*time.Millisecond {
+		reward += 0.20 // highest reward for local latencies
+	} else if pullLatency <= 100*time.Millisecond {
+		reward += 0.10 // reward for close by links that don't globe span.
+	}
+
 	s.syncs[peer].Pulls++
 	var items uint64
 
@@ -108,7 +121,7 @@ func (s *Server) AntiEntropy() {
 			items++
 		}
 
-		reward += 0.45 // add reward for a push request
+		reward += 0.25 // add reward for a push request
 
 		if len(rep.Pull.Versions) > 1 {
 			// add reward for multi-items
@@ -116,7 +129,17 @@ func (s *Server) AntiEntropy() {
 		}
 
 		s.syncs[peer].Pushes++
+		pushStart := time.Now()
 		client.Push(context.Background(), push)
+		pushLatency := time.Since(pushStart)
+		s.syncs[peer].Update(pushLatency, "push")
+
+		// add reward for low latency pull requests
+		if pushLatency < 5*time.Millisecond {
+			reward += 0.20 // highest reward for local latencies
+		} else if pushLatency <= 100*time.Millisecond {
+			reward += 0.10 // reward for close by links that don't globe span.
+		}
 	}
 
 	// Log anti-entropy success and metrics
@@ -210,11 +233,60 @@ func (s *Server) Push(ctx context.Context, in *pb.PushRequest) (*pb.PushReply, e
 // Per-peer metrics for syncrhonization
 //===========================================================================
 
+// Syncs is a map of peer hostnames to their synchronization statistics.
+type Syncs map[string]*SyncStats
+
+// Serialize the syncs to save to JSON format.
+func (s Syncs) Serialize() map[string]map[string]interface{} {
+	data := make(map[string]map[string]interface{})
+	for peer, stats := range s {
+		info := make(map[string]interface{})
+		info["Syncs"] = stats.Syncs
+		info["Pulls"] = stats.Pulls
+		info["Pushes"] = stats.Pushes
+		info["Misses"] = stats.Misses
+		info["Versions"] = stats.Versions
+		info["PullLatency"] = stats.PullLatency.Serialize()
+		info["PushLatency"] = stats.PushLatency.Serialize()
+
+		data[peer] = info
+	}
+	return data
+}
+
 // SyncStats represents per-peer pairwise metrics of synchronization.
 type SyncStats struct {
-	Syncs    uint64 // Total number of anti-entropy sessions between peers
-	Pulls    uint64 // Number of successful pull exchanges between peers
-	Pushes   uint64 // Number of successful push exchanges between peers
-	Misses   uint64 // Number of unsuccessful exchanges between peers
-	Versions uint64 // The total number of object versions exchanged
+	Syncs       uint64 // Total number of anti-entropy sessions between peers
+	Pulls       uint64 // Number of successful pull exchanges between peers
+	Pushes      uint64 // Number of successful push exchanges between peers
+	Misses      uint64 // Number of unsuccessful exchanges between peers
+	Versions    uint64 // The total number of object versions exchanged
+	PullLatency *stats.Benchmark
+	PushLatency *stats.Benchmark
+	initialized bool
+}
+
+// Init the Syncstats to ensure it's ready for updating.
+func (s *SyncStats) Init() {
+	s.PullLatency = new(stats.Benchmark)
+	s.PushLatency = new(stats.Benchmark)
+	s.initialized = true
+}
+
+// Update the latency of the given type
+func (s *SyncStats) Update(latency time.Duration, method string) error {
+	if !s.initialized {
+		s.Init()
+	}
+
+	switch method {
+	case "pull":
+		s.PullLatency.Update(latency)
+	case "push":
+		s.PushLatency.Update(latency)
+	default:
+		return fmt.Errorf("no method '%s'", method)
+	}
+
+	return nil
 }
