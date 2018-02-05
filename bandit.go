@@ -45,7 +45,7 @@ func (b *EpsilonGreedy) Init(nArms int) {
 // Select the arm with the maximizing value with probability epsilon,
 // otherwise uniform random selection of all arms with probability 1-epsilon.
 func (b *EpsilonGreedy) Select() int {
-	if rand.Float64() <= b.Epsilon {
+	if rand.Float64() > b.Epsilon {
 		// Select the maximal value from values.
 		max := -1.0
 		idx := -1
@@ -137,7 +137,7 @@ func (b *AnnealingEpsilonGreedy) Epsilon() float64 {
 // Select the arm with the maximizing value with probability epsilon,
 // otherwise uniform random selection of all arms with probability 1-epsilon.
 func (b *AnnealingEpsilonGreedy) Select() int {
-	if rand.Float64() <= b.Epsilon() {
+	if rand.Float64() > b.Epsilon() {
 		// Select the maximal value from values.
 		max := -1.0
 		idx := -1
