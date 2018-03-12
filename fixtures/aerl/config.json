@@ -1,12 +1,15 @@
 {
   "replicas": {
-    "pid": "",
-    "addr": ":3264",
-    "peers": "",
-    "delay": "5s",
-    "uptime": "5m",
-    "stats": "metrics.json",
-    "bandit": "uniform"
+    "config": {
+      "pid": "",
+      "addr": ":3264",
+      "peers": "",
+      "delay": "5s",
+      "uptime": "5m",
+      "stats": "metrics.json",
+      "bandit": "uniform"
+    },
+    "hosts": []
   },
   "clients": {
     "config": {
@@ -15,15 +18,6 @@
       "delay": "1m",
       "prefix": ""
     },
-    "hosts": {
-      "alia-seoul-5": "K",
-      "alia-virginia-18": "C",
-      "alia-london-2": "E",
-      "alia-frankfurt-14": "G",
-      "alia-ohio-20": "M",
-      "alia-sydney-12": "A",
-      "alia-sao-paulo-7": "B",
-      "alia-california-23": "W"
-    }
+    "hosts": {}
   }
 }

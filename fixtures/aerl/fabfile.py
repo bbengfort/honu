@@ -123,13 +123,14 @@ def make_replica_args(config, host):
     info = hosts[name]
 
     if name not in config["replicas"]["hosts"]:
-        return None 
+        return None
 
-    args = config['replicas'].copy()
+    args = config['replicas']['config'].copy()
     args['pid'] = int(name.split("-")[-1])
+
     args['peers'] = ",".join([
         hosts[peer]['hostname'] + ":3264"
-        for peer in hosts
+        for peer in config["replicas"]["hosts"]
         if peer != name
     ])
     return " ".join(["--{} {}".format(k,v) for k,v in args.items()])

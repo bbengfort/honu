@@ -1,22 +1,22 @@
 {
   "clients": {
-    "hosts": [
-      "alia-canada-23", 
-      "alia-tokyo-17", 
-      "alia-seoul-13", 
-      "alia-singapore-26", 
-      "alia-paris-5", 
-      "alia-sydney-30", 
-      "alia-virginia-35", 
-      "alia-oregon-45", 
-      "alia-ohio-39", 
-      "alia-london-8", 
-      "alia-ireland-10", 
-      "alia-california-42", 
-      "alia-mumbai-1", 
-      "alia-sao-paulo-19", 
-      "alia-frankfurt-31"
-    ], 
+    "hosts": {
+      "alia-singapore-26": "D", 
+      "alia-canada-23": "A", 
+      "alia-ohio-39": "I", 
+      "alia-oregon-45": "H", 
+      "alia-virginia-35": "G", 
+      "alia-frankfurt-31": "O", 
+      "alia-mumbai-1": "M", 
+      "alia-tokyo-17": "B", 
+      "alia-paris-5": "E", 
+      "alia-london-8": "J", 
+      "alia-sydney-30": "F", 
+      "alia-ireland-10": "K", 
+      "alia-seoul-13": "C", 
+      "alia-sao-paulo-19": "N", 
+      "alia-california-42": "L"
+    }, 
     "config": {
       "duration": "3m", 
       "delay": "1m", 
@@ -25,14 +25,6 @@
     }
   }, 
   "replicas": {
-    "bandit": "epsilon", 
-    "peers": "", 
-    "stats": "metrics.json", 
-    "addr": ":3264", 
-    "epsilon": 0.2, 
-    "pid": "", 
-    "uptime": "5m", 
-    "delay": "5s", 
     "hosts": [
       "alia-canada-23", 
       "alia-canada-22", 
@@ -79,6 +71,16 @@
       "alia-frankfurt-31", 
       "alia-frankfurt-32", 
       "alia-frankfurt-33"
-    ]
+    ], 
+    "config": {
+      "bandit": "epsilon", 
+      "peers": "", 
+      "stats": "metrics.json", 
+      "addr": ":3264", 
+      "epsilon": 0.2, 
+      "pid": "", 
+      "uptime": "5m", 
+      "delay": "5s"
+    }
   }
 }

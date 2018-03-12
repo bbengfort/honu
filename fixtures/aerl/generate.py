@@ -4,6 +4,7 @@ import os
 import json
 import argparse
 
+from string import ascii_uppercase
 from collections import defaultdict
 
 BASE   = os.path.dirname(__file__)
@@ -37,8 +38,8 @@ def main(args):
         config = json.load(f)
 
     # Create hosts for replicas and clients
-    config['replicas']['hosts'] = []
-    config['clients']['hosts'] = []
+    replicas = []
+    clients = []
 
     for loc, names in hosts.items():
         if args.replicas > len(names):
@@ -51,19 +52,25 @@ def main(args):
                 "not enough hosts in {} for {} clients".format(loc, args.cliens)
             )
 
-        config['replicas']['hosts'] += names[:args.replicas]
-        config['clients']['hosts'] += names[:args.clients]
+        replicas += names[:args.replicas]
+        clients += names[:args.clients]
+
+    config['replicas']['hosts'] = replicas
+    config['clients']['hosts'] = {}
+
+    for idx, client in enumerate(clients):
+        config['clients']['hosts'][client] = ascii_uppercase[idx%26]
 
     if args.uniform or args.annealing:
         config['replicas'].pop('epsilon', None)
 
     if args.uniform:
-        config['replicas']['bandit'] = 'uniform'
+        config['replicas']['config']['bandit'] = 'uniform'
     elif args.annealing:
-        config['replicas']['bandit'] = 'annealing'
+        config['replicas']['config']['bandit'] = 'annealing'
     elif args.epsilon:
-        config['replicas']['bandit'] = 'epsilon'
-        config['replicas']['epsilon'] = args.epsilon
+        config['replicas']['config']['bandit'] = 'epsilon'
+        config['replicas']['config']['epsilon'] = args.epsilon
 
     if args.outpath is not None:
         with open(args.outpath, 'w') as o:
@@ -126,7 +133,7 @@ if __name__ == '__main__':
     )
 
     args = parser.parse_args()
-    try:
-        main(args)
-    except Exception as e:
-        parser.error(str(e))
+    # try:
+    main(args)
+    # except Exception as e:
+    #     parser.error(str(e))
