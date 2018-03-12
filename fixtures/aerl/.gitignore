@@ -1,4 +1,5 @@
 data/*
+!data/config-*.json
 hosts.json
 archive/*
 sendToContainer.sh
