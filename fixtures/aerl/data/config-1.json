@@ -18,8 +18,8 @@
       "alia-california-42": "L"
     }, 
     "config": {
-      "duration": "3m", 
-      "delay": "1m", 
+      "duration": "10m", 
+      "delay": "30s", 
       "prefix": "", 
       "addr": "localhost:3264"
     }
@@ -78,8 +78,8 @@
       "stats": "metrics.json", 
       "addr": ":3264", 
       "pid": "", 
-      "uptime": "5m", 
-      "delay": "5s"
+      "uptime": "11m", 
+      "delay": "15s"
     }
   }
 }

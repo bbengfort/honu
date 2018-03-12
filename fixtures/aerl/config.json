@@ -4,8 +4,8 @@
       "pid": "",
       "addr": ":3264",
       "peers": "",
-      "delay": "5s",
-      "uptime": "5m",
+      "delay": "15s",
+      "uptime": "11m",
       "stats": "metrics.json",
       "bandit": "uniform"
     },
@@ -14,8 +14,8 @@
   "clients": {
     "config": {
       "addr": "localhost:3264",
-      "duration": "3m",
-      "delay": "1m",
+      "duration": "10m",
+      "delay": "30s",
       "prefix": ""
     },
     "hosts": {}
