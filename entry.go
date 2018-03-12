@@ -17,11 +17,12 @@ import (
 // meta data and is lockable for different types of consistency requirements.
 type Entry struct {
 	sync.RWMutex
-	Key     *string  // The associated key with the entry
-	Version *Version // The conflict-free version of the entry
-	Parent  *Version // The version of the parent the entry was derived from
-	Value   []byte   // The data value of the entry
-	Current uint64   // The current version scalar
+	Key             *string  // The associated key with the entry
+	Version         *Version // The conflict-free version of the entry
+	Parent          *Version // The version of the parent the entry was derived from
+	Value           []byte   // The data value of the entry
+	TrackVisibility bool     // Whether or not this entry is being tracked
+	Current         uint64   // The current version scalar
 }
 
 //===========================================================================
@@ -30,9 +31,10 @@ type Entry struct {
 
 func (e *Entry) topb() *pb.Entry {
 	return &pb.Entry{
-		Parent:  e.Parent.topb(),
-		Version: e.Version.topb(),
-		Value:   e.Value,
+		Parent:          e.Parent.topb(),
+		Version:         e.Version.topb(),
+		Value:           e.Value,
+		TrackVisibility: e.TrackVisibility,
 	}
 }
 
@@ -44,6 +46,7 @@ func (e *Entry) frompb(in *pb.Entry) {
 	e.Parent.frompb(in.Parent)
 	e.Version.frompb(in.Version)
 	e.Value = in.Value
+	e.TrackVisibility = in.TrackVisibility
 }
 
 //===========================================================================

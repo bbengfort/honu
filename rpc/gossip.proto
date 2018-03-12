@@ -14,6 +14,7 @@ message Entry {
     Version parent = 1;
     Version version = 2;
     bytes value = 3;
+    bool trackVisibility = 4;
 }
 
 // PullRequest sends a vector of versions to a remote and expects any more

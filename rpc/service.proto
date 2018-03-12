@@ -19,8 +19,9 @@ message GetReply {
 
 // PutRequest is sent from a client to the server to put a value for a key
 message PutRequest {
-    string key = 1;  // the key of the object to put
-    bytes value = 2; // the value of the object to put
+    string key = 1;           // the key of the object to put
+    bytes value = 2;          // the value of the object to put
+    bool trackVisibility = 3; // whether or not to track write visibility
 }
 
 // PutReply is a response from the leader to the client
