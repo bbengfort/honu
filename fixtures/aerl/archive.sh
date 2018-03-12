@@ -1,5 +1,12 @@
 #!/bin/bash
 
-SRC=data/
+# PATHS
+SRC="data"
 DST="archive/honu-experiment-$(date +"%Y%m%d%H%M").tgz"
-tar -czvf $DST $SRC
+
+# Create the archive
+tar -czf $DST $SRC
+
+# Delete old files in the src directory
+rm -rf $SRC/alia-*
+rm -rf $SRC/run-*

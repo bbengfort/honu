@@ -1,21 +1,41 @@
-#!/bin/bash 
-# Run the anti-entropy experiments 
+#!/bin/bash
+# Run the anti-entropy experiments
 
 # Describe the time format
 TIMEFORMAT="experiment completed in %2lR"
 
+# Setup variables and paths
+DATA="data"
+HOSTS="hosts.json"
+CONFIGS="$DATA/config*.json"
+
+# Determine the number of runs
+RUNS=$1
+if [ -z "$RUNS" ]; then
+    echo "specify the number of times to run the experiment"
+    exit
+fi
+
+# Execute all of the experiments
 time {
-    # Step One: Ensure the package is up to date 
-    fab update 
-    fab version 
+    # Ensure package is up to date
+    fab update
+    fab version
 
-    # Step Two: Clean out any old results that linger 
-    fab cleanup 
+    # Perform housekeeping tasks
+    fab cleanup
+    cp $HOSTS $DATA
 
-    # Step Three: Execute each configuration file 
-    for (( I=1; I<=5; I+=1 )); do 
-        fab bench:config=data/config-$I.json
-        fab getmerge 
-        fab cleanup 
-    done 
+    # Conduct the experiment $RUNS times
+    for (( I=0; I<$RUNS; I+=1 )); do
+        RESULTS="$DATA/run-$I"
+        mkdir $RESULTS
+
+        # Run each experiment whose parameters are defined in a config
+        for CONFIG in $CONFIGS; do
+            fab bench:config=$CONFIG
+            fab getmerge:path=$RESULTS
+            fab cleanup
+        done
+    done
 }
