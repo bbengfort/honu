@@ -79,7 +79,7 @@
       "addr": ":3264", 
       "pid": "", 
       "uptime": "11m", 
-      "delay": "15s"
+      "delay": "1s"
     }
   }
 }

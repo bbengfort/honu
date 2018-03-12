@@ -4,7 +4,7 @@
       "pid": "",
       "addr": ":3264",
       "peers": "",
-      "delay": "15s",
+      "delay": "1s",
       "uptime": "11m",
       "stats": "metrics.json",
       "bandit": "uniform"

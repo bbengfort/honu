@@ -80,7 +80,7 @@
       "epsilon": 0.5, 
       "pid": "", 
       "uptime": "11m", 
-      "delay": "15s"
+      "delay": "1s"
     }
   }
 }
