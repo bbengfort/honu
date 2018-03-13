@@ -157,6 +157,30 @@ def make_client_args(config, host):
 ##########################################################################
 
 @parallel
+def install():
+    """
+    Install epaxos for the first time on each machine
+    """
+    with cd(os.path.dirname(repo)):
+        run("git clone git@github.com:bbengfort/honu.git")
+
+    with cd(repo):
+        run("godep restore")
+        run("go install ./...")
+
+    run("mkdir -p {}".format(workspace))
+
+
+@parallel
+def uninstall():
+    """
+    Uninstall ePaxos on every machine
+    """
+    run("rm -rf {}".format(repo))
+    run("rm -rf {}".format(workspace))
+
+
+@parallel
 def update():
     """
     Update honu by pulling the repository and installing the command.
