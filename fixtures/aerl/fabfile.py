@@ -122,11 +122,15 @@ def make_replica_args(config, host):
     name = addrs[host]
     info = hosts[name]
 
-    args = config['replicas'].copy()
+    if name not in config["replicas"]["hosts"]:
+        return None
+
+    args = config['replicas']['config'].copy()
     args['pid'] = int(name.split("-")[-1])
+
     args['peers'] = ",".join([
         hosts[peer]['hostname'] + ":3264"
-        for peer in hosts
+        for peer in config["replicas"]["hosts"]
         if peer != name
     ])
     return " ".join(["--{} {}".format(k,v) for k,v in args.items()])
@@ -194,7 +198,8 @@ def bench(config="config.json"):
 
     # Create the serve command
     args = make_replica_args(config, env.host)
-    command.append("honu serve {}".format(args))
+    if args:
+        command.append("honu serve {}".format(args))
 
     # Create the bench command
     args = make_client_args(config, env.host)

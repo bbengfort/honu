@@ -1,3 +1,9 @@
 data/*
+!data/config-*.json
 hosts.json
 archive/*
+sendToContainer.sh
+
+*.pyc 
+__pycache__
+.ipython_checkpoints

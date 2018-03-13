@@ -27,3 +27,5 @@ _testmain.go
 fixtures/*.csv
 fixtures/*.dat
 .ipynb_checkpoints
+
+.DS_Store
