@@ -102,7 +102,7 @@ func (s *Server) AntiEntropy() {
 
 			// Track visibility if requested
 			if s.visibility != nil && entry.TrackVisibility {
-				s.visibility.Log(*entry.Key, entry.Version.String())
+				s.visibility.Log(key, entry.Version.String())
 			}
 		}
 	}
@@ -231,7 +231,7 @@ func (s *Server) Push(ctx context.Context, in *pb.PushRequest) (*pb.PushReply, e
 
 			// Track visibility if requested
 			if s.visibility != nil && entry.TrackVisibility {
-				s.visibility.Log(*entry.Key, entry.Version.String())
+				s.visibility.Log(key, entry.Version.String())
 			}
 		}
 	}

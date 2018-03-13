@@ -5,19 +5,30 @@
       "addr": ":3264",
       "peers": "",
       "delay": "1s",
-      "uptime": "11m",
+      "uptime": "21m",
       "stats": "metrics.json",
+      "visibility": "visibile_versions.log",
       "bandit": "uniform"
     },
     "hosts": []
   },
   "clients": {
-    "config": {
-      "addr": "localhost:3264",
-      "duration": "10m",
-      "delay": "30s",
-      "prefix": ""
-    },
+    "configs": [
+      {
+        "addr": "localhost:3264",
+        "duration": "5m",
+        "delay": "30s",
+        "prefix": ""
+      },
+      {
+        "addr": "localhost:3264",
+        "duration": "14m",
+        "rate": "10s",
+        "delay": "6m",
+        "prefix": "",
+        "visibility": ""
+      }
+    ],
     "hosts": {}
   }
 }

@@ -40,15 +40,15 @@ type VisibilityLogger struct {
 
 // simple data structure for storing visibility information.
 type visibilityMessage struct {
-	key       string
-	version   string
-	timestamp time.Time
+	Key       string
+	Version   string
+	Timestamp time.Time
 }
 
 // Log a Put to the key/value store
 func (l *VisibilityLogger) Log(key, version string) {
 	l.msgs <- &visibilityMessage{
-		key: key, version: version, timestamp: time.Now(),
+		Key: key, Version: version, Timestamp: time.Now(),
 	}
 }
 
@@ -81,6 +81,7 @@ func (l *VisibilityLogger) flusher() {
 
 		data, l.err = json.Marshal(msg)
 		if l.err != nil {
+			warne(l.err)
 			close(l.msgs)
 			break
 		}
@@ -89,6 +90,14 @@ func (l *VisibilityLogger) flusher() {
 
 		_, l.err = l.file.Write(data)
 		if l.err != nil {
+			warne(l.err)
+			close(l.msgs)
+			break
+		}
+
+		l.err = l.file.Sync()
+		if l.err != nil {
+			warne(l.err)
 			close(l.msgs)
 			break
 		}

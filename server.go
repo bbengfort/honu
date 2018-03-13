@@ -212,7 +212,7 @@ func (s *Server) PutValue(ctx context.Context, in *pb.PutRequest) (*pb.PutReply,
 	reply.Key = in.Key
 
 	var err error
-	reply.Version, err = s.store.Put(in.Key, in.Value)
+	reply.Version, err = s.store.Put(in.Key, in.Value, in.TrackVisibility)
 	if err != nil {
 		warn(err.Error())
 		reply.Success = false
@@ -223,8 +223,15 @@ func (s *Server) PutValue(ctx context.Context, in *pb.PutRequest) (*pb.PutReply,
 	}
 
 	// Track visibility if requested
-	if err == nil && s.visibility != nil && in.TrackVisibility {
-		s.visibility.Log(in.Key, reply.Version)
+	if err == nil && in.TrackVisibility {
+		if s.visibility != nil {
+			s.visibility.Log(in.Key, reply.Version)
+			if err := s.visibility.Error(); err != nil {
+				reply.Error = err.Error()
+			}
+		} else {
+			reply.Error = "warning: replicas are not tracking visibility"
+		}
 	}
 
 	return reply, nil
