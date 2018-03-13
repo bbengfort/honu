@@ -18,12 +18,13 @@ const timeout = 10 * time.Second
 // client works with a single key and maintains information about the version
 // of each key as it generates work.
 type Client struct {
-	key     string           // the key the client accesses
-	version *Version         // current version of the key (must be increasing)
-	addr    string           // the address of the server
-	conn    *grpc.ClientConn // the connection to the server
-	rpc     pb.StorageClient // the transport to make requests on
-	metrics *stats.Benchmark // client-side latency benchmarks
+	key        string           // the key the client accesses
+	version    *Version         // current version of the key (must be increasing)
+	addr       string           // the address of the server
+	conn       *grpc.ClientConn // the connection to the server
+	rpc        pb.StorageClient // the transport to make requests on
+	metrics    *stats.Benchmark // client-side latency benchmarks
+	visibility bool             // track put visibility on access
 }
 
 // Connect creates the connection and rpc client to the server
@@ -100,14 +101,15 @@ func (c *Client) Get(key string) ([]byte, string, error) {
 }
 
 // Put composes a Put request and returns the version created.
-func (c *Client) Put(key string, value []byte) (string, error) {
+func (c *Client) Put(key string, value []byte, trackVisibility bool) (string, error) {
 	if !c.IsConnected() {
 		return "", errors.New("not connected, cannot make a request")
 	}
 
 	req := &pb.PutRequest{
-		Key:   key,
-		Value: value,
+		Key:             key,
+		Value:           value,
+		TrackVisibility: trackVisibility,
 	}
 
 	debug("send put %d bytes to %s", len(value), req.Key)
@@ -121,6 +123,8 @@ func (c *Client) Put(key string, value []byte) (string, error) {
 	if !reply.Success {
 		warn(reply.Error)
 		return "", errors.New(reply.Error)
+	} else if reply.Error != "" {
+		warn(reply.Error)
 	}
 
 	return reply.Version, nil

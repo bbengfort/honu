@@ -1,5 +1,21 @@
 {
   "clients": {
+    "configs": [
+      {
+        "duration": "5m", 
+        "delay": "30s", 
+        "prefix": "", 
+        "addr": "localhost:3264"
+      }, 
+      {
+        "addr": "localhost:3264", 
+        "prefix": "", 
+        "visibility": "", 
+        "delay": "6m", 
+        "rate": "10s", 
+        "duration": "14m"
+      }
+    ], 
     "hosts": {
       "alia-singapore-26": "D", 
       "alia-canada-23": "A", 
@@ -16,12 +32,6 @@
       "alia-seoul-13": "C", 
       "alia-sao-paulo-19": "N", 
       "alia-california-42": "L"
-    }, 
-    "config": {
-      "duration": "10m", 
-      "delay": "30s", 
-      "prefix": "", 
-      "addr": "localhost:3264"
     }
   }, 
   "replicas": {
@@ -79,7 +89,8 @@
       "addr": ":3264", 
       "epsilon": 0.5, 
       "pid": "", 
-      "uptime": "11m", 
+      "uptime": "21m", 
+      "visibility": "visibile_versions.log", 
       "delay": "1s"
     }
   }

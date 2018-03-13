@@ -133,17 +133,23 @@ def make_replica_args(config, host):
         for peer in config["replicas"]["hosts"]
         if peer != name
     ])
-    return " ".join(["--{} {}".format(k,v) for k,v in args.items()])
+    return " ".join(["--{} {}".format(k,v).strip() for k,v in args.items()])
 
 
 def make_client_args(config, host):
+    cmds = []
     name = addrs[host]
     if name not in config["clients"]["hosts"]:
-        return None
+        return cmds
 
-    args = config['clients']['config'].copy()
-    args['prefix'] = config["clients"]["hosts"][name]
-    return " ".join(["--{} {}".format(k,v) for k,v in args.items()])
+    for conf in config['clients']['configs']:
+        args = conf.copy()
+        args['prefix'] = config["clients"]["hosts"][name]
+        cmds.append(
+            " ".join(["--{} {}".format(k,v).strip() for k,v in args.items()])
+        )
+
+    return cmds
 
 
 ##########################################################################
@@ -175,14 +181,13 @@ def cleanup():
     """
     Cleans up results files so that the experiment can be run again.
     """
-    names = ("results", "metrics")
-    exts = (".json", ".jsonl")
+    names = (
+        "metrics.json", "visibile_versions.log",
+    )
 
     for name in names:
-        for ext in exts:
-            path = os.path.join(workspace, name+ext)
-            run("rm -f {}".format(path))
-
+        path = os.path.join(workspace, name)
+        run("rm -f {}".format(path))
 
 @parallel
 def bench(config="config.json"):
@@ -203,8 +208,8 @@ def bench(config="config.json"):
 
     # Create the bench command
     args = make_client_args(config, env.host)
-    if args:
-        command.append("honu bench {}".format(args))
+    for arg in args:
+        command.append("honu bench {}".format(arg))
 
     with cd(workspace):
         run(pproc_command(command))

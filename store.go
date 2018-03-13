@@ -42,15 +42,15 @@ type Locker interface {
 // Store is an interface for multiple in-memory storage types under the hood.
 type Store interface {
 	Locker
-	Init(pid uint64)                                          // Initialize the store
-	Get(key string) (value []byte, version string, err error) // Get a value and version for a given key
-	GetEntry(key string) *Entry                               // Get the entire entry without a lock
-	Put(key string, value []byte) (version string, err error) // Put a value for a given key and get associated version
-	PutEntry(key string, entry *Entry) (modified bool)        // Put the entry without modifying the version
-	View() map[string]Version                                 // Returns a map containing the latest version of all keys
-	Update(key string, version *Version)                      // Update the version scalar from a remote source
-	Snapshot(path string) error                               // Write a snapshot of the version history to disk
-	Length() int                                              // Returns the number of items in the store (number of keys)
+	Init(pid uint64)                                                                // Initialize the store
+	Get(key string) (value []byte, version string, err error)                       // Get a value and version for a given key
+	GetEntry(key string) *Entry                                                     // Get the entire entry without a lock
+	Put(key string, value []byte, trackVisibility bool) (version string, err error) // Put a value for a given key and get associated version
+	PutEntry(key string, entry *Entry) (modified bool)                              // Put the entry without modifying the version
+	View() map[string]Version                                                       // Returns a map containing the latest version of all keys
+	Update(key string, version *Version)                                            // Update the version scalar from a remote source
+	Snapshot(path string) error                                                     // Write a snapshot of the version history to disk
+	Length() int                                                                    // Returns the number of items in the store (number of keys)
 
 }
 
@@ -122,7 +122,7 @@ func (s *LinearizableStore) GetEntry(key string) *Entry {
 //
 // This operation locks the entire store, waiting for all read locks to be
 // released and not allowing any other read or write locks until complete.
-func (s *LinearizableStore) Put(key string, value []byte) (string, error) {
+func (s *LinearizableStore) Put(key string, value []byte, trackVisibility bool) (string, error) {
 	s.Lock()
 	defer s.Unlock()
 
@@ -132,10 +132,11 @@ func (s *LinearizableStore) Put(key string, value []byte) (string, error) {
 
 	// Create the new entry
 	entry := &Entry{
-		Key:     &key,
-		Version: version,
-		Parent:  s.lastWrite,
-		Value:   value,
+		Key:             &key,
+		Version:         version,
+		Parent:          s.lastWrite,
+		Value:           value,
+		TrackVisibility: trackVisibility,
 	}
 
 	// Update the namespace, versions, and last write
@@ -329,7 +330,7 @@ func (s *SequentialStore) make(key string) *Entry {
 
 // Put a value into the namespace and increment the version. Returns the
 // version for the given key and any error that might occur.
-func (s *SequentialStore) Put(key string, value []byte) (string, error) {
+func (s *SequentialStore) Put(key string, value []byte, trackVisibility bool) (string, error) {
 	// Attempt to get the write-locked version from the store
 	entry := s.get(key, true)
 
@@ -350,6 +351,7 @@ func (s *SequentialStore) Put(key string, value []byte) (string, error) {
 
 	// Update the value
 	entry.Value = value
+	entry.TrackVisibility = trackVisibility
 
 	// Store the version in the version history and return it
 	s.history.Append(entry.Key, entry.Parent, entry.Version)

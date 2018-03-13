@@ -20,7 +20,7 @@ type Benchmark struct {
 }
 
 // NewBenchmark creates the data structure and clients.
-func NewBenchmark(workers int, prefix string, extra map[string]interface{}) (*Benchmark, error) {
+func NewBenchmark(workers int, prefix string, visibility bool, extra map[string]interface{}) (*Benchmark, error) {
 	b := new(Benchmark)
 	b.workers = workers
 	b.clients = make([]*Client, 0, workers)
@@ -33,6 +33,7 @@ func NewBenchmark(workers int, prefix string, extra map[string]interface{}) (*Be
 
 	for i := 0; i < workers; i++ {
 		client := new(Client)
+		client.visibility = visibility
 
 		// Generate a key with specified prefix
 		if len(prefix) > 1 {
@@ -48,7 +49,7 @@ func NewBenchmark(workers int, prefix string, extra map[string]interface{}) (*Be
 }
 
 // Run the benchmark with the specified duration
-func (b *Benchmark) Run(addr, outpath string, duration, delay time.Duration) error {
+func (b *Benchmark) Run(addr, outpath string, duration, delay, rate time.Duration) error {
 	if delay > 0 {
 		status("delaying benchmark for %s", delay)
 		time.Sleep(delay)
@@ -59,7 +60,7 @@ func (b *Benchmark) Run(addr, outpath string, duration, delay time.Duration) err
 	group := new(errgroup.Group)
 	for _, client := range b.clients {
 		c := client
-		group.Go(func() error { return c.Run(addr, duration) })
+		group.Go(func() error { return c.Run(addr, duration, rate) })
 	}
 
 	if err := group.Wait(); err != nil {
@@ -111,8 +112,12 @@ func (b *Benchmark) String() string {
 //===========================================================================
 
 // Access sends a put request, measuring latency.
-func (c *Client) Access(done chan<- bool, echan chan<- error) {
+func (c *Client) Access(done chan<- bool, echan chan<- error, rate time.Duration) {
 	defer func() {
+		// If we're rate limited, then wait a bit before we return
+		if rate > 0 {
+			time.Sleep(rate)
+		}
 		done <- true
 	}()
 
@@ -124,8 +129,9 @@ func (c *Client) Access(done chan<- bool, echan chan<- error) {
 
 	// Create the Put request
 	req := &pb.PutRequest{
-		Key:   c.key,
-		Value: []byte(val),
+		Key:             c.key,
+		Value:           []byte(val),
+		TrackVisibility: c.visibility,
 	}
 
 	// Send the request
@@ -153,7 +159,7 @@ func (c *Client) Access(done chan<- bool, echan chan<- error) {
 }
 
 // Run a continuous access client for the specified duration.
-func (c *Client) Run(addr string, duration time.Duration) error {
+func (c *Client) Run(addr string, duration, rate time.Duration) error {
 	c.metrics = new(stats.Benchmark)
 
 	if err := c.Connect(addr); err != nil {
@@ -165,7 +171,7 @@ func (c *Client) Run(addr string, duration time.Duration) error {
 	done := make(chan bool, 1)
 
 	// Kick off the first access
-	go c.Access(done, echan)
+	go c.Access(done, echan, rate)
 
 	// Keep accessing until time runs out or something goes down
 	for {
@@ -176,7 +182,7 @@ func (c *Client) Run(addr string, duration time.Duration) error {
 		case err := <-echan:
 			return err
 		case <-done:
-			go c.Access(done, echan)
+			go c.Access(done, echan, rate)
 		}
 	}
 }

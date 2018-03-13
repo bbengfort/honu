@@ -35,6 +35,7 @@ time {
         for CONFIG in $CONFIGS; do
             fab bench:config=$CONFIG
             fab getmerge:path=$RESULTS
+            fab getmerge:name=visibile_versions.log,path=$RESULTS
             fab cleanup
         done
     done

@@ -1,5 +1,6 @@
 export HONU="../../cmd/honu/main.go"
 export SERVE="go run $HONU serve" 
 export BENCH="go run $HONU bench"
+export VIZ="go run $HONU bench -r 3s -V"
 export PUT="go run $HONU put -k foo -v $(date +%F-%H%M%S)"
 export GET="go run $HONU get -k foo"

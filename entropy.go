@@ -99,6 +99,11 @@ func (s *Server) AntiEntropy() {
 		entry.frompb(pbentry)
 		if s.store.PutEntry(key, entry) {
 			items++
+
+			// Track visibility if requested
+			if s.visibility != nil && entry.TrackVisibility {
+				s.visibility.Log(key, entry.Version.String())
+			}
 		}
 	}
 
@@ -223,6 +228,11 @@ func (s *Server) Push(ctx context.Context, in *pb.PushRequest) (*pb.PushReply, e
 
 		if s.store.PutEntry(key, entry) {
 			reply.Success = true
+
+			// Track visibility if requested
+			if s.visibility != nil && entry.TrackVisibility {
+				s.visibility.Log(key, entry.Version.String())
+			}
 		}
 	}
 

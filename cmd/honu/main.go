@@ -91,6 +91,12 @@ func main() {
 					Value:  0.2,
 					EnvVar: "HONU_BANDIT_EPSILON",
 				},
+				cli.StringFlag{
+					Name:   "V, visibility",
+					Usage:  "log version visibility at the specified path",
+					Value:  "",
+					EnvVar: "HONU_VISIBILITY_LOG",
+				},
 			},
 		},
 		{
@@ -135,6 +141,10 @@ func main() {
 					Name:  "v, value",
 					Usage: "value to write to the storage server",
 				},
+				cli.BoolFlag{
+					Name:  "V, visibility",
+					Usage: "track visibility for the version",
+				},
 			},
 		},
 		{
@@ -159,6 +169,15 @@ func main() {
 					Name:  "D, delay",
 					Usage: "parseable duration to delay start of benchmark",
 					Value: "",
+				},
+				cli.StringFlag{
+					Name:  "r, rate",
+					Usage: "parseable duration to rate limit requests",
+					Value: "",
+				},
+				cli.BoolFlag{
+					Name:  "V, visibility",
+					Usage: "track visibility for the version",
 				},
 				cli.StringFlag{
 					Name:   "o, results",
@@ -200,6 +219,13 @@ func serve(c *cli.Context) error {
 
 	// Set the stats and version dump paths
 	server.Measure(c.String("stats"), c.String("history"))
+
+	// Set the visibility log
+	if c.String("visibility") != "" {
+		if err := server.Visibility(c.String("visibility")); err != nil {
+			cli.NewExitError(err.Error(), 1)
+		}
+	}
 
 	// Run replication service
 	if !c.Bool("standalone") && len(peers) > 0 {
@@ -265,7 +291,7 @@ func get(c *cli.Context) error {
 
 // Put a value for a key
 func put(c *cli.Context) error {
-	version, err := client.Put(c.String("key"), []byte(c.String("value")))
+	version, err := client.Put(c.String("key"), []byte(c.String("value")), c.Bool("visibility"))
 	if err != nil {
 		return cli.NewExitError(err.Error(), 1)
 	}
@@ -289,13 +315,21 @@ func bench(c *cli.Context) error {
 		}
 	}
 
+	// If a rate is specified parse the duration
+	var rate time.Duration
+	if c.String("rate") != "" {
+		if rate, err = time.ParseDuration(c.String("rate")); err != nil {
+			return cli.NewExitError(err.Error(), 1)
+		}
+	}
+
 	extra := make(map[string]interface{})
-	bench, err := honu.NewBenchmark(c.Int("workers"), c.String("prefix"), extra)
+	bench, err := honu.NewBenchmark(c.Int("workers"), c.String("prefix"), c.Bool("visibility"), extra)
 	if err != nil {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
-	if err := bench.Run(c.String("addr"), c.String("results"), duration, delay); err != nil {
+	if err := bench.Run(c.String("addr"), c.String("results"), duration, delay, rate); err != nil {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
