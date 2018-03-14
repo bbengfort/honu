@@ -1,21 +1,6 @@
 {
   "clients": {
-    "configs": [
-      {
-        "duration": "3m15s", 
-        "delay": "15s", 
-        "prefix": "", 
-        "addr": "localhost:3264"
-      }, 
-      {
-        "addr": "localhost:3264", 
-        "prefix": "", 
-        "visibility": "", 
-        "delay": "3m30s", 
-        "rate": "1m", 
-        "duration": "45s"
-      }
-    ], 
+    "configs": [], 
     "hosts": {
       "alia-singapore-26": "D", 
       "alia-canada-23": "A", 
@@ -90,7 +75,7 @@
       "pid": "", 
       "uptime": "60m", 
       "visibility": "visibile_versions.log", 
-      "delay": "250ms"
+      "delay": "1s"
     }
   }
 }

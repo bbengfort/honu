@@ -18,11 +18,22 @@ Fabric command definitions for running anti-entropy reinforcement learning.
 ##########################################################################
 
 import os
+import re
 import json
+import pytz
+
+from datetime import datetime
+from StringIO import StringIO
+from tabulate import tabulate
+from operator import itemgetter
+from collections import defaultdict
+from dotenv import load_dotenv, find_dotenv
+from dateutil.parser import parse as date_parse
 
 from fabric.contrib import files
-from dotenv import load_dotenv, find_dotenv
-from fabric.api import env, run, cd, parallel, get
+from fabric.api import env, run, cd, get
+from fabric.colors import red, green, cyan
+from fabric.api import parallel, task, runs_once, execute
 
 
 ##########################################################################
@@ -33,6 +44,14 @@ from fabric.api import env, run, cd, parallel, get
 def load_hosts(path):
     with open(path, 'r') as f:
         return json.load(f)
+
+
+def load_host_regions(hosts):
+    locations = defaultdict(list)
+    for host in hosts:
+        loc = " ".join(host.split("-")[1:-1])
+        locations[loc].append(host)
+    return locations
 
 
 def parse_bool(val):
@@ -62,6 +81,7 @@ repo = "~/workspace/go/src/github.com/bbengfort/honu"
 
 ## Load Hosts
 hosts = load_hosts(hostinfo)
+regions = load_host_regions(hosts)
 addrs = {info['hostname']: host for host, info in hosts.items()}
 env.hosts = sorted(list(hosts.keys()))
 
@@ -156,6 +176,7 @@ def make_client_args(config, host):
 ## Honu Commands
 ##########################################################################
 
+@task
 @parallel
 def install():
     """
@@ -171,6 +192,7 @@ def install():
     run("mkdir -p {}".format(workspace))
 
 
+@task
 @parallel
 def uninstall():
     """
@@ -180,6 +202,7 @@ def uninstall():
     run("rm -rf {}".format(workspace))
 
 
+@task
 @parallel
 def update():
     """
@@ -191,6 +214,7 @@ def update():
         run("go install ./...")
 
 
+@task
 @parallel
 def version():
     """
@@ -200,6 +224,7 @@ def version():
         run("honu --version")
 
 
+@task
 @parallel
 def cleanup():
     """
@@ -213,6 +238,8 @@ def cleanup():
         path = os.path.join(workspace, name)
         run("rm -f {}".format(path))
 
+
+@task
 @parallel
 def bench(config="config.json"):
     """
@@ -239,6 +266,7 @@ def bench(config="config.json"):
         run(pproc_command(command))
 
 
+@task
 @parallel
 def getmerge(name="metrics.json", path="data", suffix=None):
     """
@@ -251,3 +279,122 @@ def getmerge(name="metrics.json", path="data", suffix=None):
     local  = unique_name(local)
     if files.exists(remote):
         get(remote, local)
+
+
+@task
+@parallel
+def putkey(key="foo", value=None, visibility=True, geo="virginia", n_replicas=1):
+    n_replicas = int(n_replicas)
+    hostname = addrs[env.host]
+    region = " ".join(hostname.split("-")[1:-1])
+
+    # Perform geography filtering
+    geo = geo.split(";")
+    if region not in geo: return "ignoring {}".format(geo)
+    if hostname not in regions[region][:n_replicas]: return
+
+    if value is None:
+        now = pytz.timezone('America/New_York').localize(datetime.now())
+        now = now.strftime("%Y-%m-%d %H:%M:%S %z")
+        value = '"created on {} at {}"'.format(hostname, now)
+
+    cmd = "honu put -k {} -v {}".format(key, value)
+    if visibility:
+        cmd += " --visibility"
+
+    run(cmd)
+
+
+@parallel
+def _getkey(key):
+    return run("honu get -k {}".format(key), quiet=True)
+
+
+@task
+@runs_once
+def getkey(key="foo"):
+    """
+    Returns the latest version of the key on the hosts specified
+    """
+    row = re.compile(r'version ([\d\.]+), value: (.*)', re.I)
+    data = execute(_getkey, key)
+    table = []
+
+    for host, line in data.items():
+        match = row.match(line)
+        if match is None:
+            version = 0.0
+            value = red(line.split("\n")[-1])
+        else:
+            version, value = match.groups()
+        table.append([host, float(version), value])
+
+    table = [["Host", "Version", "Value"]] + table
+    print(tabulate(table, tablefmt='simple', headers='firstrow', floatfmt=".2f"))
+
+
+
+@parallel
+def fetch_visibility():
+    """
+    Fetch and parse the visibility data
+    """
+    fd = StringIO()
+    remote = os.path.join(workspace, "visibile_versions.log")
+    get(remote, fd)
+    rows = fd.getvalue().split("\n")
+    return list(map(json.loads, filter(None, rows)))
+
+
+@task
+@runs_once
+def visibility():
+    """
+    Print a table of the current key visibility listed
+    """
+    def loc_count(replicas):
+        locs = defaultdict(int)
+        for replica in replicas:
+            loc = " ".join(replica.split("-")[1:-1])
+            locs[loc] += 1
+        output = [
+            "{}-{}".format(l, c) for l, c in
+            sorted(locs.items(), key=itemgetter(1), reverse=True)
+        ]
+
+        for idx in range(0, len(output), 2):
+            output[idx] = cyan(output[idx])
+
+        return " ".join(output)
+
+
+    data = execute(fetch_visibility)
+    n_hosts = len(data)
+    versions = defaultdict(list)
+
+    for host, vals in data.items():
+        for val in vals:
+            vers = "{Key} {Version}".format(**val)
+            versions[vers].append((host, val['Timestamp']))
+
+    table = [['Version', 'R', '%', 'L (secs)', 'Created', 'Updated', 'Regions']]
+    for vers, timestamps in sorted(versions.items(), key=itemgetter(0)):
+        replicas = [h[0] for h in timestamps]
+        timestamps = [date_parse(h[1]) for h in timestamps]
+        replicated = len(set(replicas))
+        visibility = (float(replicated) / float(n_hosts)) * 100.0
+        created = min(timestamps)
+        updated = max(timestamps)
+        latency = (updated - created).total_seconds()
+        table.append([
+            vers,
+            replicated,
+            "{:0.2f}".format(visibility),
+            "{:0.2f}".format(latency),
+            created.strftime("%Y-%m-%d %H:%M:%S"),
+            updated.strftime("%Y-%m-%d %H:%M:%S"),
+            loc_count(replicas)
+        ])
+
+
+    print(tabulate(table, tablefmt='simple', headers='firstrow'))

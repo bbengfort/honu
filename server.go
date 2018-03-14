@@ -227,11 +227,14 @@ func (s *Server) PutValue(ctx context.Context, in *pb.PutRequest) (*pb.PutReply,
 		if s.visibility != nil {
 			s.visibility.Log(in.Key, reply.Version)
 			if err := s.visibility.Error(); err != nil {
+				warne(err)
 				reply.Error = err.Error()
 			}
 		} else {
 			reply.Error = "warning: replicas are not tracking visibility"
 		}
+	} else {
+		warn("not put tracking visibiilty of %s %s", in.Key, reply.Version)
 	}
 
 	return reply, nil
