@@ -177,6 +177,7 @@ func (s *LinearizableStore) PutEntry(key string, entry *Entry) bool {
 	current.Version = entry.Version
 	current.Parent = entry.Parent
 	current.Value = entry.Value
+	current.TrackVisibility = entry.TrackVisibility
 
 	// Update the namespace, versions, and last write
 	s.namespace[key] = current
@@ -389,6 +390,7 @@ func (s *SequentialStore) PutEntry(key string, entry *Entry) bool {
 	current.Version = entry.Version
 	current.Parent = entry.Parent
 	current.Value = entry.Value
+	current.TrackVisibility = entry.TrackVisibility
 
 	// Store the version in the version history and return true.
 	s.history.Append(current.Key, current.Parent, current.Version)
