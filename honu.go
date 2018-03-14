@@ -16,7 +16,7 @@ import (
 //===========================================================================
 
 // PackageVersion of the current Honu implementation
-const PackageVersion = "0.11b"
+const PackageVersion = "0.11c"
 
 // Initialize the package and random numbers, etc.
 func init() {

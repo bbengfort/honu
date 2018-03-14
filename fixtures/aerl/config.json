@@ -4,8 +4,8 @@
       "pid": "",
       "addr": ":3264",
       "peers": "",
-      "delay": "250ms",
-      "uptime": "60m",
+      "delay": "1s",
+      "uptime": "12m30s",
       "stats": "metrics.json",
       "visibility": "visibile_versions.log",
       "bandit": "uniform"
@@ -16,15 +16,15 @@
     "configs": [
       {
         "addr": "localhost:3264",
-        "duration": "3m15s",
+        "duration": "4m",
         "delay": "15s",
         "prefix": ""
       },
       {
         "addr": "localhost:3264",
-        "duration": "45s",
-        "rate": "1m",
-        "delay": "3m30s",
+        "duration": "8m",
+        "rate": "15s",
+        "delay": "4m15s",
         "prefix": "",
         "visibility": ""
       }

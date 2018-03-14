@@ -2,7 +2,7 @@
   "clients": {
     "configs": [
       {
-        "duration": "3m15s", 
+        "duration": "4m", 
         "delay": "15s", 
         "prefix": "", 
         "addr": "localhost:3264"
@@ -11,9 +11,9 @@
         "addr": "localhost:3264", 
         "prefix": "", 
         "visibility": "", 
-        "delay": "3m30s", 
-        "rate": "1m", 
-        "duration": "45s"
+        "delay": "4m15s", 
+        "rate": "15s", 
+        "duration": "8m"
       }
     ], 
     "hosts": {
@@ -89,9 +89,9 @@
       "addr": ":3264", 
       "epsilon": 0.1, 
       "pid": "", 
-      "uptime": "60m", 
+      "uptime": "12m30s", 
       "visibility": "visibile_versions.log", 
-      "delay": "250ms"
+      "delay": "1s"
     }
   }
 }

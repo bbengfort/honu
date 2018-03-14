@@ -233,8 +233,6 @@ func (s *Server) PutValue(ctx context.Context, in *pb.PutRequest) (*pb.PutReply,
 		} else {
 			reply.Error = "warning: replicas are not tracking visibility"
 		}
-	} else {
-		warn("not put tracking visibiilty of %s %s", in.Key, reply.Version)
 	}
 
 	return reply, nil

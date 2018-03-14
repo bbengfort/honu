@@ -106,8 +106,6 @@ func (s *Server) AntiEntropy() {
 				if err := s.visibility.Error(); err != nil {
 					warne(err)
 				}
-			} else {
-				warn("not tracking pull visibiilty of %s %s", key, entry.Version.String())
 			}
 		}
 	}
@@ -240,8 +238,6 @@ func (s *Server) Push(ctx context.Context, in *pb.PushRequest) (*pb.PushReply, e
 				if err := s.visibility.Error(); err != nil {
 					warne(err)
 				}
-			} else {
-				warn("not tracking push visibiilty of %s %s", key, entry.Version.String())
 			}
 		}
 	}
