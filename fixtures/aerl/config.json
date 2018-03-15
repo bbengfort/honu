@@ -4,7 +4,7 @@
       "pid": "",
       "addr": ":3264",
       "peers": "",
-      "delay": "1s",
+      "delay": "125ms",
       "uptime": "12m30s",
       "stats": "metrics.json",
       "visibility": "visibile_versions.log",
@@ -23,7 +23,7 @@
       {
         "addr": "localhost:3264",
         "duration": "8m",
-        "rate": "15s",
+        "rate": "4s",
         "delay": "4m15s",
         "prefix": "",
         "visibility": ""
